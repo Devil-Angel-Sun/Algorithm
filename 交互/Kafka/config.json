@@ -1,0 +1,1 @@
+{"bootstrap_servers": "192.168.50.110:19092", "event_topic": "test", "offset": "earliest", "groupid": "test01", "new_topic": {"topic_name": "test", "partitions": 1, "replication": 1}}

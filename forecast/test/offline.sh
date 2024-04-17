@@ -1,0 +1,1 @@
+curl -i http://192.168.50.86:5000/offline -d '{"metricsIdentify":"operation_select_freq","metricsEntity":"Test1","startStamp":1600995600,"endStamp":1601136000,"forecastDay":3}' -X POST -H 'Content-Type: application/json'

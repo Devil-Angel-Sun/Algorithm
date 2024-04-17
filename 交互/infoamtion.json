@@ -1,0 +1,9 @@
+{
+  "kafka": {
+    "groupid": "AnomalyDetectTest01",
+    "http": "192.168.50.107:19092",
+    "offset": "latest",
+    "topicCtrl": "dc_abnormal_control",
+    "topicData": "dc_abnormal_data"
+  }
+}
