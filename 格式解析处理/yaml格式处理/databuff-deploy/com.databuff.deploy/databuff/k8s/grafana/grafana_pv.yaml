@@ -1,0 +1,30 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: dc-grafana-pvc
+  namespace: databuff
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: nfs
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: dc-grafana-pv
+  labels:
+    pv: dc-grafana-pv
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  storageClassName: nfs
+  nfs:
+    path: /data/nfs/databuff-kaifa/dc-grafana-data
+    server: 192.168.50.126
+  persistentVolumeReclaimPolicy: Retain

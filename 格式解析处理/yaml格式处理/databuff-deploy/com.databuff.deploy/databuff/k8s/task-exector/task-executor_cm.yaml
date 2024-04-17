@@ -1,0 +1,116 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dc-task-executor-conf
+  namespace: databuff
+  labels:
+    app: dc-task-executor
+data:
+  task-executor.yml: |
+    server:
+      port: 18089
+    spring:
+      datasource:
+        #    url: jdbc:mysql://mysql-svc:32306/dc_order?characterEncoding=UTF-8&useSSL=false
+        url: jdbc:mysql://mysql-svc:3306/dc_databuff?characterEncoding=UTF-8&useSSL=false
+        username: root
+        password: 234*(sdlj12
+        driverClassName: com.mysql.cj.jdbc.Driver
+        type: com.zaxxer.hikari.HikariDataSource
+        hikari:
+          idle-timeout: 120000
+          minimum-idle: 20
+          maximum-pool-size: 50
+          keepalive_time: 60000
+          #????mysql?wait_timeout?????28800000ms???
+          max-lifetime: 28000000
+      # kafka config
+      kafka:
+        bootstrap-servers: dc-kafka-svc:9092
+        consumer:
+          enable-auto-commit: true
+          max-poll-records: 500
+          auto-offset-reset: earliest
+          key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+          value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      # redis
+      redis:
+        host: redis-svc
+        port: 6379
+        timeout: 10000
+        password: Dacheng@123
+        jedis:
+          pool:
+            max-idle: 8
+            min-idle: 0
+            max-wait: -1
+            max-active: 200
+
+    # mysql config
+    mybatis-plus:
+      mapper-locations: classpath*:mappers/*.xml
+      configuration:
+        map-underscore-to-camel-case: true
+        cache-enabled: false
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      global-config:
+        refresh: true
+        db-config:
+          id-type: auto
+          field-strategy: not_empty
+          db-column-underline: true
+          logic-delete-value: 1
+          logic-not-delete-value: 0
+          db-type: mysql
+
+    # 线程池配置
+    tasks:
+      monitor:
+        pool:
+          coresize: 20
+          maxsize: 50
+          queuesize: 100
+
+    # es config
+    elasticsearch:
+      hosts: elasticsearch-svc:9200
+      indexPrefix: dc_
+      user: elastic
+      password: Databuff@123
+
+    # influxdb
+    influx:
+      url: http://influxdb-svc:8086
+      user: admin
+      password: 234*(sdlj12
+      max-total: 30
+      min-idle: 3
+      max-wait-millis: 5000
+      soft-min-evictable-idle-time-millis: 300000
+      test-on-borrow: true
+
+    # log config
+    logging:
+      config: classpath:log4j2.xml
+
+    ##-- xxl-job config
+    ### xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
+    xxl:
+      job:
+        admin:
+          addresses: http://dc-webapp-svc:18080/xxl-job-admin
+        ### xxl-job, access token
+        accessToken: default_token
+        ### xxl-job executor appname
+        executor:
+          appname: databuff-executor
+          ### xxl-job executor registry-address: default use address to registry , otherwise use ip:port if address is null
+          address:
+          ### xxl-job executor server-info
+          ip:
+          port: 9999
+          ### xxl-job executor log-path
+          #      logpath: ../logs/xxl-job/jobhandler
+          logpath: ../xxl-job/jobhandler
+          ### xxl-job executor log-retention-days
+          logretentiondays: 7

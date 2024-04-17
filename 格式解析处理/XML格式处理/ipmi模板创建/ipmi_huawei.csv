@@ -1,0 +1,140 @@
+,id,name,sensor,reading,state,value,units,threshold
+0,PS1 Temp Status,(r0.32.10.0).PS1 Temp Status,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+1,PS1 Fan Status,(r0.32.10.0).PS1 Fan Status,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+2,PS1 Status,(r0.32.10.0).PS1 Status,"{'type': 8, 'text': 'power_supply'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'presence detected'}",,,
+3,DISK7,(r0.32.4.7).DISK7,"{'type': 13, 'text': 'drive_slot'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+4,DISK6,(r0.32.4.6).DISK6,"{'type': 13, 'text': 'drive_slot'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'drive presence'}",,,
+5,DISK5,(r0.32.4.5).DISK5,"{'type': 13, 'text': 'drive_slot'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'drive presence'}",,,
+6,DISK4,(r0.32.4.4).DISK4,"{'type': 13, 'text': 'drive_slot'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'drive presence'}",,,
+7,DISK3,(r0.32.4.3).DISK3,"{'type': 13, 'text': 'drive_slot'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'drive presence'}",,,
+8,DISK2,(r0.32.4.2).DISK2,"{'type': 13, 'text': 'drive_slot'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'drive presence'}",,,
+9,DISK1,(r0.32.4.1).DISK1,"{'type': 13, 'text': 'drive_slot'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'drive presence'}",,,
+10,DISK0,(r0.32.4.0).DISK0,"{'type': 13, 'text': 'drive_slot'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'drive presence'}",,,
+11,RAID Card BBU,(r0.32.11.0).RAID Card BBU,"{'type': 41, 'text': 'battery'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+12,RAID PCIE ERR,(r0.32.11.0).RAID PCIE ERR,"{'type': 23, 'text': 'add_in_card'}","{'type': 3, 'text': 'discrete_state'}","{'state': 0, 'text': ''}",,,
+13,RAID Status,(r0.32.11.0).RAID Status,"{'type': 23, 'text': 'add_in_card'}","{'type': 4, 'text': 'discrete_predictive_failure'}","{'state': 0, 'text': ''}",,,
+14,NIC1 Presence,(r0.32.7.0).NIC1 Presence,"{'type': 23, 'text': 'add_in_card'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 0, 'text': ''}",,,
+15,Host Loss,(r0.32.7.0).Host Loss,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+16,Sec. Log Full,(r0.32.7.0).Sec. Log Full,"{'type': 16, 'text': 'event_logging_disabled'}","{'type': 7, 'text': 'discrete_severity'}","{'state': 0, 'text': ''}",,,
+17,Op. Log Full,(r0.32.7.0).Op. Log Full,"{'type': 16, 'text': 'event_logging_disabled'}","{'type': 7, 'text': 'discrete_severity'}","{'state': 0, 'text': ''}",,,
+18,SEL Status,(r0.32.7.0).SEL Status,"{'type': 16, 'text': 'event_logging_disabled'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+19,NTP Sync Failed,(r0.32.7.0).NTP Sync Failed,"{'type': 22, 'text': 'microcontroller_coprocessor'}","{'type': 3, 'text': 'discrete_state'}","{'state': 0, 'text': ''}",,,
+20,BMC Time Hopping,(r0.32.7.0).BMC Time Hopping,"{'type': 22, 'text': 'microcontroller_coprocessor'}","{'type': 3, 'text': 'discrete_state'}","{'state': 0, 'text': ''}",,,
+21,BMC Boot Up,(r0.32.7.0).BMC Boot Up,"{'type': 22, 'text': 'microcontroller_coprocessor'}","{'type': 9, 'text': 'discrete_device_enable'}","{'state': 2, 'text': 'device enabled'}",,,
+22,PS Redundancy,(r0.32.11.6).PS Redundancy,"{'type': 8, 'text': 'power_supply'}","{'type': 11, 'text': 'discrete_redundancy'}","{'state': 0, 'text': ''}",,,
+23,LCD Presence,(r0.32.7.0).LCD Presence,"{'type': 28, 'text': 'terminator'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 1, 'text': 'device removed/absent'}",,,
+24,LCD Status,(r0.32.7.0).LCD Status,"{'type': 28, 'text': 'terminator'}","{'type': 4, 'text': 'discrete_predictive_failure'}","{'state': 0, 'text': ''}",,,
+25,Memory Usage,(r0.32.7.0).Memory Usage,"{'type': 12, 'text': 'memory'}","{'type': 5, 'text': 'discrete_limit_exceeded'}","{'state': 0, 'text': ''}",,,
+26,CPU Usage,(r0.32.7.0).CPU Usage,"{'type': 7, 'text': 'processor'}","{'type': 5, 'text': 'discrete_limit_exceeded'}","{'state': 0, 'text': ''}",,,
+27,RAID Presence,(r0.32.7.0).RAID Presence,"{'type': 23, 'text': 'add_in_card'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 2, 'text': 'device inserted/present'}",,,
+28,FAN4 Presence,(r0.32.30.3).FAN4 Presence,"{'type': 10, 'text': 'cooling_device'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 0, 'text': ''}",,,
+29,FAN3 Presence,(r0.32.30.2).FAN3 Presence,"{'type': 10, 'text': 'cooling_device'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 0, 'text': ''}",,,
+30,FAN2 Presence,(r0.32.30.1).FAN2 Presence,"{'type': 10, 'text': 'cooling_device'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 0, 'text': ''}",,,
+31,FAN1 Presence,(r0.32.30.0).FAN1 Presence,"{'type': 10, 'text': 'cooling_device'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 0, 'text': ''}",,,
+32,SAS Cable,(r0.32.7.0).SAS Cable,"{'type': 27, 'text': 'cable_interconnect'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+33,Riser3 Card,(r0.32.7.0).Riser3 Card,"{'type': 23, 'text': 'add_in_card'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 0, 'text': ''}",,,
+34,Riser2 Card,(r0.32.7.0).Riser2 Card,"{'type': 23, 'text': 'add_in_card'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 0, 'text': ''}",,,
+35,Riser1 Card,(r0.32.7.0).Riser1 Card,"{'type': 23, 'text': 'add_in_card'}","{'type': 8, 'text': 'discrete_device_presence'}","{'state': 2, 'text': 'device inserted/present'}",,,
+36,HDD BP Status,(r0.32.7.0).HDD BP Status,"{'type': 21, 'text': 'module_board'}","{'type': 7, 'text': 'discrete_severity'}","{'state': 0, 'text': ''}",,,
+37,HDD Backplane,(r0.32.7.0).HDD Backplane,"{'type': 27, 'text': 'cable_interconnect'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+38,PwrCap Status,(r0.32.7.0).PwrCap Status,"{'type': 18, 'text': 'system_event'}","{'type': 4, 'text': 'discrete_predictive_failure'}","{'state': 0, 'text': ''}",,,
+39,PwrOn TimeOut,(r0.32.7.0).PwrOn TimeOut,"{'type': 8, 'text': 'power_supply'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+40,PwrOk Sig. Drop,(r0.32.7.0).PwrOk Sig. Drop,"{'type': 8, 'text': 'power_supply'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+41,UID Button,(r0.32.7.0).UID Button,"{'type': 20, 'text': 'button'}","{'type': 3, 'text': 'discrete_state'}","{'state': 0, 'text': ''}",,,
+42,Mngmnt Health,(r0.32.7.0).Mngmnt Health,"{'type': 40, 'text': 'management_subsystem_health'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+43,Watchdog2,(r0.32.7.0).Watchdog2,"{'type': 35, 'text': 'watchdog_2'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+44,Boot Error,(r0.32.7.0).Boot Error,"{'type': 30, 'text': 'boot_error'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+45,SysRestart,(r0.32.7.0).SysRestart,"{'type': 29, 'text': 'system_boot_initiated'}","{'type': 111, 'text': 'sensor specific'}","{'state': 128, 'text': 'System restart'}",,,
+46,Power Button,(r0.32.7.0).Power Button,"{'type': 20, 'text': 'button'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+47,SysFWProgress,(r0.32.7.0).SysFWProgress,"{'type': 15, 'text': 'system_firmware_progress'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+48,ACPI State,(r0.32.7.0).ACPI State,"{'type': 34, 'text': 'system_acpi_power_state'}","{'type': 111, 'text': 'sensor specific'}","{'state': 1, 'text': 'S0/G0 working'}",,,
+49,PCIE Status,(r0.32.11.5).PCIE Status,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+50,RTC Battery,(r0.32.7.0).RTC Battery,"{'type': 41, 'text': 'battery'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+51,DIMM151,(r0.32.32.23).DIMM151,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+52,DIMM150,(r0.32.32.22).DIMM150,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+53,DIMM141,(r0.32.32.21).DIMM141,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+54,DIMM140,(r0.32.32.20).DIMM140,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+55,DIMM131,(r0.32.32.19).DIMM131,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+56,DIMM130,(r0.32.32.18).DIMM130,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+57,DIMM121,(r0.32.32.17).DIMM121,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+58,DIMM120,(r0.32.32.16).DIMM120,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+59,DIMM111,(r0.32.32.15).DIMM111,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+60,DIMM110,(r0.32.32.14).DIMM110,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+61,DIMM101,(r0.32.32.13).DIMM101,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+62,DIMM100,(r0.32.32.12).DIMM100,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 64, 'text': 'presence detected'}",,,
+63,DIMM051,(r0.32.32.11).DIMM051,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+64,DIMM050,(r0.32.32.10).DIMM050,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+65,DIMM041,(r0.32.32.9).DIMM041,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+66,DIMM040,(r0.32.32.8).DIMM040,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+67,DIMM031,(r0.32.32.7).DIMM031,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+68,DIMM030,(r0.32.32.6).DIMM030,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+69,DIMM021,(r0.32.32.5).DIMM021,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+70,DIMM020,(r0.32.32.4).DIMM020,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+71,DIMM011,(r0.32.32.3).DIMM011,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+72,DIMM010,(r0.32.32.2).DIMM010,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+73,DIMM001,(r0.32.32.1).DIMM001,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+74,DIMM000,(r0.32.32.0).DIMM000,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 64, 'text': 'presence detected'}",,,
+75,FAN4 Status,(r0.32.30.3).FAN4 Status,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+76,FAN3 Status,(r0.32.30.2).FAN3 Status,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+77,FAN2 Status,(r0.32.30.1).FAN2 Status,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+78,FAN1 Status,(r0.32.30.0).FAN1 Status,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+79,CPU2 Memory,(r0.32.3.1).CPU2 Memory,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+80,CPU1 Memory,(r0.32.3.0).CPU1 Memory,"{'type': 12, 'text': 'memory'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+81,CPU2 Status,(r0.32.3.1).CPU2 Status,"{'type': 7, 'text': 'processor'}","{'type': 111, 'text': 'sensor specific'}","{'state': 128, 'text': 'processor presence detected'}",,,
+82,CPU1 Status,(r0.32.3.0).CPU1 Status,"{'type': 7, 'text': 'processor'}","{'type': 111, 'text': 'sensor specific'}","{'state': 128, 'text': 'processor presence detected'}",,,
+83,System Error,(r0.32.7.0).System Error,"{'type': 18, 'text': 'system_event'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+84,System Notice,(r0.32.7.0).System Notice,"{'type': 18, 'text': 'system_event'}","{'type': 7, 'text': 'discrete_severity'}","{'state': 0, 'text': ''}",,,
+85,CPU2 Prochot,(r0.32.3.1).CPU2 Prochot,"{'type': 7, 'text': 'processor'}","{'type': 3, 'text': 'discrete_state'}","{'state': 0, 'text': ''}",,,
+86,CPU2 UPI Link,(r0.32.3.1).CPU2 UPI Link,"{'type': 27, 'text': 'cable_interconnect'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+87,CPU1 Prochot,(r0.32.3.0).CPU1 Prochot,"{'type': 7, 'text': 'processor'}","{'type': 3, 'text': 'discrete_state'}","{'state': 0, 'text': ''}",,,
+88,CPU1 UPI Link,(r0.32.3.0).CPU1 UPI Link,"{'type': 27, 'text': 'cable_interconnect'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+89,PCH Status,(r0.32.7.0).PCH Status,"{'type': 25, 'text': 'chip_set'}","{'type': 3, 'text': 'discrete_state'}","{'state': 0, 'text': ''}",,,
+90,LOM P4 Link Down,(r0.32.42.0).LOM P4 Link Down,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 256, 'text': 'slot is disabled'}",,,
+91,LOM P3 Link Down,(r0.32.42.0).LOM P3 Link Down,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 0, 'text': ''}",,,
+92,LOM P2 Link Down,(r0.32.42.0).LOM P2 Link Down,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 256, 'text': 'slot is disabled'}",,,
+93,LOM P1 Link Down,(r0.32.42.0).LOM P1 Link Down,"{'type': 33, 'text': 'slot_connector'}","{'type': 111, 'text': 'sensor specific'}","{'state': 256, 'text': 'slot is disabled'}",,,
+94,PCH PRIM 1V05,(r0.32.7.0).PCH PRIM 1V05,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",1.04,volts,"{'lower': {'crit': 0.91}, 'upper': {'crit': 1.19}}"
+95,PCH VPVNN,(r0.32.7.0).PCH VPVNN,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",0.99,volts,"{'lower': {'crit': 0.73}, 'upper': {'crit': 1.15}}"
+96,CPU2 VCCIO,(r0.32.3.1).CPU2 VCCIO,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",0.99,volts,"{'lower': {'crit': 0.84}, 'upper': {'crit': 1.16}}"
+97,CPU1 VCCIO,(r0.32.3.0).CPU1 VCCIO,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",0.99,volts,"{'lower': {'crit': 0.84}, 'upper': {'crit': 1.16}}"
+98,CPU2 VSA,(r0.32.3.1).CPU2 VSA,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",0.87,volts,"{'lower': {'crit': 0.45}, 'upper': {'crit': 1.21}}"
+99,CPU1 VSA,(r0.32.3.0).CPU1 VSA,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",0.89,volts,"{'lower': {'crit': 0.45}, 'upper': {'crit': 1.21}}"
+100,CPU2 VRD Temp,(r0.32.3.1).CPU2 VRD Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",45.0,C,"{'lower': {}, 'upper': {'non_crit': 120.0}}"
+101,CPU1 VRD Temp,(r0.32.3.0).CPU1 VRD Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",43.0,C,"{'lower': {}, 'upper': {'non_crit': 120.0}}"
+102,CPU2 VDDQ Temp,(r0.32.3.1).CPU2 VDDQ Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",37.0,C,"{'lower': {}, 'upper': {'non_crit': 120.0}}"
+103,CPU1 VDDQ Temp,(r0.32.3.0).CPU1 VDDQ Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",33.0,C,"{'lower': {}, 'upper': {'non_crit': 120.0}}"
+104,CPU2 DDR VDDQ2,(r0.32.3.1).CPU2 DDR VDDQ2,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",1.23,volts,"{'lower': {'crit': 1.14}, 'upper': {'crit': 1.26}}"
+105,CPU2 DDR VDDQ,(r0.32.3.1).CPU2 DDR VDDQ,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",1.22,volts,"{'lower': {'crit': 1.14}, 'upper': {'crit': 1.26}}"
+106,CPU1 DDR VDDQ2,(r0.32.3.0).CPU1 DDR VDDQ2,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",1.22,volts,"{'lower': {'crit': 1.14}, 'upper': {'crit': 1.26}}"
+107,CPU1 DDR VDDQ,(r0.32.3.0).CPU1 DDR VDDQ,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",1.22,volts,"{'lower': {'crit': 1.14}, 'upper': {'crit': 1.26}}"
+108,CPU2 VCore,(r0.32.3.1).CPU2 VCore,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",1.78,volts,"{'lower': {'crit': 1.23}, 'upper': {'crit': 2.04}}"
+109,CPU1 VCore,(r0.32.3.0).CPU1 VCore,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",1.78,volts,"{'lower': {'crit': 1.23}, 'upper': {'crit': 2.04}}"
+110,PS1 Inlet Temp,(r0.32.10.0).PS1 Inlet Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",35.0,C,"{'lower': {}, 'upper': {}}"
+111,PS1 VIN,(r0.32.10.0).PS1 VIN,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",230.0,volts,"{'lower': {}, 'upper': {}}"
+112,Power1,(r0.32.10.0).Power1,"{'type': 11, 'text': 'other_units_based_sensor'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",294.0,watts,"{'lower': {}, 'upper': {}}"
+113,RAID Temp,(r0.32.11.0).RAID Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",51.0,C,"{'lower': {}, 'upper': {'non_crit': 95.0}}"
+114,Disks Temp,(r0.32.7.0).Disks Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",35.0,C,"{'lower': {}, 'upper': {}}"
+115,Power,(r0.32.7.0).Power,"{'type': 11, 'text': 'other_units_based_sensor'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",294.0,watts,"{'lower': {}, 'upper': {}}"
+116,FAN4 Speed,(r0.32.30.3).FAN4 Speed,"{'type': 4, 'text': 'fan'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",3960.0,RPM,"{'lower': {}, 'upper': {}}"
+117,FAN3 Speed,(r0.32.30.2).FAN3 Speed,"{'type': 4, 'text': 'fan'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",3960.0,RPM,"{'lower': {}, 'upper': {}}"
+118,FAN2 Speed,(r0.32.30.1).FAN2 Speed,"{'type': 4, 'text': 'fan'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",3960.0,RPM,"{'lower': {}, 'upper': {}}"
+119,FAN1 Speed,(r0.32.30.0).FAN1 Speed,"{'type': 4, 'text': 'fan'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",3960.0,RPM,"{'lower': {}, 'upper': {}}"
+120,CPU2 DDR VPP2,(r0.32.3.1).CPU2 DDR VPP2,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",2.58,volts,"{'lower': {'crit': 2.24}, 'upper': {'crit': 2.74}}"
+121,CPU2 DDR VPP1,(r0.32.3.1).CPU2 DDR VPP1,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",2.56,volts,"{'lower': {'crit': 2.24}, 'upper': {'crit': 2.74}}"
+122,CPU1 DDR VPP2,(r0.32.3.0).CPU1 DDR VPP2,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",2.54,volts,"{'lower': {'crit': 2.24}, 'upper': {'crit': 2.74}}"
+123,CPU1 DDR VPP1,(r0.32.3.0).CPU1 DDR VPP1,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",2.56,volts,"{'lower': {'crit': 2.24}, 'upper': {'crit': 2.74}}"
+124,SYS 12V_2,(r0.32.7.0).SYS 12V_2,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",12.12,volts,"{'lower': {'crit': 10.8}, 'upper': {'crit': 13.2}}"
+125,SYS 12V_1,(r0.32.7.0).SYS 12V_1,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",12.12,volts,"{'lower': {'crit': 10.8}, 'upper': {'crit': 13.2}}"
+126,SYS 5V,(r0.32.7.0).SYS 5V,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",5.16,volts,"{'lower': {'crit': 4.5}, 'upper': {'crit': 5.49}}"
+127,SYS 3.3V,(r0.32.7.0).SYS 3.3V,"{'type': 2, 'text': 'voltage'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",3.3,volts,"{'lower': {'crit': 2.96}, 'upper': {'crit': 3.62}}"
+128,CPU2 MEM Temp,(r0.32.37.1).CPU2 MEM Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",37.0,C,"{'lower': {}, 'upper': {'non_crit': 95.0}}"
+129,CPU1 MEM Temp,(r0.32.37.0).CPU1 MEM Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",34.0,C,"{'lower': {}, 'upper': {'non_crit': 95.0}}"
+130,Cpu2 Margin,(r0.32.3.1).Cpu2 Margin,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",-38.0,unspecified,"{'lower': {}, 'upper': {}}"
+131,Cpu1 Margin,(r0.32.3.0).Cpu1 Margin,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",-40.0,unspecified,"{'lower': {}, 'upper': {}}"
+132,CPU2 DTS,(r0.32.3.1).CPU2 DTS,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",-48.0,unspecified,"{'lower': {}, 'upper': {'non_crit': -1.0}}"
+133,CPU1 DTS,(r0.32.3.0).CPU1 DTS,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",-50.0,unspecified,"{'lower': {}, 'upper': {'non_crit': -1.0}}"
+134,CPU2 Core Rem,(r0.32.3.1).CPU2 Core Rem,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",50.0,C,"{'lower': {}, 'upper': {}}"
+135,CPU1 Core Rem,(r0.32.3.0).CPU1 Core Rem,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",48.0,C,"{'lower': {}, 'upper': {}}"
+136,PCH Temp,(r0.32.7.0).PCH Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",63.0,C,"{'lower': {}, 'upper': {'non_crit': 86.0}}"
+137,Outlet Temp,(r0.32.7.0).Outlet Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",36.0,C,"{'lower': {}, 'upper': {'non_crit': 75.0}}"
+138,Inlet Temp,(r0.32.7.0).Inlet Temp,"{'type': 1, 'text': 'temperature'}","{'type': 1, 'text': 'threshold'}","{'state': 0, 'text': ''}",26.0,C,"{'lower': {}, 'upper': {'non_crit': 46.0, 'crit': 48.0}}"

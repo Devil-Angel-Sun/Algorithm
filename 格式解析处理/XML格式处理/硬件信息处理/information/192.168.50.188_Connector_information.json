@@ -1,0 +1,79 @@
+{
+  "Single Connector Network Port1": {
+    "External Connector Type": "RJ-45",
+    "External Reference Designator": "1",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "Network Port"
+  },
+  "Single Connector Network Port2": {
+    "External Connector Type": "RJ-45",
+    "External Reference Designator": "2",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "Network Port"
+  },
+  "Single Connector Network Port3": {
+    "External Connector Type": "RJ-45",
+    "External Reference Designator": "3",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "Network Port"
+  },
+  "Single Connector Network Port4": {
+    "External Connector Type": "RJ-45",
+    "External Reference Designator": "4",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "Network Port"
+  },
+  "Single Connector Serial Port 16550A CompatibleSerial port 1": {
+    "External Connector Type": "DB-9 male",
+    "External Reference Designator": "Serial port 1",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "Serial Port 16550A Compatible"
+  },
+  "Single Connector USBBack USB port 1": {
+    "External Connector Type": "Access Bus (USB)",
+    "External Reference Designator": "Back USB port 1",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "USB"
+  },
+  "Single Connector USBBack USB port 2": {
+    "External Connector Type": "Access Bus (USB)",
+    "External Reference Designator": "Back USB port 2",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "USB"
+  },
+  "Single Connector USBFront USB port 1": {
+    "External Connector Type": "Access Bus (USB)",
+    "External Reference Designator": "Front USB port 1",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "USB"
+  },
+  "Single Connector USBFront USB port 2": {
+    "External Connector Type": "Access Bus (USB)",
+    "External Reference Designator": "Front USB port 2",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "USB"
+  },
+  "Single Connector USBNot Specified": {
+    "External Connector Type": "None",
+    "External Reference Designator": "Not Specified",
+    "Internal Connector Type": "Access Bus (USB)",
+    "Internal Reference Designator": "Internal USB port 1",
+    "Port Type": "USB"
+  },
+  "Single Connector Video PortVideo port 1": {
+    "External Connector Type": "DB-15 female",
+    "External Reference Designator": "Video port 1",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "Not Specified",
+    "Port Type": "Video Port"
+  }
+}

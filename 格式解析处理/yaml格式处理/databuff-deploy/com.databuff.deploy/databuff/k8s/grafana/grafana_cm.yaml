@@ -1,0 +1,534 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dc-grafana-conf
+  namespace: databuff
+  labels:
+    app: dc-grafana-conf
+data:
+  dc_tech.crt: |
+    -----BEGIN CERTIFICATE REQUEST-----
+    MIICvzCCAacCAQAwejELMAkGA1UEBhMCQ04xETAPBgNVBAgMCFpoZUppYW5nMREw
+    DwYDVQQHDAhIYW5nWmhvdTEUMBIGA1UECgwLREMtVGVjaEluYy4xEDAOBgNVBAsM
+    B0RDLVRlY2gxHTAbBgNVBAMMFHd3dy5kYWNoZW5nLXRlY2guY29tMIIBIjANBgkq
+    hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo1a8FExPVGFO84ZZtR5oPhssC/CSUR9g
+    SEo7/o8IzYQxxSampwZT0IbaDgQBpoUTzpIKY/Hb4PdvwSuL1o0gZSKNraV0ArCO
+    k3W/UHRmQZ70MEnn0ehzxBAj0chRZhzwd5m/2aOY0xyHvBAPtdSC1XYLBZOfnJ/w
+    ryaSEIgxbAFmzHKklkSgSshpTmmbt4eSuNJDwHXCTNdjYaZxOJIYKEvtZ8YWdiYN
+    Sbop3AocZKqsBPBDxvLdK0A5P0joWMOdjXAhBQ2ujyWcrI7ZfocDL3mh8rr1xnWP
+    kzgb1JbdJuHjOericncz4QOCytDtECawp7xiMbXkc3wCB4Pe0hbM5wIDAQABoAAw
+    DQYJKoZIhvcNAQELBQADggEBADgx7NAFvC95nuYFI/F3W4RoQZIC1rgp4O9S7i3j
+    /hfw59Hm+OpFb+yoN+k/YfC9CyPXl/eTzsP48GEstsPiPZ4FmaqBz8iIcPqT1pwp
+    g8IYnjHmpigYGs5+PPcT9n++dVAlNJzdaSYjYol4EPN933ItMCv6swNwE/uhDIxG
+    IkdJtUSKZS7r6MxQYPV7UWEoScxOL01n/uMN4E5FPAjPE+kwMGO5Kq8yohHC8R+g
+    UZOvq8MQ2d29zyqXYK9qmkV+Im4EtRIiqsQceK0TVX0/w9QvLO6/Hg95MVnd6jkL
+    C4Dnsx5gEP7ajAzItGr+xrIpLBPAlE2VWoj+uZpUX6dVgXM=
+    -----END CERTIFICATE REQUEST-----
+  dc_tech.key: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjVrwUTE9UYU7z
+    hlm1Hmg+GywL8JJRH2BISjv+jwjNhDHFJqanBlPQhtoOBAGmhRPOkgpj8dvg92/B
+    K4vWjSBlIo2tpXQCsI6Tdb9QdGZBnvQwSefR6HPEECPRyFFmHPB3mb/Zo5jTHIe8
+    EA+11ILVdgsFk5+cn/CvJpIQiDFsAWbMcqSWRKBKyGlOaZu3h5K40kPAdcJM12Nh
+    pnE4khgoS+1nxhZ2Jg1JuincChxkqqwE8EPG8t0rQDk/SOhYw52NcCEFDa6PJZys
+    jtl+hwMveaHyuvXGdY+TOBvUlt0m4eM56uJydzPhA4LK0O0QJrCnvGIxteRzfAIH
+    g97SFsznAgMBAAECggEAUbxGc7XYALaNBonVfC/SJDn+qZ7h6RxVVvdm3DSBSC59
+    pVV5EZ219WR124ufs89mIPmtn2PZDtNjJfv/hwaqDlHjKeDgk7P8NMg4Sy9kODQt
+    p7hj/ANhYtxcwE6IhRu4LXFPsr4N7J6bQb2bzvaf3eerDkhYF81laJBZiVJNwOiJ
+    mIgxxZN1KN5kpA7WB3J5OKbF4xi09jdL0zvMhsVVQQJgr4a2yzDyv1TnSTtT3j//
+    OKwvEYCzqEt5q3bY1d3cEqnvc6stcVS6ZQCHtQzBttSjeyCDWUfoM4KF/G+gXXbA
+    NjdWWSWtO0csTwskDBhNl5yQPkZ3DffpmmP/dpwoKQKBgQDZeJG+WCqSCABvDoZg
+    PhhZCxXrNWbas2A9IsOFJ6yRIAFcSzrC2VH95k4qU5iinSk1rULcYUnRECmS9bxk
+    mBtXIycIl2ebbIOzbSI3uBHLqF5PVAffMsMHIdfV7n9ySj2IOsHvbJRc2yNgmTEc
+    /NP3Roxw60txdbIt0jsUeWYEHQKBgQDARv4JfSBNeMt6fe8wxx/VFrQ3LltFX9bJ
+    /UmC5/ByreZe21ZIKW7q2JH8SNupLloJt0Bu5rRJaim0VrS0rOkM32BhSRKICPT8
+    RfNn7YANtsCRI/r8dZ5du40tb1U+N+Dg4Pw3VII0pjeAl0d4h1GOQHSJGLasQNfA
+    IOniqFi90wKBgBmLUgM7s/RnQDXLTPltEcsTxEVWhnhV7Y4A0VqIqHp7ee1vYL2W
+    bU0XikLqgtlHAJovedUNEHCgJ2H9v11JiJyZonId5quY+XdP8F7/HggABOPoiOws
+    uD/UN9gHJa01Dzk7PaBz7pFhpCwqklxHTlaTUNfKq5fuLTm4ofvrrpH5AoGAR6Xs
+    odKLh/LcN9/XkqCQvxG/w9Q1VIua+Re2Hd6Z3dHpRy2KYEd4OnDLLWxk1g0cpgQw
+    MWMsiTLTKY0pty27hf1y562YBzL3P049nluE3RddeHgk3ZBim+D4gZa79/xQgtuz
+    gFawUjgh9HvquQILpOtlwXSBFXzwKHrbTIeY0dsCgYEAtcMI5Or/QhqnJSkUV5VN
+    hwD52/h2Udui3B4QFBkAZatRV5a85jMnuboWyFXr7DQ8/ewv26hAijKqN1a9wZDO
+    7oXY2SlhWMKTKqRXnvyFGoEOT7IKdABfeQNqGt8O4zJkod1owzI43e7TMvzgxj2n
+    PgASZAmDC5ptqDnpOqbtGDs=
+    -----END PRIVATE KEY-----
+  dc_tech.pem: |
+    -----BEGIN CERTIFICATE-----
+    MIIFojCCBIqgAwIBAgIQCCyMIYHNfcFgiOEibM6zJDANBgkqhkiG9w0BAQsFADBu
+    MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+    d3cuZGlnaWNlcnQuY29tMS0wKwYDVQQDEyRFbmNyeXB0aW9uIEV2ZXJ5d2hlcmUg
+    RFYgVExTIENBIC0gRzEwHhcNMjAwODA3MDAwMDAwWhcNMjEwODA4MTIwMDAwWjAf
+    MR0wGwYDVQQDExR3d3cuZGFjaGVuZy10ZWNoLmNvbTCCASIwDQYJKoZIhvcNAQEB
+    BQADggEPADCCAQoCggEBAKNWvBRMT1RhTvOGWbUeaD4bLAvwklEfYEhKO/6PCM2E
+    McUmpqcGU9CG2g4EAaaFE86SCmPx2+D3b8Eri9aNIGUija2ldAKwjpN1v1B0ZkGe
+    9DBJ59Hoc8QQI9HIUWYc8HeZv9mjmNMch7wQD7XUgtV2CwWTn5yf8K8mkhCIMWwB
+    ZsxypJZEoErIaU5pm7eHkrjSQ8B1wkzXY2GmcTiSGChL7WfGFnYmDUm6KdwKHGSq
+    rATwQ8by3StAOT9I6FjDnY1wIQUNro8lnKyO2X6HAy95ofK69cZ1j5M4G9SW3Sbh
+    4znq4nJ3M+EDgsrQ7RAmsKe8YjG15HN8AgeD3tIWzOcCAwEAAaOCAokwggKFMB8G
+    A1UdIwQYMBaAFFV0T7JyT/VgulDR1+ZRXJoBhxrXMB0GA1UdDgQWBBRGk07cyk9f
+    KZBs7Hpx0bWcZcBX8jAxBgNVHREEKjAoghR3d3cuZGFjaGVuZy10ZWNoLmNvbYIQ
+    ZGFjaGVuZy10ZWNoLmNvbTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYB
+    BQUHAwEGCCsGAQUFBwMCMEwGA1UdIARFMEMwNwYJYIZIAYb9bAECMCowKAYIKwYB
+    BQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQIBMIGA
+    BggrBgEFBQcBAQR0MHIwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0
+    LmNvbTBKBggrBgEFBQcwAoY+aHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0Vu
+    Y3J5cHRpb25FdmVyeXdoZXJlRFZUTFNDQS1HMS5jcnQwCQYDVR0TBAIwADCCAQMG
+    CisGAQQB1nkCBAIEgfQEgfEA7wB1APZclC/RdzAiFFQYCDCUVo7jTRMZM7/fDC8g
+    C8xO8WTjAAABc8hp6AoAAAQDAEYwRAIgL18cq4mA10Y46RrNYJkiVsngYGeYKLMO
+    N94Aw5g0ZZUCIBZ1UjHGx8qF8nF1VieEYesOOr8Xm5VLuzvu5zJr/etSAHYAXNxD
+    kv7mq0VEsV6a1FbmEDf71fpH3KFzlLJe5vbHDsoAAAFzyGnoNQAABAMARzBFAiB6
+    8/848Nsa1V+XPfiGunnFfz+0s6mgRK0E0Tq8q1HeWgIhAIHGMlQKupq5xhdGmHcq
+    65NvZUNuWGzPgr9DoJz57lLZMA0GCSqGSIb3DQEBCwUAA4IBAQCdO9jMZhWKN01x
+    NGcjJ76+rZnz8H0ZzEk4sub31p5EXM1jRrRNlSa5G7F9QWxY6KleS8zgGu28uSu5
+    HIVMIsGFVnx+ym9d280TifOUw+k6MwB1RvdFCMQwwgPQrPnd/9o8C0wN7ClIB9bZ
+    Rmn4XHoBXy8LBYJnTufMxoqQGOEu1cWXS17Fy/06zgBkLNEWdwfYmM4qFg4nEoA3
+    0VxICGgU5V/fp++rlDjabHg+jEG2vvzSm1TCjHTYnJ3IebJZg41/QxMQ67+zkJK6
+    tmsrFP8Kkvnu7YP8/QTzNNkMgbA1NiA40qHsrUM61f2zlLDLKi4QsGSke1iyJpH/
+    CgJVef7T
+    -----END CERTIFICATE-----
+    -----BEGIN CERTIFICATE-----
+    MIIEqjCCA5KgAwIBAgIQAnmsRYvBskWr+YBTzSybsTANBgkqhkiG9w0BAQsFADBh
+    MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+    d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD
+    QTAeFw0xNzExMjcxMjQ2MTBaFw0yNzExMjcxMjQ2MTBaMG4xCzAJBgNVBAYTAlVT
+    MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j
+    b20xLTArBgNVBAMTJEVuY3J5cHRpb24gRXZlcnl3aGVyZSBEViBUTFMgQ0EgLSBH
+    MTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALPeP6wkab41dyQh6mKc
+    oHqt3jRIxW5MDvf9QyiOR7VfFwK656es0UFiIb74N9pRntzF1UgYzDGu3ppZVMdo
+    lbxhm6dWS9OK/lFehKNT0OYI9aqk6F+U7cA6jxSC+iDBPXwdF4rs3KRyp3aQn6pj
+    pp1yr7IB6Y4zv72Ee/PlZ/6rK6InC6WpK0nPVOYR7n9iDuPe1E4IxUMBH/T33+3h
+    yuH3dvfgiWUOUkjdpMbyxX+XNle5uEIiyBsi4IvbcTCh8ruifCIi5mDXkZrnMT8n
+    wfYCV6v6kDdXkbgGRLKsR4pucbJtbKqIkUGxuZI2t7pfewKRc5nWecvDBZf3+p1M
+    pA8CAwEAAaOCAU8wggFLMB0GA1UdDgQWBBRVdE+yck/1YLpQ0dfmUVyaAYca1zAf
+    BgNVHSMEGDAWgBQD3lA1VtFMu2bwo+IbG8OXsj3RVTAOBgNVHQ8BAf8EBAMCAYYw
+    HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMBIGA1UdEwEB/wQIMAYBAf8C
+    AQAwNAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdp
+    Y2VydC5jb20wQgYDVR0fBDswOTA3oDWgM4YxaHR0cDovL2NybDMuZGlnaWNlcnQu
+    Y29tL0RpZ2lDZXJ0R2xvYmFsUm9vdENBLmNybDBMBgNVHSAERTBDMDcGCWCGSAGG
+    /WwBAjAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3dy5kaWdpY2VydC5jb20vQ1BT
+    MAgGBmeBDAECATANBgkqhkiG9w0BAQsFAAOCAQEAK3Gp6/aGq7aBZsxf/oQ+TD/B
+    SwW3AU4ETK+GQf2kFzYZkby5SFrHdPomunx2HBzViUchGoofGgg7gHW0W3MlQAXW
+    M0r5LUvStcr82QDWYNPaUy4taCQmyaJ+VB+6wxHstSigOlSNF2a6vg4rgexixeiV
+    4YSB03Yqp2t3TeZHM9ESfkus74nQyW7pRGezj+TC44xCagCQQOzzNmzEAP2SnCrJ
+    sNE2DpRVMnL8J6xBRdjmOsC3N6cQuKuRXbzByVBjCqAA8t1L0I+9wXJerLPyErjy
+    rMKWaBFLmfK/AHNF4ZihwPGOc7w6UHczBZXH5RFzJNnww+WnKuTPI0HfnVH8lg==
+    -----END CERTIFICATE-----
+  defaults.ini: |
+    app_mode = production
+    instance_name = ${HOSTNAME}
+    [paths]
+    data = data
+    temp_data_lifetime = 24h
+    logs = data/log
+    #plugins = conf/plugins
+    plugins = data/plugins
+    provisioning = conf/provisioning
+    [server]
+    protocol = https
+    http_addr =
+    http_port = 3000
+    domain = 
+    enforce_domain = true
+    root_url = %(protocol)s://%(domain)s:%(http_port)s/
+    serve_from_sub_path = false
+    router_logging = false
+    static_root_path = public
+    enable_gzip = false
+    cert_file = /usr/share/grafana/conf/cert/dc_tech.pem
+    cert_key = /usr/share/grafana/conf/cert/dc_tech.key
+    socket = /tmp/grafana.sock
+    cdn_url =
+    read_timeout = 0
+    [database]
+    type = mysql
+    host = mysql-svc:3306
+    name = dc_databuff
+    user = root
+    password = 234*(sdlj12
+    url =
+    max_idle_conn = 2
+    max_open_conn =
+    conn_max_lifetime = 14400
+    log_queries =
+    ssl_mode = disable
+    isolation_level =
+    ca_cert_path =
+    client_key_path =
+    client_cert_path =
+    server_cert_name =
+    path = grafana.db
+    cache_mode = private
+    [remote_cache]
+    type = database
+    connstr =
+    [dataproxy]
+    logging = false
+    timeout = 30
+    dialTimeout = 10
+    keep_alive_seconds = 30
+    tls_handshake_timeout_seconds = 10
+    expect_continue_timeout_seconds = 1
+    max_conns_per_host = 0
+    max_idle_connections = 100
+    max_idle_connections_per_host = 2
+    idle_conn_timeout_seconds = 90
+    send_user_header = false
+    [analytics]
+    reporting_enabled = true
+    reporting_distributor = grafana-labs
+    check_for_updates = true
+    google_analytics_ua_id =
+    google_tag_manager_id =
+    [security]
+    disable_initial_admin_creation = false
+    admin_user = admin
+    admin_password = admin
+    secret_key = SW2YcwTIb9zpOOhoPsMm
+    disable_gravatar = false
+    data_source_proxy_whitelist =
+    disable_brute_force_login_protection = false
+    cookie_secure = false
+    cookie_samesite = lax
+    allow_embedding = true
+    strict_transport_security = false
+    strict_transport_security_max_age_seconds = 86400
+    strict_transport_security_preload = false
+    strict_transport_security_subdomains = false
+    x_content_type_options = true
+    x_xss_protection = true
+    content_security_policy = false
+    content_security_policy_template = """script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' $NONCE;object-src 'none';font-src 'self';style-src 'self' 'unsafe-inline' blob:;img-src * data:;base-uri 'self';connect-src 'self' grafana.com ws://$ROOT_PATH wss://$ROOT_PATH;manifest-src 'self';media-src 'none';form-action 'self';"""
+    [snapshots]
+    external_enabled = true
+    external_snapshot_url = https://snapshots-origin.raintank.io
+    external_snapshot_name = Publish to snapshot.raintank.io
+    public_mode = false
+    snapshot_remove_expired = true
+    [dashboards]
+    versions_to_keep = 20
+    min_refresh_interval = 5s
+    default_home_dashboard_path =
+    [datasources]
+    datasource_limit = 5000
+    [users]
+    allow_sign_up = false
+    allow_org_create = false
+    auto_assign_org = true
+    auto_assign_org_id = 1
+    auto_assign_org_role = Viewer
+    verify_email_enabled = false
+    login_hint = email or username
+    password_hint = password
+    default_theme = dark
+    home_page =
+    external_manage_link_url =
+    external_manage_link_name =
+    external_manage_info =
+    viewers_can_edit = false
+    editors_can_admin = false
+    user_invite_max_lifetime_duration = 24h
+    hidden_users =
+    [auth]
+    login_cookie_name = databuff_g_session
+    login_maximum_inactive_lifetime_duration =
+    login_maximum_lifetime_duration =
+    token_rotation_interval_minutes = 10
+    disable_login_form = false
+    disable_signout_menu = false
+    signout_redirect_url =
+    oauth_auto_login = false
+    oauth_state_cookie_max_age = 600
+    api_key_max_seconds_to_live = -1
+    sigv4_auth_enabled = false
+    [auth.anonymous]
+    enabled = true
+    org_name = Main Org.
+    org_role = Admin
+    hide_version = false
+    [auth.github]
+    enabled = false
+    allow_sign_up = true
+    client_id = some_id
+    client_secret =
+    scopes = user:email,read:org
+    auth_url = https://github.com/login/oauth/authorize
+    token_url = https://github.com/login/oauth/access_token
+    api_url = https://api.github.com/user
+    allowed_domains =
+    team_ids =
+    allowed_organizations =
+    [auth.gitlab]
+    enabled = false
+    allow_sign_up = true
+    client_id = some_id
+    client_secret =
+    scopes = api
+    auth_url = https://gitlab.com/oauth/authorize
+    token_url = https://gitlab.com/oauth/token
+    api_url = https://gitlab.com/api/v4
+    allowed_domains =
+    allowed_groups =
+    [auth.google]
+    enabled = false
+    allow_sign_up = true
+    client_id = some_client_id
+    client_secret =
+    scopes = https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email
+    auth_url = https://accounts.google.com/o/oauth2/auth
+    token_url = https://accounts.google.com/o/oauth2/token
+    api_url = https://www.googleapis.com/oauth2/v1/userinfo
+    allowed_domains =
+    hosted_domain =
+    [auth.grafananet]
+    enabled = false
+    allow_sign_up = true
+    client_id = some_id
+    client_secret =
+    scopes = user:email
+    allowed_organizations =
+    [auth.grafana_com]
+    enabled = false
+    allow_sign_up = true
+    client_id = some_id
+    client_secret =
+    scopes = user:email
+    allowed_organizations =
+    [auth.azuread]
+    name = Azure AD
+    enabled = false
+    allow_sign_up = true
+    client_id = some_client_id
+    client_secret =
+    scopes = openid email profile
+    auth_url = https://login.microsoftonline.com/<tenant-id>/oauth2/v2.0/authorize
+    token_url = https://login.microsoftonline.com/<tenant-id>/oauth2/v2.0/token
+    allowed_domains =
+    allowed_groups =
+    [auth.okta]
+    name = Okta
+    enabled = false
+    allow_sign_up = true
+    client_id = some_id
+    client_secret =
+    scopes = openid profile email groups
+    auth_url = https://<tenant-id>.okta.com/oauth2/v1/authorize
+    token_url = https://<tenant-id>.okta.com/oauth2/v1/token
+    api_url = https://<tenant-id>.okta.com/oauth2/v1/userinfo
+    allowed_domains =
+    allowed_groups =
+    role_attribute_path =
+    role_attribute_strict = false
+    [auth.generic_oauth]
+    name = OAuth
+    enabled = false
+    allow_sign_up = true
+    client_id = some_id
+    client_secret =
+    scopes = user:email
+    empty_scopes = false
+    email_attribute_name = email:primary
+    email_attribute_path =
+    login_attribute_path =
+    name_attribute_path =
+    role_attribute_path =
+    role_attribute_strict = false
+    id_token_attribute_name =
+    auth_url =
+    token_url =
+    api_url =
+    allowed_domains =
+    team_ids =
+    allowed_organizations =
+    tls_skip_verify_insecure = false
+    tls_client_cert =
+    tls_client_key =
+    tls_client_ca =
+    [auth.basic]
+    enabled = true
+    [auth.proxy]
+    enabled = false
+    header_name = X-WEBAUTH-USER
+    header_property = username
+    auto_sign_up = true
+    ldap_sync_ttl = 60
+    sync_ttl = 60
+    whitelist =
+    headers =
+    enable_login_token = false
+    [auth.jwt]
+    enabled = false
+    header_name =
+    email_claim =
+    username_claim =
+    jwk_set_url =
+    jwk_set_file =
+    cache_ttl = 60m
+    expected_claims = {}
+    key_file =
+    [auth.ldap]
+    enabled = false
+    config_file = /etc/grafana/ldap.toml
+    allow_sign_up = true
+    sync_cron = "0 0 1 * * *"
+    active_sync_enabled = true
+    [aws]
+    allowed_auth_providers = default,keys,credentials
+    assume_role_enabled = true
+    list_metrics_page_limit = 500
+    [azure]
+    cloud = AzureCloud
+    managed_identity_enabled = false
+    managed_identity_client_id =
+    [smtp]
+    enabled = false
+    host = localhost:25
+    user =
+    password =
+    cert_file =
+    key_file =
+    skip_verify = false
+    from_address = admin@grafana.localhost
+    from_name = Grafana
+    ehlo_identity =
+    startTLS_policy =
+    [emails]
+    welcome_email_on_sign_up = false
+    templates_pattern = emails/*.html
+    [log]
+    mode = console file
+    level = debug
+    # optional settings to set different levels for specific loggers. Ex filters = sqlstore:debug
+    filters =
+    [log.console]
+    level =
+    format = console
+    [log.file]
+    level =
+    format = text
+    log_rotate = true
+    max_lines = 1000000
+    max_size_shift = 28
+    daily_rotate = true
+    max_days = 7
+    [log.syslog]
+    level =
+    format = text
+    network =
+    address =
+    facility =
+    # Syslog tag. By default, the process' argv[0] is used.
+    tag =
+    [log.frontend]
+    enabled = false
+    sentry_dsn =
+    custom_endpoint = /log
+    sample_rate = 1.0
+    log_endpoint_requests_per_second_limit = 3
+    log_endpoint_burst_limit = 15
+    [quota]
+    enabled = false
+    org_user = 10
+    org_dashboard = 100
+    org_data_source = 10
+    org_api_key = 10
+    org_alert_rule = 100
+    user_org = 10
+    global_user = -1
+    global_org = -1
+    global_dashboard = -1
+    global_api_key = -1
+    global_session = -1
+    global_alert_rule = -1
+    [alerting]
+    enabled = false
+    execute_alerts = false
+    error_or_timeout = alerting
+    nodata_or_nullvalues = no_data
+    concurrent_render_limit = 5
+    evaluation_timeout_seconds = 30
+    notification_timeout_seconds = 30
+    max_attempts = 3
+    min_interval_seconds = 1
+    max_annotation_age =
+    max_annotations_to_keep =
+    [annotations]
+    cleanupjob_batchsize = 100
+    [annotations.dashboard]
+    max_age =
+    max_annotations_to_keep =
+    [annotations.api]
+    max_age =
+    max_annotations_to_keep =
+    [explore]
+    enabled = true
+    [metrics]
+    enabled              = true
+    interval_seconds     = 10
+    disable_total_stats = false
+    basic_auth_username =
+    basic_auth_password =
+    [metrics.environment_info]
+    [metrics.graphite]
+    address =
+    prefix = prod.grafana.%(instance_name)s.
+    [grafana_net]
+    url = https://grafana.com
+    [grafana_com]
+    url = https://grafana.com
+    [tracing.jaeger]
+    address =
+    always_included_tag =
+    sampler_type = const
+    sampler_param = 1
+    sampling_server_url =
+    zipkin_propagation = false
+    disable_shared_zipkin_spans = false
+    [external_image_storage]
+    provider =
+    [external_image_storage.s3]
+    [external_image_storage.webdav]
+    [external_image_storage.gcs]
+    key_file =
+    bucket =
+    path =
+    enable_signed_urls = false
+    signed_url_expiration =
+    [external_image_storage.azure_blob]
+    account_name =
+    account_key =
+    container_name =
+    [external_image_storage.local]
+    [rendering]
+    server_url =
+    callback_url =
+    concurrent_render_request_limit = 30
+    [panels]
+    enable_alpha = false
+    disable_sanitize_html = false
+    [plugins]
+    enable_alpha = false
+    app_tls_skip_verify_insecure = false
+    allow_loading_unsigned_plugins =
+    plugin_admin_enabled = false
+    plugin_admin_external_manage_enabled = false
+    plugin_catalog_url = https://grafana.com/grafana/plugins/
+    [live]
+    max_connections = 100
+    [plugin.grafana-image-renderer]
+    [enterprise]
+    license_path =
+    [feature_toggles]
+    enable =
+    [date_formats]
+    full_date = YYYY-MM-DD HH:mm:ss
+    interval_second = HH:mm:ss
+    interval_minute = HH:mm
+    interval_hour = MM/DD HH:mm
+    interval_day = MM/DD
+    interval_month = YYYY-MM
+    interval_year = YYYY
+    use_browser_locale = false
+    default_timezone = browser
+    [expressions]
+    enabled = true

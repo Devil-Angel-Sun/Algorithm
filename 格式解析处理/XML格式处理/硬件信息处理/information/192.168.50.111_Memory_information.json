@@ -1,0 +1,60 @@
+{
+  "Physical Memory": {
+    "Actual_Num_Device": "65536 MB",
+    "Location": "System Board Or Motherboard",
+    "Max_Capacity": " 256 GB",
+    "Num_Device": "4"
+  },
+  "Single Memory P1-DIMMC1": {
+    "Form Factor": "DIMM",
+    "Locator": "P1-DIMMC1",
+    "Manufacturer": "Samsung",
+    "Part Number": "M393A2G40DB0-CPB   ",
+    "Rank": "2",
+    "Serial Number": "71DF5EF0",
+    "Size": " 16384 MB",
+    "Speed": "2133 MHz",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous"
+  },
+  "Single Memory P1-DIMMD1": {
+    "Form Factor": "DIMM",
+    "Locator": "P1-DIMMD1",
+    "Manufacturer": "Samsung",
+    "Part Number": "M393A2G40DB0-CPB   ",
+    "Rank": "2",
+    "Serial Number": "416F37D5",
+    "Size": " 16384 MB",
+    "Speed": "2133 MHz",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous"
+  },
+  "Single Memory P2-DIMMG1": {
+    "Form Factor": "DIMM",
+    "Locator": "P2-DIMMG1",
+    "Manufacturer": "Samsung",
+    "Part Number": "M393A2G40DB0-CPB   ",
+    "Rank": "2",
+    "Serial Number": "416F37FD",
+    "Size": " 16384 MB",
+    "Speed": "2133 MHz",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous"
+  },
+  "Single Memory P2-DIMMH1": {
+    "Form Factor": "DIMM",
+    "Locator": "P2-DIMMH1",
+    "Manufacturer": "Samsung",
+    "Part Number": "M393A2G40DB0-CPB   ",
+    "Rank": "2",
+    "Serial Number": "71DF5D7C",
+    "Size": " 16384 MB",
+    "Speed": "2133 MHz",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous"
+  }
+}

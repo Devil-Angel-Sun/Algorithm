@@ -1,0 +1,33 @@
+{
+  "Single Processer CPU1": {
+    "Core Count": "6",
+    "Core Enabled": "6",
+    "Current Speed": "1700 MHz",
+    "External Clock": "6400 MHz",
+    "Family": "Xeon",
+    "ID": "F1 06 04 00 FF FB EB BF",
+    "Manufacturer": "Intel",
+    "Max Speed": "4000 MHz",
+    "Part Number": "Not Specified",
+    "Serial Number": "Not Specified",
+    "Socket Designation": "CPU1",
+    "Status": "Populated, Enabled",
+    "Thread Count": "6",
+    "Type": "Central Processor",
+    "Version": "Intel(R) Xeon(R) CPU E5-2603 v4 @ 1.70GHz"
+  },
+  "Single Processer CPU2": {
+    "Current Speed": "Unknown",
+    "External Clock": "Unknown",
+    "Family": "Unknown",
+    "ID": "00 00 00 00 00 00 00 00",
+    "Manufacturer": "Not Specified",
+    "Max Speed": "4000 MHz",
+    "Part Number": "Not Specified",
+    "Serial Number": "Not Specified",
+    "Socket Designation": "CPU2",
+    "Status": "Unpopulated",
+    "Type": "Central Processor",
+    "Version": "Not Specified"
+  }
+}

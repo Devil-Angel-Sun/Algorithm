@@ -1,0 +1,433 @@
+itemname,key,delay,value_type,description,application,discovery_rule,template,units
+{#SENSOR_INFO}: Fan status,sensor.fan.status[ciscoEnvMonFanState.{#SNMPINDEX}],3m,3,MIB: CISCO-ENVMON-MIB,Fans,FAN Discovery,Template Module Cisco CISCO-ENVMON-MIB SNMPv2,
+{#SENSOR_INFO}: Power supply status,sensor.psu.status[ciscoEnvMonSupplyState.{#SNMPINDEX}],3m,3,MIB: CISCO-ENVMON-MIB,Power supply,PSU Discovery,Template Module Cisco CISCO-ENVMON-MIB SNMPv2,
+{#SNMPVALUE}: Temperature status,sensor.temp.status[ciscoEnvMonTemperatureState.{#SNMPINDEX}],3m,3,"MIB: CISCO-ENVMON-MIB
+The current state of the test point being instrumented.",Temperature,Temperature Discovery,Template Module Cisco CISCO-ENVMON-MIB SNMPv2,
+{#SNMPVALUE}: Available memory,vm.memory.free[ciscoMemoryPoolFree.{#SNMPINDEX}],3m,3,"MIB: CISCO-MEMORY-POOL-MIB
+Indicates the number of bytes from the memory pool that are currently unused on the managed device. Note that the sum of ciscoMemoryPoolUsed and ciscoMemoryPoolFree is the total amount of memory in the pool
+Reference: http://www.cisco.com/c/en/us/support/docs/ip/simple-network-management-protocol-snmp/15216-contiguous-memory.html",Memory,Memory Discovery,Template Module Cisco CISCO-MEMORY-POOL-MIB SNMPv2,B
+{#SNMPVALUE}: CPU utilization,system.cpu.util[cpmCPUTotal5min.{#SNMPINDEX}],3m,0,"MIB: CISCO-PROCESS-MIB
+The overall CPU busy percentage in the last 5 minute
+period. This object deprecates the avgBusy5 object from
+the OLD-CISCO-SYSTEM-MIB. This object is deprecated
+by cpmCPUTotal5minRev which has the changed range
+of value (0..100)
+Reference: http://www.cisco.com/c/en/us/support/docs/ip/simple-network-management-protocol-snmp/15215-collect-cpu-util-snmp.html",CPU,CPU Discovery,Template Module Cisco CISCO-PROCESS-MIB IOS versions 12.0_3_T-12.2_3.5 SNMPv2,%
+#{#SNMPINDEX}: CPU utilization,system.cpu.util[cpmCPUTotal5minRev.{#SNMPINDEX}],3m,0,"MIB: CISCO-PROCESS-MIB
+The cpmCPUTotal5minRev MIB object provides a more accurate view of the performance of the router over time than the MIB objects cpmCPUTotal1minRev and cpmCPUTotal5secRev . These MIB objects are not accurate because they look at CPU at one minute and five second intervals, respectively. These MIBs enable you to monitor the trends and plan the capacity of your network. The recommended baseline rising threshold for cpmCPUTotal5minRev is 90 percent. Depending on the platform, some routers that run at 90 percent, for example, 2500s, can exhibit performance degradation versus a high-end router, for example, the 7500 series, which can operate fine.
+Reference: http://www.cisco.com/c/en/us/support/docs/ip/simple-network-management-protocol-snmp/15215-collect-cpu-util-snmp.html",CPU,CPU Discovery,Template Module Cisco CISCO-PROCESS-MIB SNMPv2,%
+{#ENT_NAME}: Hardware serial number,system.hw.serialnumber[entPhysicalSerialNum.{#SNMPINDEX}],1h,1,MIB: ENTITY-MIB,Inventory,Entity Serial Numbers Discovery,Template Module Cisco Inventory SNMPv2,
+Interface {#IFNAME}({#IFALIAS}): Duplex status,net.if.duplex[dot3StatsDuplexStatus.{#SNMPINDEX}],5m,3,"MIB: EtherLike-MIB
+The current mode of operation of the MAC
+entity.  'unknown' indicates that the current
+duplex mode could not be determined.
+
+Management control of the duplex mode is
+accomplished through the MAU MIB.  When
+an interface does not support autonegotiation,
+or when autonegotiation is not enabled, the
+duplex mode is controlled using
+ifMauDefaultType.  When autonegotiation is
+supported and enabled, duplex mode is controlled
+using ifMauAutoNegAdvertisedBits.  In either
+case, the currently operating duplex mode is
+reflected both in this object and in ifMauType.
+
+Note that this object provides redundant
+information with ifMauType.  Normally, redundant
+objects are discouraged.  However, in this
+instance, it allows a management application to
+determine the duplex status of an interface
+without having to know every possible value of
+ifMauType.  This was felt to be sufficiently
+valuable to justify the redundancy.
+Reference: [IEEE 802.3 Std.], 30.3.1.1.32,aDuplexStatus.",Network interfaces,EtherLike-MIB Discovery,Template Module EtherLike-MIB SNMPv1,
+Interface {#IFNAME}({#IFALIAS}): Duplex status,net.if.duplex[dot3StatsDuplexStatus.{#SNMPINDEX}],5m,3,"MIB: EtherLike-MIB
+The current mode of operation of the MAC
+entity.  'unknown' indicates that the current
+duplex mode could not be determined.
+
+Management control of the duplex mode is
+accomplished through the MAU MIB.  When
+an interface does not support autonegotiation,
+or when autonegotiation is not enabled, the
+duplex mode is controlled using
+ifMauDefaultType.  When autonegotiation is
+supported and enabled, duplex mode is controlled
+using ifMauAutoNegAdvertisedBits.  In either
+case, the currently operating duplex mode is
+reflected both in this object and in ifMauType.
+
+Note that this object provides redundant
+information with ifMauType.  Normally, redundant
+objects are discouraged.  However, in this
+instance, it allows a management application to
+determine the duplex status of an interface
+without having to know every possible value of
+ifMauType.  This was felt to be sufficiently
+valuable to justify the redundancy.
+Reference: [IEEE 802.3 Std.], 30.3.1.1.32,aDuplexStatus.",Network interfaces,EtherLike-MIB Discovery,Template Module EtherLike-MIB SNMPv2,
+#{#SNMPINDEX}: CPU utilization,system.cpu.util[hrProcessorLoad.{#SNMPINDEX}],3m,0,"MIB: HOST-RESOURCES-MIB
+The average, over the last minute, of the percentage of time that this processor was not idle.
+Implementations may approximate this one minute smoothing period if necessary.",CPU,CPU Discovery,Template Module HOST-RESOURCES-MIB SNMPv1,%
+#{#SNMPINDEX}: Memory utilization,vm.memory.pused[memoryUsedPercentage.{#SNMPINDEX}],3m,0,Memory utilization in %,Memory,Memory Discovery,Template Module HOST-RESOURCES-MIB SNMPv1,%
+{#SNMPVALUE}: Storage utilization,vfs.fs.pused[storageUsedPercentage.{#SNMPINDEX}],5m,0,Storage utilization in % for {#SNMPVALUE},Storage,Storage Discovery,Template Module HOST-RESOURCES-MIB SNMPv1,%
+#{#SNMPINDEX}: CPU utilization,system.cpu.util[hrProcessorLoad.{#SNMPINDEX}],3m,0,"MIB: HOST-RESOURCES-MIB
+The average, over the last minute, of the percentage of time that this processor was not idle.
+Implementations may approximate this one minute smoothing period if necessary.",CPU,CPU Discovery,Template Module HOST-RESOURCES-MIB SNMPv2,%
+#{#SNMPINDEX}: Memory utilization,vm.memory.pused[memoryUsedPercentage.{#SNMPINDEX}],3m,0,Memory utilization in %,Memory,Memory Discovery,Template Module HOST-RESOURCES-MIB SNMPv2,%
+{#SNMPVALUE}: Storage utilization,vfs.fs.pused[storageUsedPercentage.{#SNMPINDEX}],5m,0,Storage utilization in % for {#SNMPVALUE},Storage,Storage Discovery,Template Module HOST-RESOURCES-MIB SNMPv2,%
+Interface {#IFDESCR}: Inbound packets discarded,net.if.in.discards[ifInDiscards.{#SNMPINDEX}],5m,3,"MIB: IF-MIB
+The number of inbound packets which were chosen to be discarded
+even though no errors had been detected to prevent their being deliverable to a higher-layer protocol.
+One possible reason for discarding such a packet could be to free up buffer space.
+Discontinuities in the value of this counter can occur at re-initialization of the management system,
+and at other times as indicated by the value of ifCounterDiscontinuityTime.",Network interfaces,Network Interfaces Discovery,Template Module Interfaces Simple SNMPv1,
+Interface {#IFDESCR}: Inbound packets discarded,net.if.in.discards[ifInDiscards.{#SNMPINDEX}],5m,3,"MIB: IF-MIB
+The number of inbound packets which were chosen to be discarded
+even though no errors had been detected to prevent their being deliverable to a higher-layer protocol.
+One possible reason for discarding such a packet could be to free up buffer space.
+Discontinuities in the value of this counter can occur at re-initialization of the management system,
+and at other times as indicated by the value of ifCounterDiscontinuityTime.",Network interfaces,Network Interfaces Discovery,Template Module Interfaces Simple SNMPv2,
+Interface {#IFNAME}({#IFALIAS}): Inbound packets discarded,net.if.in.discards[ifInDiscards.{#SNMPINDEX}],5m,3,"MIB: IF-MIB
+The number of inbound packets which were chosen to be discarded
+even though no errors had been detected to prevent their being deliverable to a higher-layer protocol.
+One possible reason for discarding such a packet could be to free up buffer space.
+Discontinuities in the value of this counter can occur at re-initialization of the management system,
+and at other times as indicated by the value of ifCounterDiscontinuityTime.",Network interfaces,Network Interfaces Discovery,Template Module Interfaces SNMPv1,
+Interface {#IFNAME}({#IFALIAS}): Inbound packets discarded,net.if.in.discards[ifInDiscards.{#SNMPINDEX}],5m,3,"MIB: IF-MIB
+The number of inbound packets which were chosen to be discarded
+even though no errors had been detected to prevent their being deliverable to a higher-layer protocol.
+One possible reason for discarding such a packet could be to free up buffer space.
+Discontinuities in the value of this counter can occur at re-initialization of the management system,
+and at other times as indicated by the value of ifCounterDiscontinuityTime.",Network interfaces,Network Interfaces Discovery,Template Module Interfaces SNMPv2,
+Interface {#IFNAME}({#IFALIAS}): Inbound packets discarded,net.if.in.discards[ifInDiscards.{#SNMPINDEX}],5m,3,"MIB: IF-MIB
+The number of inbound packets which were chosen to be discarded
+even though no errors had been detected to prevent their being deliverable to a higher-layer protocol.
+One possible reason for discarding such a packet could be to free up buffer space.
+Discontinuities in the value of this counter can occur at re-initialization of the management system,
+and at other times as indicated by the value of ifCounterDiscontinuityTime.",Network interfaces,Network Interfaces Discovery,Template Module Interfaces Windows SNMPv2,
+{#ENT_NAME}: Hardware serial number,system.hw.serialnumber[tmnxHwSerialNumber.{#SNMPINDEX}],1h,1,MIB: TIMETRA-CHASSIS-MIB,Inventory,Entity Serial Numbers Discovery,Template Net Alcatel Timetra TiMOS SNMPv2,
+#{#SNMPINDEX}: Fan status,sensor.fan.status[tmnxChassisFanOperStatus.{#SNMPINDEX}],3m,3,"MIB: TIMETRA-SYSTEM-MIB
+Current status of the Fan tray.",Fans,FAN Discovery,Template Net Alcatel Timetra TiMOS SNMPv2,
+{#SNMPVALUE}: Temperature,sensor.temp.value[tmnxHwTemperature.{#SNMPINDEX}],3m,0,"MIB: TIMETRA-SYSTEM-MIB
+The current temperature reading in degrees celsius from this hardware component's temperature sensor.  If this component does not contain a temperature sensor, then the value -1 is returned.",Temperature,Temperature Discovery,Template Net Alcatel Timetra TiMOS SNMPv2,°C
+{#ENT_NAME}: Hardware model name,system.hw.model[entPhysicalModelName.{#SNMPINDEX}],1h,1,MIB: ENTITY-MIB,Inventory,Entity Discovery,Template Net Arista SNMPv2,
+{#SENSOR_INFO}: Fan speed,sensor.fan.speed[entPhySensorValue.{#SNMPINDEX}],5m,3,"MIB: ENTITY-SENSORS-MIB
+The most recent measurement obtained by the agent for this sensor.
+To correctly interpret the value of this object, the associated entPhySensorType,
+entPhySensorScale, and entPhySensorPrecision objects must also be examined.",Fans,Fan Discovery,Template Net Arista SNMPv2,rpm
+{#DEVICE_DESCR}: CPU utilization,system.cpu.util[hrProcessorLoad.{#SNMPINDEX}],3m,0,"MIB: HOST-RESOURCES-MIB
+The average, over the last minute, of the percentage of time that this processor was not idle.
+Implementations may approximate this one minute smoothing period if necessary.",CPU,CPU Discovery,Template Net Arista SNMPv2,%
+#{#SNMPINDEX}: Memory utilization,vm.memory.pused[memoryUsedPercentage.{#SNMPINDEX}],3m,0,Memory utilization in %,Memory,Memory Discovery,Template Net Arista SNMPv2,%
+{#ENT_NAME}: Power supply status,sensor.psu.status[entStateOper.{#SNMPINDEX}],3m,3,MIB: ENTITY-STATE-MIB,Power supply,PSU Discovery,Template Net Arista SNMPv2,
+{#SNMPVALUE}: Storage utilization,vfs.fs.pused[storageUsedPercentage.{#SNMPINDEX}],5m,0,Storage utilization in % for {#SNMPVALUE},Storage,Storage Discovery,Template Net Arista SNMPv2,%
+{#SENSOR_INFO}: Temperature status,sensor.temp.status[entPhySensorOperStatus.{#SNMPINDEX}],3m,3,"MIB: ENTITY-SENSORS-MIB
+The operational status of the sensor {#SENSOR_INFO}",Temperature,Temperature Discovery,Template Net Arista SNMPv2,
+{#SENSOR_INFO}: Fan speed,sensor.fan.speed[swSensorValue.{#SNMPINDEX}],5m,3,"MIB: SW-MIB
+The current value (reading) of the sensor.
+The value, -2147483648, represents an unknown quantity.
+The fan value will be in RPM(revolution per minute)",Fans,FAN Discovery,Template Net Brocade FC SNMPv2,rpm
+{#SENSOR_INFO}: Power supply status,sensor.psu.status[swSensorStatus.{#SNMPINDEX}],3m,3,MIB: SW-MIB,Power supply,PSU Discovery,Template Net Brocade FC SNMPv2,
+{#SENSOR_INFO}: Temperature status,sensor.temp.status[swSensorStatus.{#SNMPINDEX}],3m,3,"MIB: SW-MIB
+Temperature status of testpoint: {#SENSOR_INFO}",Temperature,Temperature Discovery,Template Net Brocade FC SNMPv2,
+Fan {#FAN_INDEX}: Fan status,sensor.fan.status[snChasFanOperStatus.{#SNMPINDEX}],3m,3,MIB: FOUNDRY-SN-AGENT-MIB,Fans,FAN Discovery,Template Net Brocade_Foundry Nonstackable SNMPv2,
+PSU {#PSU_INDEX}: Power supply status,sensor.psu.status[snChasPwrSupplyOperStatus.{#SNMPINDEX}],3m,3,MIB: FOUNDRY-SN-AGENT-MIB,Power supply,PSU Discovery,Template Net Brocade_Foundry Nonstackable SNMPv2,
+Temperature,sensor.temp.value[snChasActualTemperature.{#SNMPINDEX}],3m,0,"MIB: FOUNDRY-SN-AGENT-MIB
+Temperature of the chassis. Each unit is 0.5 degrees Celcius.
+Only management module built with temperature sensor hardware is applicable.
+For those non-applicable management module, it returns no-such-name.",Temperature,Temperature Discovery Chassis,Template Net Brocade_Foundry Nonstackable SNMPv2,°C
+{#SENSOR_DESCR}: Temperature,sensor.temp.value[snAgentTempValue.{#SNMPINDEX}],3m,0,"MIB: FOUNDRY-SN-AGENT-MIB
+Temperature of the sensor represented by this row. Each unit is 0.5 degrees Celsius.",Temperature,Temperature Discovery,Template Net Brocade_Foundry Nonstackable SNMPv2,°C
+Unit {#SNMPVALUE}: Hardware serial number,system.hw.serialnumber[snChasUnitSerNum.{#SNMPINDEX}],1h,1,"MIB: FOUNDRY-SN-AGENT-MIB
+The serial number of the chassis for each unit. If the serial number is unknown or unavailable then the value should be a zero length string.",Inventory,Chassis Discovery,Template Net Brocade_Foundry Stackable SNMPv2,
+Unit {#FAN_UNIT} Fan {#FAN_INDEX}: Fan status,sensor.fan.status[snChasFan2OperStatus.{#SNMPINDEX}],3m,3,MIB: FOUNDRY-SN-AGENT-MIB,Fans,FAN Discovery,Template Net Brocade_Foundry Stackable SNMPv2,
+Unit {#PSU_UNIT} PSU {#PSU_INDEX}: Power supply status,sensor.psu.status[snChasPwrSupply2OperStatus.{#SNMPINDEX}],3m,3,MIB: FOUNDRY-SN-AGENT-MIB,Power supply,PSU Discovery,Template Net Brocade_Foundry Stackable SNMPv2,
+Unit {#SNMPINDEX}: Hardware model name,system.hw.model[snStackingConfigUnitType.{#SNMPINDEX}],1h,1,"MIB: FOUNDRY-SN-STACKING-MIB
+A description of the configured/active system type for each unit.",Inventory,Stack Discovery,Template Net Brocade_Foundry Stackable SNMPv2,
+{#SENSOR_DESCR}: Temperature,sensor.temp.value[snAgentTemp2Value.{#SNMPINDEX}],3m,0,"MIB: FOUNDRY-SN-AGENT-MIB
+Temperature of the sensor represented by this row. Each unit is 0.5 degrees Celsius.",Temperature,Temperature Discovery,Template Net Brocade_Foundry Stackable SNMPv2,°C
+{#SNMPVALUE}: Fan status,sensor.fan.status[mySystemFanIsNormal.{#SNMPINDEX}],3m,3,MIB: MY-SYSTEM-MIB,Fans,FAN Discovery,Template Net D-Link DES 7200 SNMPv2,
+Memory utilization,vm.memory.pused[myMemoryPoolCurrentUtilization.{#SNMPINDEX}],3m,0,"MIB: MY-MEMORY-MIB
+This is the memory pool utilization currently.",Memory,Memory Discovery,Template Net D-Link DES 7200 SNMPv2,%
+{#SNMPVALUE}: Power supply status,sensor.psu.status[mySystemElectricalSourceIsNormal.{#SNMPINDEX}],3m,3,MIB: MY-SYSTEM-MIB,Power supply,PSU Discovery,Template Net D-Link DES 7200 SNMPv2,
+{#SNMPVALUE}: Temperature,sensor.temp.value[mySystemTemperatureCurrent.{#SNMPINDEX}],3m,0,"MIB: MY-SYSTEM-MIB
+Return the current temperature of the FastSwitch.The temperature display is not supported for the current temperature returns to 0.",Temperature,Temperature Discovery,Template Net D-Link DES 7200 SNMPv2,°C
+#{#SNMPVALUE}: Fan status,sensor.fan.status[swFanStatus.{#SNMPINDEX}],3m,3,"MIB: EQUIPMENT-MIB
+Indicates the current fan status.
+speed-0     : If the fan function is normal and the fan does not spin            due to the temperature not  reaching the threshold, the status of the fan is speed 0.
+speed-low   : Fan spin using the lowest speed.
+speed-middle: Fan spin using the middle speed.
+speed-high  : Fan spin using the highest speed.",Fans,FAN Discovery,Template Net D-Link DES_DGS Switch SNMPv2,
+#{#SNMPVALUE}: Memory utilization,vm.memory.pused[agentDRAMutilization.{#SNMPINDEX}],3m,0,"MIB: DLINK-AGENT-MIB
+The percentage of used DRAM memory of the total DRAM memory available.The value will be between 0%(idle) and 100%(very busy)",Memory,Memory Discovery,Template Net D-Link DES_DGS Switch SNMPv2,%
+#{#SNMPVALUE}: Power supply status,sensor.psu.status[swPowerStatus.{#SNMPINDEX}],3m,3,"MIB: EQUIPMENT-MIB
+Indicates the current power status.
+lowVoltage : The voltage of the power unit is too low.
+overCurrent: The current of the power unit is too high.
+working    : The power unit is working normally.
+fail       : The power unit has failed.
+connect    : The power unit is connected but not powered on.
+disconnect : The power unit is not connected.",Power supply,PSU Discovery,Template Net D-Link DES_DGS Switch SNMPv2,
+#{#SNMPVALUE}: Temperature,sensor.temp.value[swTemperatureCurrent.{#SNMPINDEX}],3m,0,"MIB: EQUIPMENT-MIB
+The shelf current temperature.",Temperature,Temperature Discovery,Template Net D-Link DES_DGS Switch SNMPv2,°C
+Fan {#SNMPVALUE}: Fan status,sensor.fan.status[chSysFanTrayOperStatus.{#SNMPINDEX}],3m,3,"MIB: F10-S-SERIES-CHASSIS-MIB
+The status of the fan tray {#SNMPVALUE}.",Fans,FAN Discovery,Template Net Dell Force S-Series SNMPv2,
+#{#SNMPINDEX}: CPU utilization,system.cpu.util[chStackUnitCpuUtil1Min.{#SNMPINDEX}],3m,0,"MIB: F10-S-SERIES-CHASSIS-MIB
+CPU utilization in percentage for last 1 minute.",CPU,CPU and Memory and Flash Discovery,Template Net Dell Force S-Series SNMPv2,%
+PSU {#SNMPVALUE}: Power supply status,sensor.psu.status[chSysPowerSupplyOperStatus.{#SNMPINDEX}],3m,3,"MIB: F10-S-SERIES-CHASSIS-MIB
+The status of the power supply {#SNMPVALUE}",Power supply,PSU Discovery,Template Net Dell Force S-Series SNMPv2,
+Device {#SNMPVALUE}: Temperature,sensor.temp.value[chStackUnitTemp.{#SNMPINDEX}],3m,0,"MIB: F10-S-SERIES-CHASSIS-MIB
+The temperature of the unit.",Temperature,Stack Unit Discovery,Template Net Dell Force S-Series SNMPv2,°C
+Fan {#SNMPVALUE}: Fan speed,sensor.fan.speed[extremeFanSpeed.{#SNMPINDEX}],5m,3,"MIB: EXTREME-SYSTEM-MIB
+The speed (RPM) of a cooling fan in the fantray {#SNMPVALUE}",Fans,FAN Discovery,Template Net Extreme EXOS SNMPv2,rpm
+#{#SNMPVALUE}: Available memory,vm.memory.free[extremeMemoryMonitorSystemFree.{#SNMPINDEX}],3m,3,"MIB: EXTREME-SOFTWARE-MONITOR-MIB
+Total amount of free memory in Kbytes in the system.",Memory,Memory Discovery,Template Net Extreme EXOS SNMPv2,B
+PSU {#SNMPVALUE}: Power supply status,sensor.psu.status[extremePowerSupplyStatus.{#SNMPINDEX}],3m,3,"MIB: EXTREME-SYSTEM-MIB
+Status of the power supply {#SNMPVALUE}",Power supply,PSU Discovery,Template Net Extreme EXOS SNMPv2,
+{#ENT_NAME}: Firmware version,system.hw.firmware[entPhysicalFirmwareRev.{#SNMPINDEX}],1h,1,MIB: ENTITY-MIB,Inventory,Entity Discovery,Template Net HP Comware HH3C SNMPv2,
+{#ENT_NAME}: Fan status,sensor.fan.status[hh3cEntityExtErrorStatus.{#SNMPINDEX}],3m,3,"MIB: HH3C-ENTITY-EXT-MIB
+Indicate the error state of this entity object.
+fanError(41) means that the fan stops working.",Fans,FAN Discovery,Template Net HP Comware HH3C SNMPv2,
+{#MODULE_NAME}: CPU utilization,system.cpu.util[hh3cEntityExtCpuUsage.{#SNMPINDEX}],3m,0,"MIB: HH3C-ENTITY-EXT-MIB
+The CPU usage for this entity. Generally, the CPU usage
+will calculate the overall CPU usage on the entity, and it
+is not sensible with the number of CPU on the entity",CPU,Module Discovery,Template Net HP Comware HH3C SNMPv2,%
+{#ENT_NAME}: Power supply status,sensor.psu.status[hh3cEntityExtErrorStatus.{#SNMPINDEX}],3m,3,"MIB: HH3C-ENTITY-EXT-MIB
+Indicate the error state of this entity object.
+psuError(51) means that the power supply unit is in the state of fault.
+rpsError(61) means the redundant power supply is in the state of fault.",Power supply,PSU Discovery,Template Net HP Comware HH3C SNMPv2,
+{#SNMPVALUE}: Temperature,sensor.temp.value[hh3cEntityExtTemperature.{#SNMPINDEX}],3m,0,"MIB: HH3C-ENTITY-EXT-MIB
+The temperature for the {#SNMPVALUE}.",Temperature,Temperature Discovery,Template Net HP Comware HH3C SNMPv2,°C
+{#ENT_NAME}: Hardware model name,system.hw.model[entPhysicalDescr.{#SNMPINDEX}],1h,1,MIB: ENTITY-MIB,Inventory,Entity Discovery,Template Net HP Enterprise Switch SNMPv2,
+{#ENT_DESCR}: Fan status,sensor.fan.status[hpicfSensorStatus.{#SNMPINDEX}],3m,3,"MIB: HP-ICF-CHASSIS
+Actual status indicated by the sensor: {#ENT_DESCR}",Fans,FAN Discovery,Template Net HP Enterprise Switch SNMPv2,
+#{#SNMPVALUE}: Available memory,vm.memory.free[hpLocalMemFreeBytes.{#SNMPINDEX}],3m,3,"MIB: NETSWITCH-MIB
+The number of available (unallocated) bytes.",Memory,Memory Discovery,Template Net HP Enterprise Switch SNMPv2,B
+{#ENT_DESCR}: Power supply status,sensor.psu.status[hpicfSensorStatus.{#SNMPINDEX}],3m,3,"MIB: HP-ICF-CHASSIS
+Actual status indicated by the sensor: {#ENT_DESCR}",Power supply,PSU Discovery,Template Net HP Enterprise Switch SNMPv2,
+{#SENSOR_INFO}: Temperature,sensor.temp.value[entPhySensorValue.{#SNMPINDEX}],3m,0,"MIB: ENTITY-SENSORS-MIB
+The most recent measurement obtained by the agent for this sensor.
+To correctly interpret the value of this object, the associated entPhySensorType,
+entPhySensorScale, and entPhySensorPrecision objects must also be examined.",Temperature,Temperature Discovery,Template Net HP Enterprise Switch SNMPv2,°C
+{#ENT_DESCR}: Temperature status,sensor.temp.status[hpicfSensorStatus.{#SNMPINDEX}],3m,3,"MIB: HP-ICF-CHASSIS
+Actual status indicated by the sensor: {#ENT_DESCR}",Temperature,Temp Status Discovery,Template Net HP Enterprise Switch SNMPv2,
+#{#SNMPVALUE}: Fan status,sensor.fan.status[hwEntityFanState.{#SNMPINDEX}],3m,3,MIB: HUAWEI-ENTITY-EXTENT-MIB,Fans,FAN Discovery,Template Net Huawei VRP SNMPv2,
+{#ENT_NAME}: Hardware model name,system.hw.model[entPhysicalDescr.{#SNMPINDEX}],1h,1,MIB: ENTITY-MIB,Inventory,Entity Discovery,Template Net Huawei VRP SNMPv2,
+{#ENT_NAME}: Temperature,sensor.temp.value[hwEntityTemperature.{#SNMPINDEX}],3m,0,"MIB: HUAWEI-ENTITY-EXTENT-MIB
+The temperature for the {#SNMPVALUE}.",Temperature,MPU Discovery,Template Net Huawei VRP SNMPv2,°C
+{#SNMPVALUE}: Fan status,sensor.fan.status[icsChassisFanOperStatus.{#SNMPINDEX}],3m,3,"MIB: ICS-CHASSIS-MIB
+The operational status of the fan unit.",Fans,FAN Discovery,Template Net Intel_Qlogic Infiniband SNMPv2,
+{#SNMPVALUE}: Power supply status,sensor.psu.status[icsChassisPowerSupplyEntry.{#SNMPINDEX}],3m,3,"MIB: ICS-CHASSIS-MIB
+Actual status of the power supply:
+(1) unknown: status not known.
+(2) disabled: power supply is disabled.
+(3) failed - power supply is unable to supply power due to failure.
+(4) warning - power supply is supplying power, but an output or sensor is bad or warning.
+(5) standby - power supply believed usable,but not supplying power.
+(6) engaged - power supply is supplying power.
+(7) redundant - power supply is supplying power, but not needed.
+(8) notPresent - power supply is supplying power is not present.",Power supply,PSU Discovery,Template Net Intel_Qlogic Infiniband SNMPv2,
+{#SENSOR_INFO}: Temperature status,sensor.temp.status[icsChassisSensorSlotOperStatus.{#SNMPINDEX}],3m,3,"MIB: ICS-CHASSIS-MIB
+The operational status of the sensor.",Temperature,Temperature Discovery,Template Net Intel_Qlogic Infiniband SNMPv2,
+{#ENT_NAME}: Hardware serial number,system.hw.serialnumber[icsChassisSystemUnitFruSerialNumber.{#SNMPINDEX}],1h,1,"MIB: ICS-CHASSIS-MIB
+The serial number of the FRU.  If not available, this value is a zero-length string.",Inventory,Unit Discovery,Template Net Intel_Qlogic Infiniband SNMPv2,
+{#SNMPVALUE}: CPU utilization,system.cpu.util[jnxOperating5MinLoadAvg.{#SNMPINDEX}],3m,0,"MIB: JUNIPER-MIB
+The CPU Load Average over the last 5 minutes Here it will be shown as percentage valueZero if unavailable or inapplicable.
+Reference: http://kb.juniper.net/library/CUSTOMERSERVICE/GLOBAL_JTAC/BK26199/SRX%20SNMP%20Monitoring%20Guide_v1.1.pdf",CPU,CPU and Memory Discovery,Template Net Juniper SNMPv2,%
+{#SNMPVALUE}: Fan status,sensor.fan.status[jnxOperatingState.4.{#SNMPINDEX}],3m,3,MIB: JUNIPER-MIB,Fans,FAN Discovery,Template Net Juniper SNMPv2,
+{#SNMPVALUE}: Power supply status,sensor.psu.status[jnxOperatingState.2.{#SNMPINDEX}],3m,3,"MIB: JUNIPER-MIB
+If they are using DC power supplies there is a known issue on PR 1064039 where the fans do not detect the temperature correctly and fail to cool the power supply causing the shutdown to occur.
+This is fixed in Junos 13.3R7 https://forums.juniper.net/t5/Routing/PEM-0-not-OK-MX104/m-p/289644#M14122",Power supply,PSU Discovery,Template Net Juniper SNMPv2,
+{#SENSOR_INFO}: Temperature,sensor.temp.value[jnxOperatingTemp.{#SNMPINDEX}],3m,0,"MIB: JUNIPER-MIB
+The temperature in Celsius (degrees C) of {#SENSOR_INFO}",Temperature,Temperature discovery,Template Net Juniper SNMPv2,°C
+{#ENT_NAME}: Hardware model name,system.hw.model[entPhysicalModelName.{#SNMPINDEX}],1h,1,MIB: ENTITY-MIB,Inventory,Entity Discovery,Template Net Mellanox SNMPv2,
+{#SENSOR_INFO}: Fan speed,sensor.fan.speed[entPhySensorValue.{#SNMPINDEX}],5m,3,"MIB: ENTITY-SENSORS-MIB
+The most recent measurement obtained by the agent for this sensor.
+To correctly interpret the value of this object, the associated entPhySensorType,
+entPhySensorScale, and entPhySensorPrecision objects must also be examined.",Fans,Fan Discovery,Template Net Mellanox SNMPv2,rpm
+{#ENT_NAME}: Power supply status,sensor.psu.status[entStateOper.{#SNMPINDEX}],3m,3,MIB: ENTITY-STATE-MIB,Power supply,PSU Discovery,Template Net Mellanox SNMPv2,
+{#SENSOR_INFO}: Temperature status,sensor.temp.status[entPhySensorOperStatus.{#SNMPINDEX}],3m,3,"MIB: ENTITY-SENSORS-MIB
+The operational status of the sensor {#SENSOR_INFO}",Temperature,Temperature Discovery,Template Net Mellanox SNMPv2,
+#{#SNMPINDEX}: CPU utilization,system.cpu.util[hrProcessorLoad.{#SNMPINDEX}],3m,0,"MIB: HOST-RESOURCES-MIB
+The average, over the last minute, of the percentage of time that this processor was not idle.Implementations may approximate this one minute smoothing period if necessary.",CPU,CPU Discovery,Template Net Mikrotik SNMPv2,%
+CPU: Temperature,sensor.temp.value[mtxrHlProcessorTemperature.{#SNMPINDEX}],3m,0,"MIB: MIKROTIK-MIB
+(mtxrHlProcessorTemperature) Processor temperature in Celsius (degrees C). Might be missing in entry models (RB750, RB450G..)",Temperature,Temperature Discovery CPU,Template Net Mikrotik SNMPv2,°C
+Disk-{#SNMPINDEX}: Storage utilization,vfs.fs.pused[hrStorageSize.{#SNMPINDEX}],5m,0,Storage utilization in % for Disk-{#SNMPINDEX},Storage,Storage Discovery,Template Net Mikrotik SNMPv2,%
+#{#SNMPVALUE}: Fan status,sensor.fan.status[boxServicesFanItemState.{#SNMPINDEX}],3m,3,"MIB: FASTPATH-BOXSERVICES-PRIVATE-MIB
+The status of fan",Fans,FAN Discovery,Template Net Netgear Fastpath SNMPv2,
+#{#SNMPVALUE}: Power supply status,sensor.psu.status[boxServicesPowSupplyItemState.{#SNMPINDEX}],3m,3,"MIB: FASTPATH-BOXSERVICES-PRIVATE-MIB
+The status of power supply",Power supply,PSU Discovery,Template Net Netgear Fastpath SNMPv2,
+#{#SNMPVALUE}: Temperature status,sensor.temp.status[boxServicesTempSensorState.{#SNMPINDEX}],3m,3,"MIB: FASTPATH-BOXSERVICES-PRIVATE-MIB
+The state of temperature sensor",Temperature,Temperature Discovery,Template Net Netgear Fastpath SNMPv2,
+#{#SNMPVALUE}: CPU utilization,system.cpu.util[tpSysMonitorCpu1Minute.{#SNMPINDEX}],3m,0,"MIB: TPLINK-SYSMONITOR-MIB
+Displays the CPU utilization in 1 minute.
+Reference: http://www.tp-link.com/faq-1330.html",CPU,CPU Discovery,Template Net TP-LINK SNMPv2,%
+#{#SNMPVALUE}: Memory utilization,vm.memory.pused[tpSysMonitorMemoryUtilization.{#SNMPINDEX}],3m,0,"MIB: TPLINK-SYSMONITOR-MIB
+Displays the memory utilization.
+Reference: http://www.tp-link.com/faq-1330.html",Memory,Memory Discovery,Template Net TP-LINK SNMPv2,%
+Incoming network dropped packets on {#IFNAME},"net.if.in[{#IFNAME},dropped]",60,3,,Network interfaces,Network interface discovery,Template OpenStack OS Linux,
+Disk {#DEVNAME} reads ops,"disk.status[{#DEVNAME},readops]",60,3,,Disk I/O,Block devices discovery,Template OpenStack OS Linux,iops/s
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",60,0,,Filesystems,Mounted filesystem discovery,Template OpenStack OS Linux,%
+/dev/{#MDEVICE} device status,mdadm.status[{#MDEVICE}],300,4,,MD Raid,MD devices discovery,Template OpenStack OS Linux,
+OpscDB storage Assigned volume {{#CINDERNAME}},"disk.size[{#CINDERNAME},size]",1h,0,,volume,OpsdbStorage,Template OpsDB Storage  info,G
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS AIX,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS AIX,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS FreeBSD,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS FreeBSD,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS HP-UX,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS HP-UX,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS Linux,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS Linux,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS Linux APM,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS Linux APM,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS Linux noswap,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS Linux noswap,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS Linux_MySQL,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS Linux_MySQL,%
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS Mac OS X,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS OpenBSD,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS OpenBSD,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS Solaris,bps
+Free inodes on {#FSNAME} (percentage),"vfs.fs.inode[{#FSNAME},pfree]",1m,0,,Filesystems,Mounted filesystem discovery,Template OS Solaris,%
+Incoming network traffic on {#IFNAME},net.if.in[{#IFNAME}],1m,3,,Network interfaces,Network interface discovery,Template OS Windows,bps
+"State of service ""{#SERVICE.NAME}"" ({#SERVICE.DISPLAYNAME})","service.info[{#SERVICE.NAME},state]",1m,3,,Services,Windows service discovery,Template OS Windows,
+Free disk space on {#FSNAME},"vfs.fs.size[{#FSNAME},free]",1m,3,,Filesystems,Mounted filesystem discovery,Template OS Windows,B
+Battery {#BATTERY_NUM}: Disk array cache controller battery status,system.hw.diskarray.cache.battery.status[batteryState.{#SNMPINDEX}],5m,3,"MIB: IDRAC-MIB-SMIv2
+Current state of battery.
+Possible values:
+1: The current state could not be determined.
+2: The battery is operating normally.
+3: The battery has failed and needs to be replaced.
+4: The battery temperature is high or charge level is depleting.
+5: The battery is missing or not detected.
+6: The battery is undergoing the re-charge phase.
+7: The battery voltage or charge level is below the threshold.",Disk arrays,Array Controller Cache Discovery,Template Server Dell iDRAC SNMPv2,
+{#FAN_DESCR}: Fan speed,sensor.fan.speed[coolingDeviceReading.{#SNMPINDEX}],5m,3,"MIB: IDRAC-MIB-SMIv2
+0700.0012.0001.0006 This attribute defines the reading for a cooling device
+of subtype other than coolingDeviceSubTypeIsDiscrete.  When the value
+for coolingDeviceSubType is other than coolingDeviceSubTypeIsDiscrete, the
+value returned for this attribute is the speed in RPM or the OFF/ON value
+of the cooling device.  When the value for coolingDeviceSubType is
+coolingDeviceSubTypeIsDiscrete, a value is not returned for this attribute.",Fans,FAN Discovery,Template Server Dell iDRAC SNMPv2,rpm
+{#CNTLR_NAME}: Disk array controller model,system.hw.diskarray.model[controllerName.{#SNMPINDEX}],1d,1,"MIB: IDRAC-MIB-SMIv2
+The controller's name as represented in Storage Management.",Disk arrays,Array Controller Discovery,Template Server Dell iDRAC SNMPv2,
+{#DISK_NAME}: Physical disk media type,system.hw.physicaldisk.media_type[physicalDiskMediaType.{#SNMPINDEX}],1h,3,"MIB: IDRAC-MIB-SMIv2
+The media type of the physical disk. Possible Values:
+1: The media type could not be determined.
+2: Hard Disk Drive (HDD).
+3: Solid State Drive (SSD).",Physical disks,Physical Disk Discovery,Template Server Dell iDRAC SNMPv2,
+{#PSU_DESCR}: Power supply status,sensor.psu.status[powerSupplyStatus.{#SNMPINDEX}],3m,3,"MIB: IDRAC-MIB-SMIv2
+0600.0012.0001.0005 This attribute defines the status of the power supply.",Power supply,PSU Discovery,Template Server Dell iDRAC SNMPv2,
+{#SENSOR_LOCALE}: Temperature status,sensor.temp.status[temperatureProbeStatus.Ambient.{#SNMPINDEX}],3m,3,"MIB: IDRAC-MIB-SMIv2
+0700.0020.0001.0005 This attribute defines the probe status of the temperature probe.",Temperature,Temperature Ambient Discovery,Template Server Dell iDRAC SNMPv2,
+{#SENSOR_LOCALE}: Temperature status,sensor.temp.status[temperatureProbeStatus.CPU.{#SNMPINDEX}],3m,3,"MIB: IDRAC-MIB-SMIv2
+0700.0020.0001.0005 This attribute defines the probe status of the temperature probe.",Temperature,Temperature CPU Discovery,Template Server Dell iDRAC SNMPv2,
+Disk {#SNMPVALUE}({#DISK_NAME}): Layout type,system.hw.virtualdisk.layout[virtualDiskLayout.{#SNMPINDEX}],1h,3,"MIB: IDRAC-MIB-SMIv2
+The virtual disk's RAID type.
+Possible values:
+1: Not one of the following
+2: RAID-0
+3: RAID-1
+4: RAID-5
+5: RAID-6
+6: RAID-10
+7: RAID-50
+8: RAID-60
+9: Concatenated RAID 1
+10: Concatenated RAID 5",Virtual disks,Virtual Disk Discovery,Template Server Dell iDRAC SNMPv2,
+#{#CACHE_CNTRL_INDEX}: Disk array cache controller battery status,system.hw.diskarray.cache.battery.status[cpqDaAccelBattery.{#SNMPINDEX}],5m,3,"MIB: CPQIDA-MIB
+Cache Module Board Backup Power Status. This monitors the status of each backup power source on the board.
+The backup power source can only recharge when the system has power applied. The type of backup power source used is indicated by cpqDaAccelBackupPowerSource.
+The following values are valid:
+Other (1)  Indicates that the instrument agent does not recognize  backup power status.  You may need to update your software.
+
+Ok (2)  The backup power source is fully charged.
+
+Recharging (3)  The array controller has one or more cache module backup power  sources that are recharging.
+Cache module operations such as Battery/Flash Backed Write Cache, Expansion, Extension and Migration are temporarily suspended until the backup power source is fully charged.
+Cache module operations will automatically resume  when charging is complete.
+
+Failed (4)  The battery pack is below the sufficient voltage level and  has not recharged in 36 hours.
+Your Cache Module board  needs to be serviced.
+
+Degraded (5)  The battery is still operating, however, one of the batteries  in the pack has failed to recharge properly.
+Your Cache  Module board should be serviced as soon as possible.
+
+NotPresent (6)  A backup power source is not present on the cache module board. Some controllers do not have backup power sources.
+
+Capacitor Failed (7)  The flash backed cache module capacitor is below the sufficient voltage level and has not recharged in 10 minutes.  Your Cache Module board needs to be serviced.",Disk arrays,Array Controller Cache Discovery,Template Server HP iLO SNMPv2,
+{#CNTLR_LOCATION}: Disk array controller model,system.hw.diskarray.model[cpqDaCntlrModel.{#SNMPINDEX}],1d,3,"MIB: CPQIDA-MIB
+Array Controller Model. The type of controller card.",Disk arrays,Array Controller Discovery,Template Server HP iLO SNMPv2,
+Fan {#SNMPINDEX}: Fan status,sensor.fan.status[cpqHeFltTolFanCondition.{#SNMPINDEX}],3m,3,"MIB: CPQHLTH-MIB
+The condition of the fan.
+This value will be one of the following:
+other(1)  Fan status detection is not supported by this system or driver.
+ok(2)  The fan is operating properly.
+degraded(2)  A redundant fan is not operating properly.
+failed(4)  A non-redundant fan is not operating properly.",Fans,FAN Discovery,Template Server HP iLO SNMPv2,
+{#DISK_LOCATION}: Physical disk media type,system.hw.physicaldisk.media_type[cpqDaPhyDrvMediaType.{#SNMPINDEX}],1h,3,"MIB: CPQIDA-MIB
+Drive Array Physical Drive Media Type.The following values are defined:
+other(1)  The instrument agent is unable to determine the physical drive’s media type.
+rotatingPlatters(2)  The physical drive media is composed of rotating platters.
+solidState(3)  The physical drive media is composed of solid state electronics.",Physical disks,Physical Disk Discovery,Template Server HP iLO SNMPv2,
+"Chassis {#CHASSIS_NUM}, bay {#BAY_NUM}: Power supply status",sensor.psu.status[cpqHeFltTolPowerSupplyCondition.{#SNMPINDEX}],3m,3,"MIB: CPQHLTH-MIB
+The condition of the power supply. This value will be one of the following:
+other(1)  The status could not be determined or not present.
+ok(2)  The power supply is operating normally.
+degraded(3)  A temperature sensor, fan or other power supply component is  outside of normal operating range.
+failed(4)  A power supply component detects a condition that could  permanently damage the system.",Power supply,PSU Discovery,Template Server HP iLO SNMPv2,
+{#SNMPINDEX}: Temperature sensor location,sensor.temp.locale[cpqHeTemperatureLocale.{#SNMPINDEX}],1h,3,"MIB: CPQHLTH-MIB
+This specifies the location of the temperature sensor present in the system.",Temperature,Temperature Discovery,Template Server HP iLO SNMPv2,
+Ambient: Temperature,sensor.temp.value[cpqHeTemperatureCelsius.Ambient.{#SNMPINDEX}],3m,0,"MIB: CPQHLTH-MIB
+Temperature readings of testpoint: Ambient",Temperature,Temperature Discovery Ambient,Template Server HP iLO SNMPv2,°C
+CPU-{#SNMPINDEX}: Temperature,sensor.temp.value[cpqHeTemperatureCelsius.CPU.{#SNMPINDEX}],3m,0,"MIB: CPQHLTH-MIB
+Temperature readings of testpoint: CPU-{#SNMPINDEX}",Temperature,Temperature Discovery CPU,Template Server HP iLO SNMPv2,°C
+System-{#SNMPINDEX}: Temperature,sensor.temp.value[cpqHeTemperatureCelsius.System.{#SNMPINDEX}],6m,0,"MIB: CPQHLTH-MIB
+Temperature readings of testpoint: System-{#SNMPINDEX}",Temperature,Temperature Discovery System,Template Server HP iLO SNMPv2,°C
+Memory-{#SNMPINDEX}: Temperature,sensor.temp.value[cpqHeTemperatureCelsius.Memory.{#SNMPINDEX}],6m,0,"MIB: CPQHLTH-MIB
+Temperature readings of testpoint: Memory-{#SNMPINDEX}",Temperature,Temperature Discovery Memory,Template Server HP iLO SNMPv2,°C
+PSU-{#SNMPINDEX}: Temperature,sensor.temp.value[cpqHeTemperatureCelsius.PSU.{#SNMPINDEX}],6m,0,"MIB: CPQHLTH-MIB
+Temperature readings of testpoint: PSU-{#SNMPINDEX}",Temperature,Temperature Discovery PSU,Template Server HP iLO SNMPv2,°C
+Disk {#SNMPINDEX}({#DISK_NAME}): Layout type,system.hw.virtualdisk.layout[cpqDaLogDrvFaultTol.{#SNMPINDEX}],1h,3,"Logical Drive Fault Tolerance.
+This shows the fault tolerance mode of the logical drive.",Virtual disks,Virtual Disk Discovery,Template Server HP iLO SNMPv2,
+"{#FAN_DESCR}: Fan speed, %",sensor.fan.speed.percentage[fanSpeed.{#SNMPINDEX}],5m,3,"MIB: IMM-MIB
+Fan speed expressed in percent(%) of maximum RPM.
+An octet string expressed as 'ddd% of maximum' where:d is a decimal digit or blank space for a leading zero.
+If the fan is determined not to be running or the fan speed cannot be determined, the string will indicate 'Offline'.",Fans,FAN Discovery,Template Server IBM IMM SNMPv1,%
+{#SNMPINDEX}: Physical disk part number,system.hw.physicaldisk.part_number[diskFruName.{#SNMPINDEX}],1h,1,"MIB: IMM-MIB
+disk module FRU name.",Physical disks,Physical Disk Discovery,Template Server IBM IMM SNMPv1,
+{#PSU_DESCR}: Power supply status,sensor.psu.status[powerHealthStatus.{#SNMPINDEX}],3m,1,"MIB: IMM-MIB
+A description of the power module status.",Power supply,PSU Discovery,Template Server IBM IMM SNMPv1,
+{#SNMPVALUE}: Temperature,sensor.temp.value[tempReading.{#SNMPINDEX}],3m,0,"MIB: IMM-MIB
+Temperature readings of testpoint: {#SNMPVALUE}",Temperature,Temperature Discovery,Template Server IBM IMM SNMPv1,°C
+Ambient: Temperature,sensor.temp.value[tempReading.Ambient.{#SNMPINDEX}],3m,0,"MIB: IMM-MIB
+Temperature readings of testpoint: Ambient",Temperature,Temperature Discovery Ambient,Template Server IBM IMM SNMPv1,°C
+CPU: Temperature,sensor.temp.value[tempReading.CPU.{#SNMPINDEX}],3m,0,"MIB: IMM-MIB
+Temperature readings of testpoint: CPU",Temperature,Temperature Discovery CPU,Template Server IBM IMM SNMPv1,°C
+"{#FAN_DESCR}: Fan speed, %",sensor.fan.speed.percentage[fanSpeed.{#SNMPINDEX}],5m,3,"MIB: IMM-MIB
+Fan speed expressed in percent(%) of maximum RPM.
+An octet string expressed as 'ddd% of maximum' where:d is a decimal digit or blank space for a leading zero.
+If the fan is determined not to be running or the fan speed cannot be determined, the string will indicate 'Offline'.",Fans,FAN Discovery,Template Server IBM IMM SNMPv2,%
+{#SNMPINDEX}: Physical disk part number,system.hw.physicaldisk.part_number[diskFruName.{#SNMPINDEX}],1h,1,"MIB: IMM-MIB
+disk module FRU name.",Physical disks,Physical Disk Discovery,Template Server IBM IMM SNMPv2,
+{#PSU_DESCR}: Power supply status,sensor.psu.status[powerHealthStatus.{#SNMPINDEX}],3m,1,"MIB: IMM-MIB
+A description of the power module status.",Power supply,PSU Discovery,Template Server IBM IMM SNMPv2,
+{#SNMPVALUE}: Temperature,sensor.temp.value[tempReading.{#SNMPINDEX}],3m,0,"MIB: IMM-MIB
+Temperature readings of testpoint: {#SNMPVALUE}",Temperature,Temperature Discovery,Template Server IBM IMM SNMPv2,°C
+Ambient: Temperature,sensor.temp.value[tempReading.Ambient.{#SNMPINDEX}],3m,0,"MIB: IMM-MIB
+Temperature readings of testpoint: Ambient",Temperature,Temperature Discovery Ambient,Template Server IBM IMM SNMPv2,°C
+CPU: Temperature,sensor.temp.value[tempReading.CPU.{#SNMPINDEX}],3m,0,"MIB: IMM-MIB
+Temperature readings of testpoint: CPU",Temperature,Temperature Discovery CPU,Template Server IBM IMM SNMPv2,°C
+"{#SENSOR_DESCR}: Fan speed, %",sensor.fan.speed.percentage[sensorReading.{#SNMPINDEX}],5m,3,"MIB: ATEN-IPMI-MIB
+A textual string containing information about the interface.
+This string should include the name of the manufacturer, the product name and the version of the interface hardware/software.",Fans,FAN Discovery,Template Server Supermicro Aten SNMPv2,%
+{#SENSOR_DESCR}: Temperature,sensor.temp.value[sensorReading.{#SNMPINDEX}],3m,0,"MIB: ATEN-IPMI-MIB
+A textual string containing information about the interface.
+This string should include the name of the manufacturer, the product name and the version of the interface hardware/software.",Temperature,Temperature Discovery,Template Server Supermicro Aten SNMPv2,°C
+"Status of ""{#CLUSTER.NAME}"" cluster","vmware.cluster.status[{$URL},{#CLUSTER.NAME}]",1m,3,,Clusters,Discover VMware clusters,Template VM VMware,
+Number of bytes received on interface {#IFDESC},"vmware.vm.net.if.in[{$URL},{HOST.HOST},{#IFNAME},bps]",1m,3,,Interfaces,Network device discovery,Template VM VMware Guest,Bps
+Average number of bytes read from the disk {#DISKDESC},"vmware.vm.vfs.dev.read[{$URL},{HOST.HOST},{#DISKNAME},bps]",1m,3,,Disks,Disk device discovery,Template VM VMware Guest,Bps
+Free disk space on {#FSNAME},"vmware.vm.vfs.fs.size[{$URL},{HOST.HOST},{#FSNAME},free]",1m,3,,Filesystems,Mounted filesystem discovery,Template VM VMware Guest,B
+Average read latency of the datastore {#DATASTORE},"vmware.hv.datastore.read[{$URL},{HOST.HOST},{#DATASTORE},latency]",1m,3,,Datastore,Datastore discovery,Template VM VMware Hypervisor,

@@ -1,0 +1,36 @@
+{
+  "Physical Memory": {
+    "Actual_Num_Device": "64 GB",
+    "Location": "System Board Or Motherboard",
+    "Max_Capacity": " 9 TB",
+    "Num_Device": "24"
+  },
+  "Single Memory DIMM000 J22": {
+    "Configured Memory Speed": "2666 MT/s",
+    "Form Factor": "DIMM",
+    "Locator": "DIMM000 J22",
+    "Manufacturer": "Samsung",
+    "Part Number": "M393A4K40CB2-CTD    ",
+    "Rank": "2",
+    "Serial Number": "03924B73",
+    "Size": " 32 GB",
+    "Speed": "2666 MT/s",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous Registered (Buffered)"
+  },
+  "Single Memory DIMM100 J34": {
+    "Configured Memory Speed": "2666 MT/s",
+    "Form Factor": "DIMM",
+    "Locator": "DIMM100 J34",
+    "Manufacturer": "Samsung",
+    "Part Number": "M393A4K40CB2-CTD    ",
+    "Rank": "2",
+    "Serial Number": "24836E08",
+    "Size": " 32 GB",
+    "Speed": "2666 MT/s",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous Registered (Buffered)"
+  }
+}

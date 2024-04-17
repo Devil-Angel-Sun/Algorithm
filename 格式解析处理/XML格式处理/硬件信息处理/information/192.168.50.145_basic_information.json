@@ -1,0 +1,18 @@
+{
+  "Chassis": {
+    "Manufacturer": "Huawei",
+    "Serial Number": "Huawei",
+    "Type": "Main Server Chassis",
+    "Version": "Huawei"
+  },
+  "System": {
+    "Manufacturer": "Huawei",
+    "Product Name": "2288H V5",
+    "Serial Number": "2102311TXHN0KC001569",
+    "Version": "Purley",
+    "Wake-up Type": "Power Switch"
+  },
+  "bios": {
+    "Version": "7.01"
+  }
+}

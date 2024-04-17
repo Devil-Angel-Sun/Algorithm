@@ -1,0 +1,2 @@
+## 校验zookeeper是否部署成功
+for i in  0 1 2; do kubectl exec -it zk-$i  -n databuff -- zkServer.sh --config /opt/conf/zk-$i status; done

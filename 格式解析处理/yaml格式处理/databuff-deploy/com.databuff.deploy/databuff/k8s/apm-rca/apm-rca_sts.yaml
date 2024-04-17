@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: StatefulSet     # 指定创建资源的角色/类型 
+metadata:
+  labels:             # 自定义标签
+    app: dc-apm-rca-sts      # 自定义标签名字
+  name: dc-apm-rca-sts       # 资源名称
+  namespace: databuff # 资源所属命名空间
+spec:                 # 指定该资源的内容
+  selector:
+    matchLabels:
+      app: dc-apm-rca # has to match .spec.template.metadata.labels
+  serviceName: "apm-rca-svc"
+  replicas: 1 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: dc-apm-rca # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: dc-apm-rca
+          image: 192.168.50.134/root/images/apm-rca/apm-rca.2.5.2.3.tar
+          imagePullPolicy: IfNotPresent #每次重启时重新拉取镜像
+          resources:
+            requests:
+              cpu: "3"
+              memory: 1500Mi
+          volumeMounts:
+            - name: apm-rca-config
+              mountPath: /detect/traceDetect/config.json
+              subPath: config.json
+      imagePullSecrets:
+        - name: docker-reg-secret
+      volumes:
+        - name: apm-rca-config
+          configMap:
+            name: dc-apm-rca-conf
+            items:
+              - key: config.json
+                path: config.json

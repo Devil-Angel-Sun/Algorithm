@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  labels:
+    app: mysql-sts #为该Deployment设置key为app，value为mysql的标签
+  name: mysql-sts
+  namespace: databuff
+spec:
+  replicas: 1
+  selector: #标签选择器，与上面的标签共同作用
+    matchLabels: #选择包含标签app:dc-mysql的资源
+      app: dc-mysql
+  serviceName: "mysql-svc"
+  template: #这是选择或创建的Pod的模板
+    metadata: #Pod的元数据
+      labels: #Pod的标签，上面的selector即选择包含标签app:mysql-yanshi的Pod
+        app: dc-mysql
+    spec: #期望Pod实现的功能（即在pod中部署）
+      containers: #生成container，与docker中的container是同一种
+        - name: dc-mysql
+          image: 192.168.50.212/library/mysql:v5.7.39 #使用镜像 此处的镜像地址是我自己的私有镜像仓库
+          imagePullPolicy: IfNotPresent #宿主机不存在时拉取镜像
+          resources:
+            requests:
+              cpu: 500m
+              memory: 500Mi
+          ports:
+            - containerPort: 3306  # 开启本容器的3306端口可访问
+          volumeMounts:
+            - mountPath: /var/lib/mysql #这是mysql容器内保存数据的默认路径
+              name: data-path
+            - mountPath: /etc/localtime
+              name: time-path
+            - name: mysql-config
+              mountPath: /etc/mysql/my.cnf
+              subPath: my.cnf
+            - name: mysql-initdb
+              mountPath: /docker-entrypoint-initdb.d/dc_databuff_init.sql
+              subPath: dc_databuff_init.sql
+          env:   #容器运行前需设置的环境变量列表
+            - name: MYSQL_ROOT_PASSWORD  #环境变量名称
+              value: "234*(sdlj12" #环境变量的值 这是mysqlroot的密码 因为是纯数字，需要添加双引号 不然编译报错
+      imagePullSecrets:
+      - name: docker-reg-secret
+      volumes:
+        - name: data-path #和上面保持一致 这是本地的文件路径，上面是容器内部的路径
+          persistentVolumeClaim:
+            claimName: dc-mysql-pvc #此路径需要实现创建
+        - name: time-path #和上面保持一致 这是本地的文件路径，上面是容器内部的路径
+          hostPath:
+            path: /usr/share/zoneinfo/Asia/Shanghai #此路径需要实现创建
+        - name: mysql-config
+          configMap:
+            name: dc-mysql-conf
+            items:
+              - key: my.cnf
+                path: my.cnf
+        - name: mysql-initdb
+          configMap:
+            name: dc-mysql-conf
+            items:
+              - key: dc_databuff_init.sql
+                path: dc_databuff_init.sql

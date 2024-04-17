@@ -1,0 +1,1211 @@
+itemname,key,delay,value_type,description,application,template,units
+Aborted Clients,MySQL.Aborted-clients,300,0,MySQL Aborted Clients,MySQL,Percona MySQL Server Template,
+Aborted Connects,MySQL.Aborted-connects,300,0,MySQL Aborted Connects,MySQL,Percona MySQL Server Template,
+Active Transactions,MySQL.active-transactions,300,0,MySQL Active Transactions,MySQL,Percona MySQL Server Template,
+Adaptive Hash Memory,MySQL.adaptive-hash-memory,300,0,MySQL Adaptive Hash Memory,MySQL,Percona MySQL Server Template,B
+Additional Pool Alloc,MySQL.additional-pool-alloc,300,0,MySQL Additional Pool Alloc,MySQL,Percona MySQL Server Template,B
+Binary Log Space,MySQL.binary-log-space,300,0,MySQL Binary Log Space,MySQL,Percona MySQL Server Template,B
+Binlog Cache Disk Use,MySQL.Binlog-cache-disk-use,300,0,MySQL Binlog Cache Disk Use,MySQL,Percona MySQL Server Template,B
+Binlog Cache Use,MySQL.Binlog-cache-use,300,0,MySQL Binlog Cache Use,MySQL,Percona MySQL Server Template,B
+Bytes Received,MySQL.Bytes-received,300,0,MySQL Bytes Received,MySQL,Percona MySQL Server Template,B
+Bytes Sent,MySQL.Bytes-sent,300,0,MySQL Bytes Sent,MySQL,Percona MySQL Server Template,B
+Com Delete,MySQL.Com-delete,300,0,MySQL Com Delete,MySQL,Percona MySQL Server Template,
+Com Delete Multi,MySQL.Com-delete-multi,300,0,MySQL Com Delete Multi,MySQL,Percona MySQL Server Template,
+Com Insert,MySQL.Com-insert,300,0,MySQL Com Insert,MySQL,Percona MySQL Server Template,
+Com Insert Select,MySQL.Com-insert-select,300,0,MySQL Com Insert Select,MySQL,Percona MySQL Server Template,
+Com Load,MySQL.Com-load,300,0,MySQL Com Load,MySQL,Percona MySQL Server Template,
+Com Replace,MySQL.Com-replace,300,0,MySQL Com Replace,MySQL,Percona MySQL Server Template,
+Com Replace Select,MySQL.Com-replace-select,300,0,MySQL Com Replace Select,MySQL,Percona MySQL Server Template,
+Com Select,MySQL.Com-select,300,0,MySQL Com Select,MySQL,Percona MySQL Server Template,
+Com Update,MySQL.Com-update,300,0,MySQL Com Update,MySQL,Percona MySQL Server Template,
+Com Update Multi,MySQL.Com-update-multi,300,0,MySQL Com Update Multi,MySQL,Percona MySQL Server Template,
+Connections,MySQL.Connections,300,0,MySQL Connections,MySQL,Percona MySQL Server Template,
+Created Tmp Disk Tables,MySQL.Created-tmp-disk-tables,300,0,MySQL Created Tmp Disk Tables,MySQL,Percona MySQL Server Template,
+Created Tmp Files,MySQL.Created-tmp-files,300,0,MySQL Created Tmp Files,MySQL,Percona MySQL Server Template,
+Created Tmp Tables,MySQL.Created-tmp-tables,300,0,MySQL Created Tmp Tables,MySQL,Percona MySQL Server Template,
+Current Transactions,MySQL.current-transactions,300,0,MySQL Current Transactions,MySQL,Percona MySQL Server Template,
+Database Pages,MySQL.database-pages,300,0,MySQL Database Pages,MySQL,Percona MySQL Server Template,B
+Dictionary Cache Memory,MySQL.dictionary-cache-memory,300,0,MySQL Dictionary Cache Memory,MySQL,Percona MySQL Server Template,B
+File Fsyncs,MySQL.file-fsyncs,300,0,MySQL File Fsyncs,MySQL,Percona MySQL Server Template,
+File Reads,MySQL.file-reads,300,0,MySQL File Reads,MySQL,Percona MySQL Server Template,
+File System Memory,MySQL.file-system-memory,300,0,MySQL File System Memory,MySQL,Percona MySQL Server Template,B
+File Writes,MySQL.file-writes,300,0,MySQL File Writes,MySQL,Percona MySQL Server Template,
+Free Pages,MySQL.free-pages,300,0,MySQL Free Pages,MySQL,Percona MySQL Server Template,B
+Handler Commit,MySQL.Handler-commit,300,0,MySQL Handler Commit,MySQL,Percona MySQL Server Template,
+Handler Delete,MySQL.Handler-delete,300,0,MySQL Handler Delete,MySQL,Percona MySQL Server Template,
+Handler Read First,MySQL.Handler-read-first,300,0,MySQL Handler Read First,MySQL,Percona MySQL Server Template,
+Handler Read Key,MySQL.Handler-read-key,300,0,MySQL Handler Read Key,MySQL,Percona MySQL Server Template,
+Handler Read Next,MySQL.Handler-read-next,300,0,MySQL Handler Read Next,MySQL,Percona MySQL Server Template,
+Handler Read Prev,MySQL.Handler-read-prev,300,0,MySQL Handler Read Prev,MySQL,Percona MySQL Server Template,
+Handler Read Rnd,MySQL.Handler-read-rnd,300,0,MySQL Handler Read Rnd,MySQL,Percona MySQL Server Template,
+Handler Read Rnd Next,MySQL.Handler-read-rnd-next,300,0,MySQL Handler Read Rnd Next,MySQL,Percona MySQL Server Template,
+Handler Rollback,MySQL.Handler-rollback,300,0,MySQL Handler Rollback,MySQL,Percona MySQL Server Template,
+Handler Savepoint,MySQL.Handler-savepoint,300,0,MySQL Handler Savepoint,MySQL,Percona MySQL Server Template,
+Handler Savepoint Rollback,MySQL.Handler-savepoint-rollback,300,0,MySQL Handler Savepoint Rollback,MySQL,Percona MySQL Server Template,
+Handler Update,MySQL.Handler-update,300,0,MySQL Handler Update,MySQL,Percona MySQL Server Template,
+Handler Write,MySQL.Handler-write,300,0,MySQL Handler Write,MySQL,Percona MySQL Server Template,
+Hash Index Cells Total,MySQL.hash-index-cells-total,300,0,MySQL Hash Index Cells Total,MySQL,Percona MySQL Server Template,
+Hash Index Cells Used,MySQL.hash-index-cells-used,300,0,MySQL Hash Index Cells Used,MySQL,Percona MySQL Server Template,
+History List,MySQL.history-list,300,0,MySQL History List,MySQL,Percona MySQL Server Template,
+Ibuf Cell Count,MySQL.ibuf-cell-count,300,0,MySQL Ibuf Cell Count,MySQL,Percona MySQL Server Template,
+Ibuf Free Cells,MySQL.ibuf-free-cells,300,0,MySQL Ibuf Free Cells,MySQL,Percona MySQL Server Template,
+Ibuf Inserts,MySQL.ibuf-inserts,300,0,MySQL Ibuf Inserts,MySQL,Percona MySQL Server Template,
+Ibuf Merged,MySQL.ibuf-merged,300,0,MySQL Ibuf Merged,MySQL,Percona MySQL Server Template,
+Ibuf Merges,MySQL.ibuf-merges,300,0,MySQL Ibuf Merges,MySQL,Percona MySQL Server Template,
+Ibuf Used Cells,MySQL.ibuf-used-cells,300,0,MySQL Ibuf Used Cells,MySQL,Percona MySQL Server Template,
+Innodb Lock Structs,MySQL.innodb-lock-structs,300,0,MySQL Innodb Lock Structs,MySQL,Percona MySQL Server Template,
+Innodb Lock Wait Secs,MySQL.innodb-lock-wait-secs,300,0,MySQL Innodb Lock Wait Secs,MySQL,Percona MySQL Server Template,
+Innodb Locked Tables,MySQL.innodb-locked-tables,300,0,MySQL Innodb Locked Tables,MySQL,Percona MySQL Server Template,
+Innodb Log Buffer Size,MySQL.innodb-log-buffer-size,300,0,MySQL Innodb Log Buffer Size,MySQL,Percona MySQL Server Template,B
+Innodb Row Lock Time,MySQL.Innodb-row-lock-time,300,0,MySQL Innodb Row Lock Time,MySQL,Percona MySQL Server Template,
+Innodb Row Lock Waits,MySQL.Innodb-row-lock-waits,300,0,MySQL Innodb Row Lock Waits,MySQL,Percona MySQL Server Template,
+Innodb Sem Wait Time Ms,MySQL.innodb-sem-wait-time-ms,300,0,MySQL Innodb Sem Wait Time Ms,MySQL,Percona MySQL Server Template,
+Innodb Sem Waits,MySQL.innodb-sem-waits,300,0,MySQL Innodb Sem Waits,MySQL,Percona MySQL Server Template,
+Innodb Tables In Use,MySQL.innodb-tables-in-use,300,0,MySQL Innodb Tables In Use,MySQL,Percona MySQL Server Template,
+Innodb Transactions,MySQL.innodb-transactions,300,0,MySQL Innodb Transactions,MySQL,Percona MySQL Server Template,
+Key Buf Bytes Unflushed,MySQL.Key-buf-bytes-unflushed,300,0,MySQL Key Buf Bytes Unflushed,MySQL,Percona MySQL Server Template,B
+Key Buf Bytes Used,MySQL.Key-buf-bytes-used,300,0,MySQL Key Buf Bytes Used,MySQL,Percona MySQL Server Template,B
+Key Buffer Size,MySQL.key-buffer-size,300,0,MySQL Key Buffer Size,MySQL,Percona MySQL Server Template,B
+Key Read Requests,MySQL.Key-read-requests,300,0,MySQL Key Read Requests,MySQL,Percona MySQL Server Template,
+Key Reads,MySQL.Key-reads,300,0,MySQL Key Reads,MySQL,Percona MySQL Server Template,
+Key Write Requests,MySQL.Key-write-requests,300,0,MySQL Key Write Requests,MySQL,Percona MySQL Server Template,
+Key Writes,MySQL.Key-writes,300,0,MySQL Key Writes,MySQL,Percona MySQL Server Template,
+Lock System Memory,MySQL.lock-system-memory,300,0,MySQL Lock System Memory,MySQL,Percona MySQL Server Template,B
+Locked Transactions,MySQL.locked-transactions,300,0,MySQL Locked Transactions,MySQL,Percona MySQL Server Template,
+Log Bytes Flushed,MySQL.log-bytes-flushed,300,0,MySQL Log Bytes Flushed,MySQL,Percona MySQL Server Template,B
+Log Bytes Written,MySQL.log-bytes-written,300,0,MySQL Log Bytes Written,MySQL,Percona MySQL Server Template,B
+Log Writes,MySQL.log-writes,300,0,MySQL Log Writes,MySQL,Percona MySQL Server Template,
+Max Connections,MySQL.max-connections,300,0,MySQL Max Connections,MySQL,Percona MySQL Server Template,
+Max Used Connections,MySQL.Max-used-connections,300,0,MySQL Max Used Connections,MySQL,Percona MySQL Server Template,
+Modified Pages,MySQL.modified-pages,300,0,MySQL Modified Pages,MySQL,Percona MySQL Server Template,B
+Open Files,MySQL.Open-files,300,0,MySQL Open Files,MySQL,Percona MySQL Server Template,
+Open Tables,MySQL.Open-tables,300,0,MySQL Open Tables,MySQL,Percona MySQL Server Template,
+Opened Tables,MySQL.Opened-tables,300,0,MySQL Opened Tables,MySQL,Percona MySQL Server Template,
+Os Waits,MySQL.os-waits,300,0,MySQL Os Waits,MySQL,Percona MySQL Server Template,
+Page Hash Memory,MySQL.page-hash-memory,300,0,MySQL Page Hash Memory,MySQL,Percona MySQL Server Template,B
+Pages Created,MySQL.pages-created,300,0,MySQL Pages Created,MySQL,Percona MySQL Server Template,B
+Pages Read,MySQL.pages-read,300,0,MySQL Pages Read,MySQL,Percona MySQL Server Template,B
+Pages Written,MySQL.pages-written,300,0,MySQL Pages Written,MySQL,Percona MySQL Server Template,B
+Pending Aio Log Ios,MySQL.pending-aio-log-ios,300,0,MySQL Pending Aio Log Ios,MySQL,Percona MySQL Server Template,
+Pending Aio Sync Ios,MySQL.pending-aio-sync-ios,300,0,MySQL Pending Aio Sync Ios,MySQL,Percona MySQL Server Template,
+Pending Buf Pool Flushes,MySQL.pending-buf-pool-flushes,300,0,MySQL Pending Buf Pool Flushes,MySQL,Percona MySQL Server Template,
+Pending Chkp Writes,MySQL.pending-chkp-writes,300,0,MySQL Pending Chkp Writes,MySQL,Percona MySQL Server Template,
+Pending Ibuf Aio Reads,MySQL.pending-ibuf-aio-reads,300,0,MySQL Pending Ibuf Aio Reads,MySQL,Percona MySQL Server Template,
+Pending Log Flushes,MySQL.pending-log-flushes,300,0,MySQL Pending Log Flushes,MySQL,Percona MySQL Server Template,
+Pending Log Writes,MySQL.pending-log-writes,300,0,MySQL Pending Log Writes,MySQL,Percona MySQL Server Template,
+Pending Normal Aio Reads,MySQL.pending-normal-aio-reads,300,0,MySQL Pending Normal Aio Reads,MySQL,Percona MySQL Server Template,
+Pending Normal Aio Writes,MySQL.pending-normal-aio-writes,300,0,MySQL Pending Normal Aio Writes,MySQL,Percona MySQL Server Template,
+Pool Read Requests,MySQL.pool-read-requests,300,0,MySQL Pool Read Requests,MySQL,Percona MySQL Server Template,
+Pool Reads,MySQL.pool-reads,300,0,MySQL Pool Reads,MySQL,Percona MySQL Server Template,
+Pool Size,MySQL.pool-size,300,0,MySQL Pool Size,MySQL,Percona MySQL Server Template,B
+Qcache Free Blocks,MySQL.Qcache-free-blocks,300,0,MySQL Qcache Free Blocks,MySQL,Percona MySQL Server Template,B
+Qcache Free Memory,MySQL.Qcache-free-memory,300,0,MySQL Qcache Free Memory,MySQL,Percona MySQL Server Template,B
+Qcache Hits,MySQL.Qcache-hits,300,0,MySQL Qcache Hits,MySQL,Percona MySQL Server Template,B
+Qcache Inserts,MySQL.Qcache-inserts,300,0,MySQL Qcache Inserts,MySQL,Percona MySQL Server Template,B
+Qcache Lowmem Prunes,MySQL.Qcache-lowmem-prunes,300,0,MySQL Qcache Lowmem Prunes,MySQL,Percona MySQL Server Template,B
+Qcache Not Cached,MySQL.Qcache-not-cached,300,0,MySQL Qcache Not Cached,MySQL,Percona MySQL Server Template,B
+Qcache Queries In Cache,MySQL.Qcache-queries-in-cache,300,0,MySQL Qcache Queries In Cache,MySQL,Percona MySQL Server Template,B
+Qcache Total Blocks,MySQL.Qcache-total-blocks,300,0,MySQL Qcache Total Blocks,MySQL,Percona MySQL Server Template,B
+Query Cache Size,MySQL.query-cache-size,300,0,MySQL Query Cache Size,MySQL,Percona MySQL Server Template,B
+Query Time Count 00,MySQL.Query-time-count-00,300,0,MySQL Query Time Count 00,MySQL,Percona MySQL Server Template,
+Query Time Count 01,MySQL.Query-time-count-01,300,0,MySQL Query Time Count 01,MySQL,Percona MySQL Server Template,
+Query Time Count 02,MySQL.Query-time-count-02,300,0,MySQL Query Time Count 02,MySQL,Percona MySQL Server Template,
+Query Time Count 03,MySQL.Query-time-count-03,300,0,MySQL Query Time Count 03,MySQL,Percona MySQL Server Template,
+Query Time Count 04,MySQL.Query-time-count-04,300,0,MySQL Query Time Count 04,MySQL,Percona MySQL Server Template,
+Query Time Count 05,MySQL.Query-time-count-05,300,0,MySQL Query Time Count 05,MySQL,Percona MySQL Server Template,
+Query Time Count 06,MySQL.Query-time-count-06,300,0,MySQL Query Time Count 06,MySQL,Percona MySQL Server Template,
+Query Time Count 07,MySQL.Query-time-count-07,300,0,MySQL Query Time Count 07,MySQL,Percona MySQL Server Template,
+Query Time Count 08,MySQL.Query-time-count-08,300,0,MySQL Query Time Count 08,MySQL,Percona MySQL Server Template,
+Query Time Count 09,MySQL.Query-time-count-09,300,0,MySQL Query Time Count 09,MySQL,Percona MySQL Server Template,
+Query Time Count 10,MySQL.Query-time-count-10,300,0,MySQL Query Time Count 10,MySQL,Percona MySQL Server Template,
+Query Time Count 11,MySQL.Query-time-count-11,300,0,MySQL Query Time Count 11,MySQL,Percona MySQL Server Template,
+Query Time Count 12,MySQL.Query-time-count-12,300,0,MySQL Query Time Count 12,MySQL,Percona MySQL Server Template,
+Query Time Count 13,MySQL.Query-time-count-13,300,0,MySQL Query Time Count 13,MySQL,Percona MySQL Server Template,
+Query Time Total 00,MySQL.Query-time-total-00,300,0,MySQL Query Time Total 00,MySQL,Percona MySQL Server Template,
+Query Time Total 01,MySQL.Query-time-total-01,300,0,MySQL Query Time Total 01,MySQL,Percona MySQL Server Template,
+Query Time Total 02,MySQL.Query-time-total-02,300,0,MySQL Query Time Total 02,MySQL,Percona MySQL Server Template,
+Query Time Total 03,MySQL.Query-time-total-03,300,0,MySQL Query Time Total 03,MySQL,Percona MySQL Server Template,
+Query Time Total 04,MySQL.Query-time-total-04,300,0,MySQL Query Time Total 04,MySQL,Percona MySQL Server Template,
+Query Time Total 05,MySQL.Query-time-total-05,300,0,MySQL Query Time Total 05,MySQL,Percona MySQL Server Template,
+Query Time Total 06,MySQL.Query-time-total-06,300,0,MySQL Query Time Total 06,MySQL,Percona MySQL Server Template,
+Query Time Total 07,MySQL.Query-time-total-07,300,0,MySQL Query Time Total 07,MySQL,Percona MySQL Server Template,
+Query Time Total 08,MySQL.Query-time-total-08,300,0,MySQL Query Time Total 08,MySQL,Percona MySQL Server Template,
+Query Time Total 09,MySQL.Query-time-total-09,300,0,MySQL Query Time Total 09,MySQL,Percona MySQL Server Template,
+Query Time Total 10,MySQL.Query-time-total-10,300,0,MySQL Query Time Total 10,MySQL,Percona MySQL Server Template,
+Query Time Total 11,MySQL.Query-time-total-11,300,0,MySQL Query Time Total 11,MySQL,Percona MySQL Server Template,
+Query Time Total 12,MySQL.Query-time-total-12,300,0,MySQL Query Time Total 12,MySQL,Percona MySQL Server Template,
+Query Time Total 13,MySQL.Query-time-total-13,300,0,MySQL Query Time Total 13,MySQL,Percona MySQL Server Template,
+Questions,MySQL.Questions,300,0,MySQL Questions,MySQL,Percona MySQL Server Template,
+Read Views,MySQL.read-views,300,0,MySQL Read Views,MySQL,Percona MySQL Server Template,
+Recovery System Memory,MySQL.recovery-system-memory,300,0,MySQL Recovery System Memory,MySQL,Percona MySQL Server Template,B
+Relay Log Space,MySQL.relay-log-space,300,0,MySQL Relay Log Space,MySQL,Percona MySQL Server Template,B
+Rows Deleted,MySQL.rows-deleted,300,0,MySQL Rows Deleted,MySQL,Percona MySQL Server Template,
+Rows Inserted,MySQL.rows-inserted,300,0,MySQL Rows Inserted,MySQL,Percona MySQL Server Template,
+Rows Read,MySQL.rows-read,300,0,MySQL Rows Read,MySQL,Percona MySQL Server Template,
+Rows Updated,MySQL.rows-updated,300,0,MySQL Rows Updated,MySQL,Percona MySQL Server Template,
+MySQL running slave,MySQL.running-slave,60,3,MySQL running slave,MySQL,Percona MySQL Server Template,
+Select Full Join,MySQL.Select-full-join,300,0,MySQL Select Full Join,MySQL,Percona MySQL Server Template,
+Select Full Range Join,MySQL.Select-full-range-join,300,0,MySQL Select Full Range Join,MySQL,Percona MySQL Server Template,
+Select Range,MySQL.Select-range,300,0,MySQL Select Range,MySQL,Percona MySQL Server Template,
+Select Range Check,MySQL.Select-range-check,300,0,MySQL Select Range Check,MySQL,Percona MySQL Server Template,
+Select Scan,MySQL.Select-scan,300,0,MySQL Select Scan,MySQL,Percona MySQL Server Template,
+Slave Lag,MySQL.slave-lag,300,0,MySQL Slave Lag,MySQL,Percona MySQL Server Template,
+Slave Open Temp Tables,MySQL.Slave-open-temp-tables,300,0,MySQL Slave Open Temp Tables,MySQL,Percona MySQL Server Template,
+Slave Retried Transactions,MySQL.Slave-retried-transactions,300,0,MySQL Slave Retried Transactions,MySQL,Percona MySQL Server Template,
+Slave Running,MySQL.slave-running,300,0,MySQL Slave Running,MySQL,Percona MySQL Server Template,
+Slave Stopped,MySQL.slave-stopped,300,0,MySQL Slave Stopped,MySQL,Percona MySQL Server Template,
+MySQL Slave Slave_IO_Running 运行状态,mysql.slave[io],30s,3,监控Mysql slave IO进程是否异常,MySQL,Percona MySQL Server Template,
+MySQL Slave Slave_SQL_Running 运行状态,mysql.slave[sql],30s,3,监控Mysql slave slave进程是否异常,MySQL,Percona MySQL Server Template,
+Slow Queries,MySQL.Slow-queries,300,0,MySQL Slow Queries,MySQL,Percona MySQL Server Template,
+Sort Merge Passes,MySQL.Sort-merge-passes,300,0,MySQL Sort Merge Passes,MySQL,Percona MySQL Server Template,
+Sort Range,MySQL.Sort-range,300,0,MySQL Sort Range,MySQL,Percona MySQL Server Template,
+Sort Rows,MySQL.Sort-rows,300,0,MySQL Sort Rows,MySQL,Percona MySQL Server Template,
+Sort Scan,MySQL.Sort-scan,300,0,MySQL Sort Scan,MySQL,Percona MySQL Server Template,
+Spin Rounds,MySQL.spin-rounds,300,0,MySQL Spin Rounds,MySQL,Percona MySQL Server Template,
+Spin Waits,MySQL.spin-waits,300,0,MySQL Spin Waits,MySQL,Percona MySQL Server Template,
+State Closing Tables,MySQL.State-closing-tables,300,0,MySQL State Closing Tables,MySQL,Percona MySQL Server Template,
+State Copying To Tmp Table,MySQL.State-copying-to-tmp-table,300,0,MySQL State Copying To Tmp Table,MySQL,Percona MySQL Server Template,
+State End,MySQL.State-end,300,0,MySQL State End,MySQL,Percona MySQL Server Template,
+State Freeing Items,MySQL.State-freeing-items,300,0,MySQL State Freeing Items,MySQL,Percona MySQL Server Template,
+State Init,MySQL.State-init,300,0,MySQL State Init,MySQL,Percona MySQL Server Template,
+State Locked,MySQL.State-locked,300,0,MySQL State Locked,MySQL,Percona MySQL Server Template,
+State Login,MySQL.State-login,300,0,MySQL State Login,MySQL,Percona MySQL Server Template,
+State None,MySQL.State-none,300,0,MySQL State None,MySQL,Percona MySQL Server Template,
+State Other,MySQL.State-other,300,0,MySQL State Other,MySQL,Percona MySQL Server Template,
+State Preparing,MySQL.State-preparing,300,0,MySQL State Preparing,MySQL,Percona MySQL Server Template,
+State Reading From Net,MySQL.State-reading-from-net,300,0,MySQL State Reading From Net,MySQL,Percona MySQL Server Template,
+State Sending Data,MySQL.State-sending-data,300,0,MySQL State Sending Data,MySQL,Percona MySQL Server Template,
+State Sorting Result,MySQL.State-sorting-result,300,0,MySQL State Sorting Result,MySQL,Percona MySQL Server Template,
+State Statistics,MySQL.State-statistics,300,0,MySQL State Statistics,MySQL,Percona MySQL Server Template,
+State Updating,MySQL.State-updating,300,0,MySQL State Updating,MySQL,Percona MySQL Server Template,
+State Writing To Net,MySQL.State-writing-to-net,300,0,MySQL State Writing To Net,MySQL,Percona MySQL Server Template,
+Table Cache,MySQL.table-cache,300,0,MySQL Table Cache,MySQL,Percona MySQL Server Template,
+Table Locks Immediate,MySQL.Table-locks-immediate,300,0,MySQL Table Locks Immediate,MySQL,Percona MySQL Server Template,
+Table Locks Waited,MySQL.Table-locks-waited,300,0,MySQL Table Locks Waited,MySQL,Percona MySQL Server Template,
+Thread Cache Size,MySQL.thread-cache-size,300,0,MySQL Thread Cache Size,MySQL,Percona MySQL Server Template,
+Thread Hash Memory,MySQL.thread-hash-memory,300,0,MySQL Thread Hash Memory,MySQL,Percona MySQL Server Template,B
+Threads Cached,MySQL.Threads-cached,300,0,MySQL Threads Cached,MySQL,Percona MySQL Server Template,
+Threads Connected,MySQL.Threads-connected,300,0,MySQL Threads Connected,MySQL,Percona MySQL Server Template,
+Threads Created,MySQL.Threads-created,300,0,MySQL Threads Created,MySQL,Percona MySQL Server Template,
+Threads Running,MySQL.Threads-running,300,0,MySQL Threads Running,MySQL,Percona MySQL Server Template,
+Total Mem Alloc,MySQL.total-mem-alloc,300,0,MySQL Total Mem Alloc,MySQL,Percona MySQL Server Template,B
+Uncheckpointed Bytes,MySQL.uncheckpointed-bytes,300,0,MySQL Uncheckpointed Bytes,MySQL,Percona MySQL Server Template,B
+Unflushed Log,MySQL.unflushed-log,300,0,MySQL Unflushed Log,MySQL,Percona MySQL Server Template,B
+Total number of mysqld processes,proc.num[mysqld],60,3,Total number of mysqld processes,MySQL,Percona MySQL Server Template,
+Storage_snmptrap,snmptrap.fallback,0,4,,Storage_monitor,Stroage_template,
+http-8080 bytes received per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8080"",bytesReceived]",1m,0,,http-8080,Template App Apache Tomcat JMX,B
+http-8080 bytes sent per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8080"",bytesSent]",1m,0,,http-8080,Template App Apache Tomcat JMX,B
+http-8080 errors per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8080"",errorCount]",1m,0,,http-8080,Template App Apache Tomcat JMX,
+http-8080 request processing time,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8080"",processingTime]",1m,0,,http-8080,Template App Apache Tomcat JMX,s
+http-8080 requests per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8080"",requestCount]",1m,0,,http-8080,Template App Apache Tomcat JMX,
+http-8443 bytes received per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8443"",bytesReceived]",1m,0,,http-8443,Template App Apache Tomcat JMX,B
+http-8443 bytes sent per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8443"", bytesSent]",1m,0,,http-8443,Template App Apache Tomcat JMX,B
+http-8443 errors per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8443"",errorCount]",1m,0,,http-8443,Template App Apache Tomcat JMX,
+http-8443 request processing time,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8443"",processingTime]",1m,0,,http-8443,Template App Apache Tomcat JMX,s
+http-8443 requests per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=http-8443"",requestCount]",1m,0,,http-8443,Template App Apache Tomcat JMX,
+jk-8009 bytes received per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=jk-8009"", bytesReceived]",1m,0,,jk-8009,Template App Apache Tomcat JMX,B
+jk-8009 bytes sent per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=jk-8009"",bytesSent]",1m,0,,jk-8009,Template App Apache Tomcat JMX,B
+jk-8009 errors per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=jk-8009"",errorCount]",1m,0,,jk-8009,Template App Apache Tomcat JMX,
+jk-8009 request processing time,"jmx[""Catalina:type=GlobalRequestProcessor,name=jk-8009"",processingTime]",1m,0,,jk-8009,Template App Apache Tomcat JMX,s
+jk-8009 requests per second,"jmx[""Catalina:type=GlobalRequestProcessor,name=jk-8009"",requestCount]",1m,0,,jk-8009,Template App Apache Tomcat JMX,
+Number of active sessions at this moment,"jmx[""Catalina:type=Manager,path=/,host=localhost"",activeSessions]",1m,3,,Sessions,Template App Apache Tomcat JMX,
+"The maximum number of active Sessions allowed, or -1 for no limit","jmx[""Catalina:type=Manager,path=/,host=localhost"",maxActiveSessions]",1h,0,,Sessions,Template App Apache Tomcat JMX,
+Maximum number of active sessions so far,"jmx[""Catalina:type=Manager,path=/,host=localhost"",maxActive]",1m,3,,Sessions,Template App Apache Tomcat JMX,
+Number of sessions we rejected due to maxActive being reached,"jmx[""Catalina:type=Manager,path=/,host=localhost"",rejectedSessions]",1m,3,,Sessions,Template App Apache Tomcat JMX,
+Number of sessions created by this manager per second,"jmx[""Catalina:type=Manager,path=/,host=localhost"",sessionCounter]",1m,0,,Sessions,Template App Apache Tomcat JMX,
+http-8080 gzip compression,"jmx[""Catalina:type=ProtocolHandler,port=8080"",compression]",1h,1,,http-8080,Template App Apache Tomcat JMX,
+http-8443 gzip compression,"jmx[""Catalina:type=ProtocolHandler,port=8443"",compression]",1h,1,,http-8443,Template App Apache Tomcat JMX,
+Tomcat version,"jmx[""Catalina:type=Server"",serverInfo]",1h,1,,Tomcat,Template App Apache Tomcat JMX,
+http-8080 threads allocated,"jmx[""Catalina:type=ThreadPool,name=http-8080"",currentThreadCount]",1m,3,,http-8080,Template App Apache Tomcat JMX,
+http-8080 threads busy,"jmx[""Catalina:type=ThreadPool,name=http-8080"",currentThreadsBusy]",1m,3,,http-8080,Template App Apache Tomcat JMX,
+http-8080 threads max,"jmx[""Catalina:type=ThreadPool,name=http-8080"",maxThreads]",1h,3,,http-8080,Template App Apache Tomcat JMX,
+http-8443 threads allocated,"jmx[""Catalina:type=ThreadPool,name=http-8443"",currentThreadCount]",1m,3,,http-8443,Template App Apache Tomcat JMX,
+http-8443 threads busy,"jmx[""Catalina:type=ThreadPool,name=http-8443"",currentThreadsBusy]",1m,3,,http-8443,Template App Apache Tomcat JMX,
+http-8443 threads max,"jmx[""Catalina:type=ThreadPool,name=http-8443"",maxThreads]",1h,3,,http-8443,Template App Apache Tomcat JMX,
+jk-8009 threads allocated,"jmx[""Catalina:type=ThreadPool,name=jk-8009"",currentThreadCount]",1m,3,,jk-8009,Template App Apache Tomcat JMX,
+jk-8009 threads busy,"jmx[""Catalina:type=ThreadPool,name=jk-8009"",currentThreadsBusy]",1m,3,,jk-8009,Template App Apache Tomcat JMX,
+jk-8009 threads max,"jmx[""Catalina:type=ThreadPool,name=jk-8009"",maxThreads]",1h,3,,jk-8009,Template App Apache Tomcat JMX,
+FTP service is running,net.tcp.service[ftp],1m,3,,FTP service,Template App FTP Service,
+cl Loaded Class Count,"jmx[""java.lang:type=ClassLoading"",LoadedClassCount]",1m,3,,Classes,Template App Generic Java JMX,
+cl Total Loaded Class Count,"jmx[""java.lang:type=ClassLoading"",TotalLoadedClassCount]",1m,3,,Classes,Template App Generic Java JMX,
+cl Unloaded Class Count,"jmx[""java.lang:type=ClassLoading"",UnloadedClassCount]",1m,3,,Classes,Template App Generic Java JMX,
+comp Name of the current JIT compiler,"jmx[""java.lang:type=Compilation"",Name]",1h,1,,Compilation,Template App Generic Java JMX,
+comp Accumulated time spent in compilation,"jmx[""java.lang:type=Compilation"",TotalCompilationTime]",1m,0,,Compilation,Template App Generic Java JMX,s
+gc ConcurrentMarkSweep number of collections per second,"jmx[""java.lang:type=GarbageCollector,name=ConcurrentMarkSweep"",CollectionCount]",1m,0,,Garbage collector,Template App Generic Java JMX,
+gc ConcurrentMarkSweep accumulated time spent in collection,"jmx[""java.lang:type=GarbageCollector,name=ConcurrentMarkSweep"",CollectionTime]",1m,0,,Garbage collector,Template App Generic Java JMX,s
+gc Copy number of collections per second,"jmx[""java.lang:type=GarbageCollector,name=Copy"",CollectionCount]",1m,0,,Garbage collector,Template App Generic Java JMX,
+gc Copy accumulated time spent in collection,"jmx[""java.lang:type=GarbageCollector,name=Copy"",CollectionTime]",1m,0,,Garbage collector,Template App Generic Java JMX,s
+gc MarkSweepCompact number of collections per second,"jmx[""java.lang:type=GarbageCollector,name=MarkSweepCompact"",CollectionCount]",1m,0,,Garbage collector,Template App Generic Java JMX,
+gc MarkSweepCompact accumulated time spent in collection,"jmx[""java.lang:type=GarbageCollector,name=MarkSweepCompact"",CollectionTime]",1m,0,,Garbage collector,Template App Generic Java JMX,s
+gc ParNew number of collections per second,"jmx[""java.lang:type=GarbageCollector,name=ParNew"",CollectionCount]",1m,0,,Garbage collector,Template App Generic Java JMX,
+gc ParNew accumulated time spent in collection,"jmx[""java.lang:type=GarbageCollector,name=ParNew"",CollectionTime]",1m,0,,Garbage collector,Template App Generic Java JMX,s
+gc PS MarkSweep number of collections per second,"jmx[""java.lang:type=GarbageCollector,name=PS MarkSweep"",CollectionCount]",1m,0,,Garbage collector,Template App Generic Java JMX,
+gc PS MarkSweep accumulated time spent in collection,"jmx[""java.lang:type=GarbageCollector,name=PS MarkSweep"",CollectionTime]",1m,0,,Garbage collector,Template App Generic Java JMX,s
+gc PS Scavenge number of collections per second,"jmx[""java.lang:type=GarbageCollector,name=PS Scavenge"",CollectionCount]",1m,0,,Garbage collector,Template App Generic Java JMX,
+gc PS Scavenge accumulated time spent in collection,"jmx[""java.lang:type=GarbageCollector,name=PS Scavenge"",CollectionTime]",1m,0,,Garbage collector,Template App Generic Java JMX,s
+mem Heap Memory committed,"jmx[""java.lang:type=Memory"",HeapMemoryUsage.committed]",1m,3,,Memory,Template App Generic Java JMX,B
+mem Heap Memory max,"jmx[""java.lang:type=Memory"",HeapMemoryUsage.max]",1h,3,,Memory,Template App Generic Java JMX,B
+mem Heap Memory used,"jmx[""java.lang:type=Memory"",HeapMemoryUsage.used]",1m,3,,Memory,Template App Generic Java JMX,B
+mem Non-Heap Memory committed,"jmx[""java.lang:type=Memory"",NonHeapMemoryUsage.committed]",1m,3,,Memory,Template App Generic Java JMX,B
+mem Non-Heap Memory max,"jmx[""java.lang:type=Memory"",NonHeapMemoryUsage.max]",1h,3,,Memory,Template App Generic Java JMX,B
+mem Non-Heap Memory used,"jmx[""java.lang:type=Memory"",NonHeapMemoryUsage.used]",1m,3,,Memory,Template App Generic Java JMX,B
+mem Object Pending Finalization Count,"jmx[""java.lang:type=Memory"",ObjectPendingFinalizationCount]",1m,3,,Memory,Template App Generic Java JMX,
+mp CMS Old Gen committed,"jmx[""java.lang:type=MemoryPool,name=CMS Old Gen"",Usage.committed]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp CMS Old Gen max,"jmx[""java.lang:type=MemoryPool,name=CMS Old Gen"",Usage.max]",1h,3,,Memory pool,Template App Generic Java JMX,B
+mp CMS Old Gen used,"jmx[""java.lang:type=MemoryPool,name=CMS Old Gen"",Usage.used]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp CMS Perm Gen committed,"jmx[""java.lang:type=MemoryPool,name=CMS Perm Gen"",Usage.committed]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp CMS Perm Gen max,"jmx[""java.lang:type=MemoryPool,name=CMS Perm Gen"",Usage.max]",1h,3,,Memory pool,Template App Generic Java JMX,B
+mp CMS Perm Gen used,"jmx[""java.lang:type=MemoryPool,name=CMS Perm Gen"",Usage.used]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp Code Cache committed,"jmx[""java.lang:type=MemoryPool,name=Code Cache"",Usage.committed]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp Code Cache max,"jmx[""java.lang:type=MemoryPool,name=Code Cache"",Usage.max]",1h,3,,Memory pool,Template App Generic Java JMX,B
+mp Code Cache used,"jmx[""java.lang:type=MemoryPool,name=Code Cache"",Usage.used]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp Perm Gen committed,"jmx[""java.lang:type=MemoryPool,name=Perm Gen"",Usage.committed]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp Perm Gen max,"jmx[""java.lang:type=MemoryPool,name=Perm Gen"",Usage.max]",1h,3,,Memory pool,Template App Generic Java JMX,B
+mp Perm Gen used,"jmx[""java.lang:type=MemoryPool,name=Perm Gen"",Usage.used]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp PS Old Gen committed,"jmx[""java.lang:type=MemoryPool,name=PS Old Gen"",Usage.committed]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp PS Old Gen max,"jmx[""java.lang:type=MemoryPool,name=PS Old Gen"",Usage.max]",1h,3,,Memory pool,Template App Generic Java JMX,B
+mp PS Old Gen used,"jmx[""java.lang:type=MemoryPool,name=PS Old Gen"",Usage.used]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp PS Perm Gen committed,"jmx[""java.lang:type=MemoryPool,name=PS Perm Gen"",Usage.committed]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp PS Perm Gen max,"jmx[""java.lang:type=MemoryPool,name=PS Perm Gen"",Usage.max]",1h,3,,Memory pool,Template App Generic Java JMX,B
+mp PS Perm Gen used,"jmx[""java.lang:type=MemoryPool,name=PS Perm Gen"",Usage.used]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp Tenured Gen committed,"jmx[""java.lang:type=MemoryPool,name=Tenured Gen"",Usage.committed]",1m,3,,Memory pool,Template App Generic Java JMX,B
+mp Tenured Gen max,"jmx[""java.lang:type=MemoryPool,name=Tenured Gen"",Usage.max]",1h,3,,Memory pool,Template App Generic Java JMX,B
+mp Tenured Gen used,"jmx[""java.lang:type=MemoryPool,name=Tenured Gen"",Usage.used]",1m,3,,Memory pool,Template App Generic Java JMX,B
+os Max File Descriptor Count,"jmx[""java.lang:type=OperatingSystem"",MaxFileDescriptorCount]",1h,3,,Operating system,Template App Generic Java JMX,
+os Open File Descriptor Count,"jmx[""java.lang:type=OperatingSystem"",OpenFileDescriptorCount]",1m,3,,Operating system,Template App Generic Java JMX,
+os Process CPU Load,"jmx[""java.lang:type=OperatingSystem"",ProcessCpuLoad]",1m,0,,Operating system,Template App Generic Java JMX,%
+jvm Uptime,"jmx[""java.lang:type=Runtime"",Uptime]",1m,3,,Runtime,Template App Generic Java JMX,uptime
+jvm Name,"jmx[""java.lang:type=Runtime"",VmName]",1h,1,,Runtime,Template App Generic Java JMX,
+jvm Version,"jmx[""java.lang:type=Runtime"",VmVersion]",1h,1,,Runtime,Template App Generic Java JMX,
+th Daemon Thread Count,"jmx[""java.lang:type=Threading"",DaemonThreadCount]",1m,3,,Threads,Template App Generic Java JMX,
+th Peak Thread Count,"jmx[""java.lang:type=Threading"",PeakThreadCount]",1m,3,,Threads,Template App Generic Java JMX,
+th Thread Count,"jmx[""java.lang:type=Threading"",ThreadCount]",1m,3,,Threads,Template App Generic Java JMX,
+th Total Started Thread Count,"jmx[""java.lang:type=Threading"",TotalStartedThreadCount]",1m,3,,Threads,Template App Generic Java JMX,
+HTTP service is running,net.tcp.service[http],1m,3,,HTTP service,Template App HTTP Service,
+HTTPS service is running,net.tcp.service[https],1m,3,,HTTPS service,Template App HTTPS Service,
+IMAP service is running,net.tcp.service[imap],1m,3,,IMAP service,Template App IMAP Service,
+LDAP service is running,net.tcp.service[ldap],1m,3,,LDAP service,Template App LDAP Service,
+NNTP service is running,net.tcp.service[nntp],1m,3,,NNTP service,Template App NNTP Service,
+NTP service is running,net.udp.service[ntp],1m,3,,NTP service,Template App NTP Service,
+Ceilometer Agent Central should run on this node,crm.node.check[p_openstack-ceilometer-agent-central],30,3,,Ceilometer,Template App OpenStack Ceilometer,
+Ceilometer Alarm Evaluator should run on this node,crm.node.check[p_openstack-ceilometer-alarm-evaluator],30,3,,Ceilometer,Template App OpenStack Ceilometer,
+Ceilometer API Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},8777]",30,3,,Ceilometer,Template App OpenStack Ceilometer,
+Ceilometer Agent Central process is running,"proc.num[,ceilometer,,bin/python.*bin/ceilometer-agent-central]",30,3,,Ceilometer,Template App OpenStack Ceilometer,
+Ceilometer Alarm Evaluator process is running,"proc.num[,ceilometer,,bin/python.*bin/ceilometer-alarm-evaluator]",30,3,,Ceilometer,Template App OpenStack Ceilometer,
+Ceilometer Alarm Notifier process is running,"proc.num[,ceilometer,,bin/python.*bin/ceilometer-alarm-notifier]",30,3,,Ceilometer,Template App OpenStack Ceilometer,
+Ceilometer API process is running,"proc.num[,ceilometer,,bin/python.*bin/ceilometer-api]",30,3,,Ceilometer,Template App OpenStack Ceilometer,
+Ceilometer Collector process is running,"proc.num[,ceilometer,,bin/python.*bin/ceilometer-collector]",30,3,,Ceilometer,Template App OpenStack Ceilometer,
+Ceilometer Agent Compute process is running,"proc.num[,ceilometer,,bin/python.*bin/ceilometer-agent-compute]",30,3,,Ceilometer,Template App OpenStack Ceilometer Compute,
+Ceph health is OK,ceph.health,30,3,,Ceph,Template App OpenStack Ceph,
+Ceph monitor_count,monitor_count,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph objects_count,objects_count,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph osd_count_down,osd_count_down,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph osd_count_in,osd_count_in,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph osd_count_out,osd_count_out,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph osd_count_up,osd_count_up,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_bytes_free,pg_bytes_free,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_bytes_total,pg_bytes_total,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_bytes_used,pg_bytes_used,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_count,pg_count,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_data_bytes,pg_data_bytes,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_active,pg_state_count_active,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_backfill,pg_state_count_backfill,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_backfilltoofull,pg_state_count_backfilltoofull,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_clean,pg_state_count_clean,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_creating,pg_state_count_creating,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_degraded,pg_state_count_degraded,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_down,pg_state_count_down,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_incomplete,pg_state_count_incomplete,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_inconsistent,pg_state_count_inconsistent,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_peered,pg_state_count_peered,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_peering,pg_state_count_peering,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_recovering,pg_state_count_recovering,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_remapped,pg_state_count_remapped,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_repair,pg_state_count_repair,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_replay,pg_state_count_replay,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_scrubbing,pg_state_count_scrubbing,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_splitting,pg_state_count_splitting,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_stale,pg_state_count_stale,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_undersized,pg_state_count_undersized,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pg_state_count_waitbackfill,pg_state_count_waitbackfill,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pool_count,pool_count,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pool_total_bytes_free,pool_total_bytes_free,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pool_total_bytes_total,pool_total_bytes_total,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pool_total_bytes_used,pool_total_bytes_used,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pool_total_percent_free,pool_total_percent_free,0,0,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph pool_total_percent_used,pool_total_percent_used,0,0,,Ceph,Template App OpenStack Ceph Cluster,
+Probe ceph metrics,probe.ceph,30,3,,Ceph,Template App OpenStack Ceph Cluster,
+Ceph quorum_count,quorum_count,0,3,,Ceph,Template App OpenStack Ceph Cluster,
+Number of ceph-mds processes,"proc.num[,,,/usr/bin/ceph-mds]",60,3,,Ceph MDS,Template App OpenStack Ceph MDS,
+Number of ceph-gr processes,"proc.num[,,,/usr/bin/ceph-mgr]",60,3,,Ceph MGR,Template App OpenStack Ceph MGR,
+Number of ceph-mon processes,"proc.num[,,,/usr/bin/ceph-mon]",60,3,,Ceph MON,Template App OpenStack Ceph MON,
+Number of running Ceph OSD processes,"proc.num[,,,/usr/bin/ceph-osd]",30,3,,Ceph OSD,Template App OpenStack Ceph OSD,
+Number of ceph-rgw processes,"proc.num[,,,/usr/bin/radosgw]",60,3,,RGW,Template App OpenStack Ceph RGW,
+Cinder API Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},8776]",60,3,,Cinder API,Template App OpenStack Cinder API,
+Cinder API server process is running,"proc.num[,cinder,,bin/python.*bin/cinder-api]",60,3,,Cinder API,Template App OpenStack Cinder API,
+Cinder API test succeeded,cinder.api.status,60,3,,Cinder API check,Template App OpenStack Cinder API check,
+Cinder Scheduler Server process is running,"proc.num[,cinder,,bin/python.*bin/cinder-scheduler]",60,3,,Cinder Scheduler,Template App OpenStack Cinder Scheduler,
+Cinder Volume process is running,"proc.num[,cinder,,bin/python.*bin/cinder-volume]",60,3,,Cinder Volume,Template App OpenStack Cinder Volume,
+Glance API Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},9292]",60,3,,Glance API,Template App OpenStack Glance API,
+Glance API Server process is running,"proc.num[,glance,,bin/python.*bin/glance-api]",60,3,,Glance API,Template App OpenStack Glance API,
+Glance API test succeeded,glance.api.status,60,3,,Glance API check,Template App OpenStack Glance API check,
+Glance Registry Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},9090]",60,3,,Glance Registry,Template App OpenStack Glance Registry,
+Glance Registry Server process is running,"proc.num[,glance,,bin/python.*bin/glance-registry]",60,3,,Glance Registry,Template App OpenStack Glance Registry,
+RabbitMQ EPMD is listening on port,"net.tcp.port[,4369]",60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ Server is listening on port,"net.tcp.port[,41055]",60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ AMQP is listening on port,"net.tcp.port[{$IP_MANAGEMENT},5672]",60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ EPMD process is running,"proc.num[,,,epmd -(daemon|systemd)]",60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ BEAM process is running,"proc.num[,rabbitmq,,bin/beam]",60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ missing nodes,rabbitmq.missing.nodes,60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ missing queues,rabbitmq.missing.queues,60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ queue items,rabbitmq.queue.items,60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ queues without consumers,rabbitmq.queues.without.consumers,60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+RabbitMQ unmirrored queues,rabbitmq.unmirror.queues,60,3,,RabbitMQ,Template App OpenStack HA RabbitMQ,
+Horizon HTTP Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},8080]",60,3,,Horizon,Template App OpenStack Horizon,
+Horizon HTTPS Server is listening on port,"net.tcp.service[https,{$IP_MANAGEMENT},443]",60,3,,Horizon,Template App OpenStack Horizon,
+Horizon HTTP Server process is running,"proc.num[,{$APACHE_USER},,/usr/sbin/{$APACHE_NAME}]",60,3,,Horizon,Template App OpenStack Horizon,
+total icmp,iptstate.icmp,60,3,,Iptables Stats,Template App OpenStack Iptables Stats,Packets
+total other,iptstate.other,60,3,,Iptables Stats,Template App OpenStack Iptables Stats,Packets
+total tcp,iptstate.tcp,60,3,,Iptables Stats,Template App OpenStack Iptables Stats,Packets
+tcp close,iptstate.tcp.close,60,3,,Iptables Stats,Template App OpenStack Iptables Stats,Packets
+tcp established,iptstate.tcp.established,60,3,,Iptables Stats,Template App OpenStack Iptables Stats,Packets
+tcp syn,iptstate.tcp.syn,60,3,,Iptables Stats,Template App OpenStack Iptables Stats,Packets
+tcp timewait,iptstate.tcp.timewait,60,3,,Iptables Stats,Template App OpenStack Iptables Stats,Packets
+total udp,iptstate.udp,60,3,,Iptables Stats,Template App OpenStack Iptables Stats,Packets
+Keystone API Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},5000]",60,3,,Keystone,Template App OpenStack Keystone,
+Keystone Admin API Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},35357]",60,3,,Keystone,Template App OpenStack Keystone,
+Keystone Admin Server process is running,"proc.num[,keystone,,keystone]",60,3,,Keystone,Template App OpenStack Keystone,
+Keystone API test succeeded,keystone.api.status,60,3,,Keystone API check,Template App OpenStack Keystone API check,
+Keystone Service API test succeeded,keystone.service.api.status,60,3,,Keystone API check,Template App OpenStack Keystone API check,
+Libvirtd process is running,"proc.num[libvirtd,root,,]",60,3,,Libvirt,Template App OpenStack Libvirt,
+Current number of bytes used to store items,"memcache[{$IP_MANAGEMENT},bytes]",60,3,,Memcache,Template App OpenStack Memcache,B
+Bytes read by this server per second,"memcache[{$IP_MANAGEMENT},bytes_read]",60,3,,Memcache,Template App OpenStack Memcache,B
+Bytes sent by this server per second,"memcache[{$IP_MANAGEMENT},bytes_written]",60,3,,Memcache,Template App OpenStack Memcache,B
+Number of retrieval requests per second,"memcache[{$IP_MANAGEMENT},cmd_get]",60,3,,Memcache,Template App OpenStack Memcache,
+Number of storage requests per second,"memcache[{$IP_MANAGEMENT},cmd_set]",60,3,,Memcache,Template App OpenStack Memcache,
+Total number of retrieval and storage requests per second,"memcache[{$IP_MANAGEMENT},cmd_total]",60,3,,Memcache,Template App OpenStack Memcache,
+Number of connection structures allocated by the server,"memcache[{$IP_MANAGEMENT},connection_structures]",60,3,,Memcache,Template App OpenStack Memcache,
+Number of open connections,"memcache[{$IP_MANAGEMENT},curr_connections]",60,3,,Memcache,Template App OpenStack Memcache,
+Current number of items stored,"memcache[{$IP_MANAGEMENT},curr_items]",60,3,,Memcache,Template App OpenStack Memcache,
+Items removed to free memory per second,"memcache[{$IP_MANAGEMENT},evictions]",60,3,,Memcache,Template App OpenStack Memcache,
+Keys requested and found present per second,"memcache[{$IP_MANAGEMENT},get_hits]",60,3,,Memcache,Template App OpenStack Memcache,
+Items requested and not found per second,"memcache[{$IP_MANAGEMENT},get_misses]",60,3,,Memcache,Template App OpenStack Memcache,
+Bytes this server is allowed to use for storage,"memcache[{$IP_MANAGEMENT},limit_maxbytes]",3600,3,,Memcache,Template App OpenStack Memcache,B
+Process id of this server process,"memcache[{$IP_MANAGEMENT},pid]",3600,3,,Memcache,Template App OpenStack Memcache,
+System time for this process,"memcache[{$IP_MANAGEMENT},rusage_system]",60,0,,Memcache,Template App OpenStack Memcache,
+User time for this process,"memcache[{$IP_MANAGEMENT},rusage_user]",60,0,,Memcache,Template App OpenStack Memcache,
+Number of worker threads requested,"memcache[{$IP_MANAGEMENT},threads]",60,3,,Memcache,Template App OpenStack Memcache,
+Number of connections opened per second,"memcache[{$IP_MANAGEMENT},total_connections]",60,3,,Memcache,Template App OpenStack Memcache,
+Number of new items stored per second,"memcache[{$IP_MANAGEMENT},total_items]",60,3,,Memcache,Template App OpenStack Memcache,
+Number of seconds since the server started,"memcache[{$IP_MANAGEMENT},uptime]",60,3,,Memcache,Template App OpenStack Memcache,
+Memcache service is running,"net.tcp.service[tcp,{$IP_MANAGEMENT},11211]",60,3,,Memcache,Template App OpenStack Memcache,
+Memcached process is running,"proc.num[memcached,,,]",60,3,,Memcache,Template App OpenStack Memcache,
+MySQL cluster node is connected,db.wsrep.connected.query,60,3,The value is one of 1 (ON) or 0 (OFF),MySQL,Template App OpenStack MySQL,
+MySQL cluster node is ready,db.wsrep.ready.query,60,3,The value is one of 1 (ON) or 0 (OFF),MySQL,Template App OpenStack MySQL,
+MySQL cluster node status,db.wsrep.status.query,60,3,"The value is one of 1 (Primary), 2 (Non-Primary) or 3 (Disconnected)",MySQL,Template App OpenStack MySQL,
+MySQL status,mysql.ping,60,3,"It requires user parameter mysql.ping, which is defined in userparameter_mysql.conf
+
+0 - MySQL server is down
+1 - MySQL server is up",MySQL,Template App OpenStack MySQL,
+MySQL bytes received per second,mysql.status[Bytes_received],60,0,"The number of bytes received from all clients. 
+
+It requires user parameter mysql.status[*], which is defined in 
+userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,Bps
+MySQL bytes sent per second,mysql.status[Bytes_sent],60,0,"The number of bytes sent to all clients.
+
+It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,Bps
+MySQL begin operations per second,mysql.status[Com_begin],60,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,qps
+MySQL commit operations per second,mysql.status[Com_commit],60,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,qps
+MySQL delete operations per second,mysql.status[Com_delete],60,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,qps
+MySQL insert operations per second,mysql.status[Com_insert],60,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,qps
+MySQL rollback operations per second,mysql.status[Com_rollback],60,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,qps
+MySQL select operations per second,mysql.status[Com_select],60,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,qps
+MySQL update operations per second,mysql.status[Com_update],60,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,qps
+MySQL queries per second,mysql.status[Questions],60,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,qps
+MySQL slow queries,mysql.status[Slow_queries],60,3,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,
+MySQL uptime,mysql.status[Uptime],60,3,"It requires user parameter mysql.status, which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,uptime
+MySQL version,mysql.version,3600,1,"It requires user parameter mysql.uptime, which is defined in userparameter_mysql.conf.",MySQL,Template App OpenStack MySQL,
+Neutron API test succeeded,neutron.api.status,60,3,,Neutron API check,Template App OpenStack Neutron API check,
+Neutron DHCP Agent process is running,"proc.num[,neutron,,bin/python.*bin/neutron-dhcp-agent]",60,3,,Neutron DHCP Agent,Template App OpenStack Neutron DHCP Agent,
+Neutron L3 Agent process is running,"proc.num[,neutron,,bin/python.*bin/neutron-l3-agent]",60,3,,Neutron L3 Agent,Template App OpenStack Neutron L3 Agent,
+Neutron Metadata Agent process is running,"proc.num[,neutron,,bin/python.*bin/neutron-metadata-agent]",60,3,,Neutron Metadata Agent,Template App OpenStack Neutron Metadata Agent,
+Neutron OVS Agent process is running,"proc.num[,neutron,,bin/python.*bin/neutron-openvswitch-agent]",60,3,,Neutron OVS Agent,Template App OpenStack Neutron OVS Agent,
+Neutron Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},9696]",60,3,,Neutron Server,Template App OpenStack Neutron Server,
+Neutron Server process is running,"proc.num[,neutron,,bin/python.*bin/neutron-server]",60,3,,Neutron Server,Template App OpenStack Neutron Server,
+Nova API Server process is running,"proc.num[,nova,,bin/python.*bin/nova-api]",60,3,,Nova API,Template App OpenStack Nova API,
+Nova API EC2 Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},8773]",60,3,,Nova API EC2,Template App OpenStack Nova API EC2,
+Nova API Metadata Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},8775]",60,3,,Nova API Metadata,Template App OpenStack Nova API Metadata,
+Nova API OSAPI Compute Server is listening on port,"net.tcp.service[http,{$IP_MANAGEMENT},8774]",60,3,,Nova API OSAPI,Template App OpenStack Nova API OSAPI,
+Nova API test succeeded,nova.api.status,60,3,,Nova API OSAPI check,Template App OpenStack Nova API OSAPI check,
+Nova Cert Server process is running,"proc.num[,nova,,bin/python.*bin/nova-cert]",60,3,,Nova Cert,Template App OpenStack Nova Cert,
+Nova Compute Server process is running,"proc.num[,nova,,bin/python.*bin/nova-compute]",60,3,,Nova Compute,Template App OpenStack Nova Compute,
+Nova Conductor Server process is running,"proc.num[,nova,,bin/python.*bin/nova-conductor]",60,3,,Nova Conductor,Template App OpenStack Nova Conductor,
+Nova ConsoleAuth Server process is running,"proc.num[,nova,,bin/python.*bin/nova-consoleauth]",60,3,,Nova ConsoleAuth,Template App OpenStack Nova ConsoleAuth,
+Nova Network Server process is running,"proc.num[,nova,,bin/python.*bin/nova-network]",60,3,,Nova Network,Template App OpenStack Nova Network,
+Nova novncproxy Server process is running,"proc.num[,nova,,bin/python.*bin/nova-novncproxy]",60,3,,Nova novncproxy,Template App OpenStack Nova novncproxy,
+Nova Scheduler Server process is running,"proc.num[,nova,,bin/python.*bin/nova-scheduler]",60,3,,Nova Scheduler,Template App OpenStack Nova Scheduler,
+Open vSwitch Server process is running,"proc.num[,openvswitch,,ovs-vswitchd]",60,3,,Open vSwitch,Template App OpenStack Open vSwitch,
+Open vSwitch DB Server server process is running,"proc.num[,openvswitch,,ovsdb-server]",60,3,,Open vSwitch,Template App OpenStack Open vSwitch,
+Swift Account Server is listening on port,"net.tcp.service[http,{$IP_STORAGE},6002]",30,3,,Swift Account,Template App OpenStack Swift Account,
+Swift Account Replicator process is running,"proc.num[,swift,,bin/python.*bin/swift-account-replicator]",30,3,,Swift Account,Template App OpenStack Swift Account,
+Swift Account Server process is running,"proc.num[,swift,,bin/python.*bin/swift-account-server]",30,3,,Swift Account,Template App OpenStack Swift Account,
+Swift Container Server is listening on port,"net.tcp.service[http,{$IP_STORAGE},6001]",60,3,,Swift Container,Template App OpenStack Swift Container,
+Swift Container Replicator process is running,"proc.num[,swift,,bin/python.*bin/swift-container-replicator]",30,3,,Swift Container,Template App OpenStack Swift Container,
+Swift Container Server process is running,"proc.num[,swift,,bin/python.*bin/swift-container-server]",60,3,,Swift Container,Template App OpenStack Swift Container,
+Swift Object Server is listening on port,"net.tcp.service[http,{$IP_STORAGE},6000]",30,3,,Swift Object,Template App OpenStack Swift Object,
+Swift Object Replicator process is running,"proc.num[,swift,,bin/python.*bin/swift-object-replicator]",30,3,,Swift Object,Template App OpenStack Swift Object,
+Swift Object Server process is running,"proc.num[,swift,,bin/python.*bin/swift-object-server]",30,3,,Swift Object,Template App OpenStack Swift Object,
+Swift Proxy Server is listening on port,"net.tcp.service[http,{$IP_STORAGE},8080]",60,3,,Swift Proxy,Template App OpenStack Swift Proxy,
+Swift Proxy Server process is running,"proc.num[,swift,,bin/python.*bin/swift-proxy-server]",60,3,,Swift Proxy,Template App OpenStack Swift Proxy,
+POP service is running,net.tcp.service[pop],1m,3,,POP service,Template App POP Service,
+SMTP service is running,net.tcp.service[smtp],1m,3,,SMTP service,Template App SMTP Service,
+SSH service is running,net.tcp.service[ssh],1m,3,,SSH service,Template App SSH Service,
+Telnet service is running,net.tcp.service[telnet],1m,3,,Telnet service,Template App Telnet Service,
+Host name of zabbix_agentd running,agent.hostname,1h,1,,Zabbix agent,Template App Zabbix Agent,
+Agent ping,agent.ping,1m,3,The agent always returns 1 for this item. It could be used in combination with nodata() for availability check.,Zabbix agent,Template App Zabbix Agent,
+Version of zabbix_agent(d) running,agent.version,1h,1,,Zabbix agent,Template App Zabbix Agent,
+"Utilization of configuration syncer internal processes, in %","zabbix[process,configuration syncer,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of data sender internal processes, in %","zabbix[process,data sender,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of discoverer data collector processes, in %","zabbix[process,discoverer,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of heartbeat sender internal processes, in %","zabbix[process,heartbeat sender,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of history syncer internal processes, in %","zabbix[process,history syncer,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of housekeeper internal processes, in %","zabbix[process,housekeeper,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of http poller data collector processes, in %","zabbix[process,http poller,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of icmp pinger data collector processes, in %","zabbix[process,icmp pinger,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of ipmi manager internal processes, in %","zabbix[process,ipmi manager,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of ipmi poller data collector processes, in %","zabbix[process,ipmi poller,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of java poller data collector processes, in %","zabbix[process,java poller,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of poller data collector processes, in %","zabbix[process,poller,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of self-monitoring internal processes, in %","zabbix[process,self-monitoring,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of snmp trapper data collector processes, in %","zabbix[process,snmp trapper,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of task manager internal processes, in %","zabbix[process,task manager,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of trapper data collector processes, in %","zabbix[process,trapper,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of unreachable poller data collector processes, in %","zabbix[process,unreachable poller,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Utilization of vmware data collector processes, in %","zabbix[process,vmware collector,avg,busy]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+Zabbix queue over 10 minutes,"zabbix[queue,10m]",10m,3,,Zabbix proxy,Template App Zabbix Proxy,
+Zabbix queue,zabbix[queue],1m,3,,Zabbix proxy,Template App Zabbix Proxy,
+"Zabbix configuration cache, % used","zabbix[rcache,buffer,pused]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Zabbix vmware cache, % used","zabbix[vmware,buffer,pused]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+"Zabbix history write cache, % used","zabbix[wcache,history,pused]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+"Zabbix history index cache, % used","zabbix[wcache,index,pused]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,%
+Number of processed numeric (float) values per second,"zabbix[wcache,values,float]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+Number of processed log values per second,"zabbix[wcache,values,log]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+Number of processed not supported values per second,"zabbix[wcache,values,not supported]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+Number of processed character values per second,"zabbix[wcache,values,str]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+Number of processed text values per second,"zabbix[wcache,values,text]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+Number of processed numeric (unsigned) values per second,"zabbix[wcache,values,uint]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+Number of processed values per second,"zabbix[wcache,values]",1m,0,,Zabbix proxy,Template App Zabbix Proxy,
+Zabbix preprocessing queue,zabbix[preprocessing_queue],1m,3,Count of values enqueued in the preprocessing queue.,Zabbix server,Template App Zabbix Server,
+"Utilization of alerter internal processes, in %","zabbix[process,alerter,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of alert manager internal processes, in %","zabbix[process,alert manager,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of configuration syncer internal processes, in %","zabbix[process,configuration syncer,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of discoverer data collector processes, in %","zabbix[process,discoverer,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of escalator internal processes, in %","zabbix[process,escalator,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of history syncer internal processes, in %","zabbix[process,history syncer,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of housekeeper internal processes, in %","zabbix[process,housekeeper,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of http poller data collector processes, in %","zabbix[process,http poller,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of icmp pinger data collector processes, in %","zabbix[process,icmp pinger,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of ipmi manager internal processes, in %","zabbix[process,ipmi manager,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of ipmi poller data collector processes, in %","zabbix[process,ipmi poller,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of java poller data collector processes, in %","zabbix[process,java poller,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of poller data collector processes, in %","zabbix[process,poller,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of preprocessing manager internal processes, in %","zabbix[process,preprocessing manager,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of preprocessing worker internal processes, in %","zabbix[process,preprocessing worker,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of proxy poller data collector processes, in %","zabbix[process,proxy poller,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of self-monitoring internal processes, in %","zabbix[process,self-monitoring,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of snmp trapper data collector processes, in %","zabbix[process,snmp trapper,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of task manager internal processes, in %","zabbix[process,task manager,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of timer internal processes, in %","zabbix[process,timer,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of trapper data collector processes, in %","zabbix[process,trapper,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of unreachable poller data collector processes, in %","zabbix[process,unreachable poller,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Utilization of vmware data collector processes, in %","zabbix[process,vmware collector,avg,busy]",1m,0,,Zabbix server,Template App Zabbix Server,%
+Zabbix queue over 10 minutes,"zabbix[queue,10m]",10m,3,,Zabbix server,Template App Zabbix Server,
+Zabbix queue,zabbix[queue],10m,3,,Zabbix server,Template App Zabbix Server,
+"Zabbix configuration cache, % used","zabbix[rcache,buffer,pused]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Zabbix value cache, % used","zabbix[vcache,buffer,pused]",1m,0,,Zabbix server,Template App Zabbix Server,%
+Zabbix value cache hits,"zabbix[vcache,cache,hits]",1m,0,,Zabbix server,Template App Zabbix Server,vps
+Zabbix value cache misses,"zabbix[vcache,cache,misses]",1m,0,,Zabbix server,Template App Zabbix Server,vps
+Zabbix value cache operating mode,"zabbix[vcache,cache,mode]",1m,3,,Zabbix server,Template App Zabbix Server,
+"Zabbix vmware cache, % used","zabbix[vmware,buffer,pused]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Zabbix history write cache, % used","zabbix[wcache,history,pused]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Zabbix history index cache, % used","zabbix[wcache,index,pused]",1m,0,,Zabbix server,Template App Zabbix Server,%
+"Zabbix trend write cache, % used","zabbix[wcache,trend,pused]",1m,0,,Zabbix server,Template App Zabbix Server,%
+Number of processed numeric (float) values per second,"zabbix[wcache,values,float]",1m,0,,Zabbix server,Template App Zabbix Server,
+Number of processed log values per second,"zabbix[wcache,values,log]",1m,0,,Zabbix server,Template App Zabbix Server,
+Number of processed not supported values per second,"zabbix[wcache,values,not supported]",1m,0,,Zabbix server,Template App Zabbix Server,
+Number of processed character values per second,"zabbix[wcache,values,str]",1m,0,,Zabbix server,Template App Zabbix Server,
+Number of processed text values per second,"zabbix[wcache,values,text]",1m,0,,Zabbix server,Template App Zabbix Server,
+Number of processed numeric (unsigned) values per second,"zabbix[wcache,values,uint]",1m,0,,Zabbix server,Template App Zabbix Server,
+Number of processed values per second,"zabbix[wcache,values]",1m,0,,Zabbix server,Template App Zabbix Server,
+MySQL status,mysql.ping,1m,3,"It requires user parameter mysql.ping, which is defined in userparameter_mysql.conf.
+
+0 - MySQL server is down
+1 - MySQL server is up",MySQL,Template DB MySQL,
+MySQL bytes received per second,mysql.status[Bytes_received],1m,0,"The number of bytes received from all clients. 
+
+It requires user parameter mysql.status[*], which is defined in 
+userparameter_mysql.conf.",MySQL,Template DB MySQL,Bps
+MySQL bytes sent per second,mysql.status[Bytes_sent],1m,0,"The number of bytes sent to all clients.
+
+It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,Bps
+MySQL begin operations per second,mysql.status[Com_begin],1m,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,qps
+MySQL commit operations per second,mysql.status[Com_commit],1m,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,qps
+MySQL delete operations per second,mysql.status[Com_delete],1m,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,qps
+MySQL insert operations per second,mysql.status[Com_insert],1m,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,qps
+MySQL rollback operations per second,mysql.status[Com_rollback],1m,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,qps
+MySQL select operations per second,mysql.status[Com_select],1m,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,qps
+MySQL update operations per second,mysql.status[Com_update],1m,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,qps
+MySQL queries per second,mysql.status[Questions],1m,0,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,qps
+MySQL slow queries,mysql.status[Slow_queries],1m,3,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,
+MySQL uptime,mysql.status[Uptime],1m,3,"It requires user parameter mysql.status[*], which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,uptime
+MySQL version,mysql.version,1h,1,"It requires user parameter mysql.version, which is defined in userparameter_mysql.conf.",MySQL,Template DB MySQL,
+CPU utilization,system.cpu.util[snAgGblCpuUtil1MinAvg.0],3m,0,"MIB: FOUNDRY-SN-AGENT-MIB
+The statistics collection of 1 minute CPU utilization.",CPU,Template Module Brocade_Foundry Performance SNMPv2,%
+Memory utilization,vm.memory.pused[snAgGblDynMemUtil.0],3m,0,"MIB: FOUNDRY-SN-AGENT-MIB
+The system dynamic memory utilization, in unit of percentage.
+Deprecated: Refer to snAgSystemDRAMUtil.
+For NI platforms, refer to snAgentBrdMemoryUtil100thPercent",Memory,Template Module Brocade_Foundry Performance SNMPv2,%
+Hardware model name,system.hw.model,1h,1,MIB: ENTITY-MIB,Inventory,Template Module Cisco Inventory SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,MIB: ENTITY-MIB,Inventory,Template Module Cisco Inventory SNMPv2,
+Operating system,system.sw.os,1h,1,MIB: SNMPv2-MIB,Inventory,Template Module Cisco Inventory SNMPv2,
+CPU utilization,system.cpu.util[avgBusy5],3m,0,"MIB: OLD-CISCO-CPU-MIB
+5 minute exponentially-decayed moving average of the CPU busy percentage.
+Reference: http://www.cisco.com/c/en/us/support/docs/ip/simple-network-management-protocol-snmp/15215-collect-cpu-util-snmp.html",CPU,Template Module Cisco OLD-CISCO-CPU-MIB SNMPv2,%
+SNMP traps (fallback),snmptrap.fallback,5m,2,Item is used to collect all SNMP traps unmatched by other snmptrap items,General,Template Module Generic SNMPv1,
+Device contact details,system.contact,1h,1,"MIB: SNMPv2-MIB
+The textual identification of the contact person for this managed node, together with information on how to contact this person.  If no contact information is known, the value is the zero-length string.",General,Template Module Generic SNMPv1,
+Device description,system.descr,1h,1,"MIB: SNMPv2-MIB
+A textual description of the entity.  This value should
+include the full name and version identification of the system's hardware type, software operating-system, and
+networking software.",General,Template Module Generic SNMPv1,
+Device location,system.location,1h,1,"MIB: SNMPv2-MIB
+The physical location of this node (e.g., `telephone closet, 3rd floor').  If the location is unknown, the value is the zero-length string.",General,Template Module Generic SNMPv1,
+Device name,system.name,1h,1,"MIB: SNMPv2-MIB
+An administratively-assigned name for this managed node.By convention, this is the node's fully-qualified domain name.  If the name is unknown, the value is the zero-length string.",General,Template Module Generic SNMPv1,
+System object ID,system.objectid,1h,1,"MIB: SNMPv2-MIB
+The vendor's authoritative identification of the network management subsystem contained in the entity.  This value is allocated within the SMI enterprises subtree (1.3.6.1.4.1) and provides an easy and unambiguous means for determining`what kind of box' is being managed.  For example, if vendor`Flintstones, Inc.' was assigned the subtree1.3.6.1.4.1.4242, it could assign the identifier 1.3.6.1.4.1.4242.1.1 to its `Fred Router'.",General,Template Module Generic SNMPv1,
+Device uptime,system.uptime[sysUpTime],30s,3,"MIB: SNMPv2-MIB
+The time (in hundredths of a second) since the network management portion of the system was last re-initialized.",Status,Template Module Generic SNMPv1,uptime
+SNMP availability,"zabbix[host,snmp,available]",1m,3,,Status,Template Module Generic SNMPv1,
+SNMP traps (fallback),snmptrap.fallback,5m,2,Item is used to collect all SNMP traps unmatched by other snmptrap items,General,Template Module Generic SNMPv2,
+Device contact details,system.contact,1h,1,"MIB: SNMPv2-MIB
+The textual identification of the contact person for this managed node, together with information on how to contact this person.  If no contact information is known, the value is the zero-length string.",General,Template Module Generic SNMPv2,
+Device description,system.descr,1h,1,"MIB: SNMPv2-MIB
+A textual description of the entity.  This value should
+include the full name and version identification of the system's hardware type, software operating-system, and
+networking software.",General,Template Module Generic SNMPv2,
+Device location,system.location,1h,1,"MIB: SNMPv2-MIB
+The physical location of this node (e.g., `telephone closet, 3rd floor').  If the location is unknown, the value is the zero-length string.",General,Template Module Generic SNMPv2,
+Device name,system.name,1h,1,"MIB: SNMPv2-MIB
+An administratively-assigned name for this managed node.By convention, this is the node's fully-qualified domain name.  If the name is unknown, the value is the zero-length string.",General,Template Module Generic SNMPv2,
+System object ID,system.objectid,1h,1,"MIB: SNMPv2-MIB
+The vendor's authoritative identification of the network management subsystem contained in the entity.  This value is allocated within the SMI enterprises subtree (1.3.6.1.4.1) and provides an easy and unambiguous means for determining`what kind of box' is being managed.  For example, if vendor`Flintstones, Inc.' was assigned the subtree1.3.6.1.4.1.4242, it could assign the identifier 1.3.6.1.4.1.4242.1.1 to its `Fred Router'.",General,Template Module Generic SNMPv2,
+Device uptime,system.uptime[sysUpTime],30s,3,"MIB: SNMPv2-MIB
+The time (in hundredths of a second) since the network management portion of the system was last re-initialized.",Status,Template Module Generic SNMPv2,uptime
+SNMP availability,"zabbix[host,snmp,available]",1m,3,,Status,Template Module Generic SNMPv2,
+ICMP ping,icmpping,1m,3,,Status,Template Module ICMP Ping,
+ICMP loss,icmppingloss,1m,0,,Status,Template Module ICMP Ping,%
+ICMP response time,icmppingsec,1m,0,,Status,Template Module ICMP Ping,s
+CPU utilization,system.cpu.util[sgiCpuUsage.0],3m,0,"MIB: TIMETRA-SYSTEM-MIB
+The value of sgiCpuUsage indicates the current CPU utilization for the system.",CPU,Template Net Alcatel Timetra TiMOS SNMPv2,%
+Hardware model name,system.hw.model,1h,1,MIB: SNMPv2-MIB,Inventory,Template Net Alcatel Timetra TiMOS SNMPv2,
+Operating system,system.sw.os,1h,1,MIB: SNMPv2-MIB,Inventory,Template Net Alcatel Timetra TiMOS SNMPv2,
+Available memory,vm.memory.free[sgiKbMemoryAvailable.0],3m,3,"MIB: TIMETRA-SYSTEM-MIB
+The value of sgiKbMemoryAvailable indicates the amount of freememory, in kilobytes, in the overall system that is not allocated to memory pools, but is available in case a memory pool needs to grow.",Memory,Template Net Alcatel Timetra TiMOS SNMPv2,B
+Memory utilization,vm.memory.pused[vm.memory.pused.0],3m,0,Memory utilization in %,Memory,Template Net Alcatel Timetra TiMOS SNMPv2,%
+Used memory,vm.memory.used[sgiKbMemoryUsed.0],3m,3,"MIB: TIMETRA-SYSTEM-MIB
+The value of sgiKbMemoryUsed indicates the total pre-allocated pool memory, in kilobytes, currently in use on the system.",Memory,Template Net Alcatel Timetra TiMOS SNMPv2,B
+CPU utilization,system.cpu.util[swCpuUsage.0],3m,0,"MIB: SW-MIB
+System's CPU usage.",CPU,Template Net Brocade FC SNMPv2,%
+Firmware version,system.hw.firmware,1h,1,MIB: SW-MIB,Inventory,Template Net Brocade FC SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,MIB: SW-MIB,Inventory,Template Net Brocade FC SNMPv2,
+Overall system health status,system.status[swOperStatus.0],30s,3,"MIB: SW-MIB
+The current operational status of the switch.The states are as follow:
+online(1) means the switch is accessible by an external Fibre Channel port
+offline(2) means the switch is not accessible
+testing(3) means the switch is in a built-in test mode and is not accessible by an external Fibre Channel port
+faulty(4) means the switch is not operational.",Status,Template Net Brocade FC SNMPv2,
+Memory utilization,vm.memory.pused[swMemUsage.0],3m,0,"MIB: SW-MIB
+Memory utilization in %",Memory,Template Net Brocade FC SNMPv2,%
+Firmware version,system.hw.firmware,1h,1,"MIB: FOUNDRY-SN-AGENT-MIB
+The version of the running software in the form'major.minor.maintenance[letters]'",Inventory,Template Net Brocade_Foundry Nonstackable SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,MIB: FOUNDRY-SN-AGENT-MIB,Inventory,Template Net Brocade_Foundry Nonstackable SNMPv2,
+Firmware version,system.hw.firmware,1h,1,"MIB: FOUNDRY-SN-AGENT-MIB
+The version of the running software in the form 'major.minor.maintenance[letters]'",Inventory,Template Net Brocade_Foundry Stackable SNMPv2,
+CPU utilization,system.cpu.util[myCPUUtilization5Min.0],3m,0,"MIB: MY-PROCESS-MIB
+CPU utilization in %",CPU,Template Net D-Link DES 7200 SNMPv2,%
+Firmware version,system.hw.firmware,1h,1,MIB: ENTITY-MIB,Inventory,Template Net D-Link DES 7200 SNMPv2,
+Hardware model name,system.hw.model,1h,1,"MIB: SNMPv2-MIB
+A textual description of the entity. This value should
+include the full name and version identification of the system's hardware type, software operating-system, and
+networking software.",Inventory,Template Net D-Link DES 7200 SNMPv2,
+Hardware version(revision),system.hw.version,1h,1,MIB: ENTITY-MIB,Inventory,Template Net D-Link DES 7200 SNMPv2,
+Operating system,system.sw.os,1h,1,MIB: MY-SYSTEM-MIB,Inventory,Template Net D-Link DES 7200 SNMPv2,
+CPU utilization,system.cpu.util[agentCPUutilizationIn1min.0],3m,0,"MIB: DLINK-AGENT-MIB
+The unit of time is 1 minute. The value will be between 0% (idle) and 100%(very busy).",CPU,Template Net D-Link DES_DGS Switch SNMPv2,%
+Firmware version,system.hw.firmware,1h,1,MIB: ENTITY-MIB,Inventory,Template Net D-Link DES_DGS Switch SNMPv2,
+Hardware model name,system.hw.model,1h,1,"MIB: SNMPv2-MIB
+A textual description of the entity.  This value should
+include the full name and version identification of the system's hardware type, software operating-system, and
+networking software.",Inventory,Template Net D-Link DES_DGS Switch SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: DLINK-AGENT-MIB
+A text string containing the serial number of this device.",Inventory,Template Net D-Link DES_DGS Switch SNMPv2,
+Hardware version(revision),system.hw.version,1h,1,MIB: ENTITY-MIB,Inventory,Template Net D-Link DES_DGS Switch SNMPv2,
+Device: Temperature status,sensor.temp.status[extremeOverTemperatureAlarm.0],3m,3,"MIB: EXTREME-SYSTEM-MIB
+Temperature status of testpoint: Device",Temperature,Template Net Extreme EXOS SNMPv2,
+Device: Temperature,sensor.temp.value[extremeCurrentTemperature.0],3m,0,"MIB: EXTREME-SYSTEM-MIB
+Temperature readings of testpoint: Device
+Reference: https://gtacknowledge.extremenetworks.com/articles/Q_A/Does-EXOS-support-temperature-polling-via-SNMP-on-all-nodes-in-a-stack",Temperature,Template Net Extreme EXOS SNMPv2,°C
+CPU utilization,system.cpu.util[extremeCpuMonitorTotalUtilization.0],3m,0,"MIB: EXTREME-SOFTWARE-MONITOR-MIB
+Total CPU utlization (percentage) as of last sampling.",CPU,Template Net Extreme EXOS SNMPv2,%
+Firmware version,system.hw.firmware,1h,1,MIB: ENTITY-MIB,Inventory,Template Net Extreme EXOS SNMPv2,
+Hardware model name,system.hw.model,1h,1,MIB: ENTITY-MIB,Inventory,Template Net Extreme EXOS SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,MIB: ENTITY-MIB,Inventory,Template Net Extreme EXOS SNMPv2,
+Hardware version(revision),system.hw.version,1h,1,MIB: ENTITY-MIB,Inventory,Template Net Extreme EXOS SNMPv2,
+Operating system,system.sw.os,1h,1,"MIB: EXTREME-SYSTEM-MIB
+The software revision of the primary image stored in this device.
+This string will have a zero length if the revision is unknown, invalid or not present.
+This will also be reported in RMON2 probeSoftwareRev if this is the software image currently running in the device.",Inventory,Template Net Extreme EXOS SNMPv2,
+CPU utilization,system.cpu.util[hpSwitchCpuStat.0],3m,0,"MIB: STATISTICS-MIB
+The CPU utilization in percent(%).
+Reference: http://h20564.www2.hpe.com/hpsc/doc/public/display?docId=emr_na-c02597344&sp4ts.oid=51079",CPU,Template Net HP Enterprise Switch SNMPv2,%
+Firmware version,system.hw.firmware,1h,1,"MIB: NETSWITCH-MIB
+Contains the operating code version number (also known as software or firmware).
+For example, a software version such as A.08.01 is described as follows:
+A    the function set available in your router
+08   the common release number
+01   updates to the current common release",Inventory,Template Net HP Enterprise Switch SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,MIB: SEMI-MIB,Inventory,Template Net HP Enterprise Switch SNMPv2,
+Firmware version,system.hw.firmware,1h,1,MIB: ICS-CHASSIS-MIB,Inventory,Template Net Intel_Qlogic Infiniband SNMPv2,
+Hardware model name,system.hw.model,1h,1,MIB: ICS-CHASSIS-MIB,Inventory,Template Net Intel_Qlogic Infiniband SNMPv2,
+Hardware model name,system.hw.model,1h,1,"MIB: JUNIPER-MIB
+The name, model, or detailed description of the box,indicating which product the box is about, for example 'M40'.",Inventory,Template Net Juniper SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: JUNIPER-MIB
+The serial number of this subject, blank if unknown or unavailable.",Inventory,Template Net Juniper SNMPv2,
+Overall system health status,system.status[jnxRedAlarmState.0],30s,3,"MIB: JUNIPER-ALARM-MIB
+The red alarm indication on the craft interface panel.
+The red alarm is on when there is some system
+failure or power supply failure or the system
+is experiencing a hardware malfunction or some
+threshold is being exceeded.
+
+This red alarm state could be turned off by the
+ACO/LT (Alarm Cut Off / Lamp Test) button on the
+front panel module.",Status,Template Net Juniper SNMPv2,
+Operating system,system.sw.os,1h,1,MIB: SNMPv2-MIB,Inventory,Template Net Juniper SNMPv2,
+Device: Temperature,sensor.temp.value[mtxrHlTemperature],3m,0,"MIB: MIKROTIK-MIB
+(mtxrHlTemperature) Device temperature in Celsius (degrees C). Might be missing in entry models (RB750, RB450G..)
+Reference: http://wiki.mikrotik.com/wiki/Manual:SNMP",Temperature,Template Net Mikrotik SNMPv2,°C
+Firmware version,system.hw.firmware,1h,1,"MIB: MIKROTIK-MIB
+Current firmware version",Inventory,Template Net Mikrotik SNMPv2,
+Hardware model name,system.hw.model,1h,1,,Inventory,Template Net Mikrotik SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: MIKROTIK-MIB
+RouterBOARD serial number",Inventory,Template Net Mikrotik SNMPv2,
+Operating system,system.sw.os,1h,1,"MIB: MIKROTIK-MIB
+Software version",Inventory,Template Net Mikrotik SNMPv2,
+Memory utilization,vm.memory.pused[memoryUsedPercentage.Memory],3m,0,Memory utilization in %,Memory,Template Net Mikrotik SNMPv2,%
+Total memory,vm.memory.total[hrStorageSize.Memory],3m,3,"MIB: HOST-RESOURCES-MIB
+The size of the storage represented by this entry, in
+units of hrStorageAllocationUnits. This object is
+writable to allow remote configuration of the size of
+the storage area in those cases where such an
+operation makes sense and is possible on the
+underlying system. For example, the amount of main
+memory allocated to a buffer pool might be modified or
+the amount of disk space allocated to virtual memory
+might be modified.",Memory,Template Net Mikrotik SNMPv2,B
+Used memory,vm.memory.used[hrStorageUsed.Memory],3m,3,"MIB: HOST-RESOURCES-MIB
+The amount of the storage represented by this entry that is allocated, in units of hrStorageAllocationUnits.",Memory,Template Net Mikrotik SNMPv2,B
+CPU utilization,system.cpu.util[agentSwitchCpuProcessTotalUtilization.0],3m,0,"MIB: FASTPATH-SWITCHING-MIB
+CPU utilization in %",CPU,Template Net Netgear Fastpath SNMPv2,%
+Hardware model name,system.hw.model,1h,1,MIB: FASTPATH-SWITCHING-MIB,Inventory,Template Net Netgear Fastpath SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: FASTPATH-SWITCHING-MIB
+Serial number of the switch",Inventory,Template Net Netgear Fastpath SNMPv2,
+Operating system,system.sw.os,1h,1,"MIB: FASTPATH-SWITCHING-MIB
+Operating System running on this unit",Inventory,Template Net Netgear Fastpath SNMPv2,
+Available memory,vm.memory.free[agentSwitchCpuProcessMemFree.0],3m,3,"MIB: FASTPATH-SWITCHING-MIB
+The total memory freed for utilization.",Memory,Template Net Netgear Fastpath SNMPv2,B
+Memory utilization,vm.memory.pused[memoryUsedPercentage.0],3m,0,Memory utilization in %,Memory,Template Net Netgear Fastpath SNMPv2,%
+Total memory,vm.memory.total[agentSwitchCpuProcessMemAvailable.0],3m,3,"MIB: FASTPATH-SWITCHING-MIB
+The total Memory allocated for the tasks",Memory,Template Net Netgear Fastpath SNMPv2,B
+CPU utilization,system.cpu.util[switchCpuUsage.0],3m,0,"MIB: QTECH-MIB
+CPU utilization in %",CPU,Template Net QTech QSW SNMPv2,%
+Firmware version,system.hw.firmware,1h,1,MIB: ENTITY-MIB,Inventory,Template Net QTech QSW SNMPv2,
+Hardware model name,system.hw.model,1h,1,MIB: ENTITY-MIB,Inventory,Template Net QTech QSW SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,MIB: ENTITY-MIB,Inventory,Template Net QTech QSW SNMPv2,
+Hardware version(revision),system.hw.version,1h,1,MIB: ENTITY-MIB,Inventory,Template Net QTech QSW SNMPv2,
+Operating system,system.sw.os,1h,1,MIB: QTECH-MIB,Inventory,Template Net QTech QSW SNMPv2,
+Memory utilization,vm.memory.pused[vm.memory.pused.0],3m,0,Memory utilization in %,Memory,Template Net QTech QSW SNMPv2,%
+Total memory,vm.memory.total[switchMemorySize.0],3m,3,"MIB: QTECH-MIB
+Total memory in Bytes",Memory,Template Net QTech QSW SNMPv2,B
+Used memory,vm.memory.used[switchMemoryBusy.0],3m,3,"MIB: QTECH-MIB
+Used memory in Bytes",Memory,Template Net QTech QSW SNMPv2,B
+Firmware version,system.hw.firmware,1h,1,"MIB: TPLINK-SYSINFO-MIB
+The software version of the product.",Inventory,Template Net TP-LINK SNMPv2,
+Hardware model name,system.hw.model,1h,1,"MIB: TPLINK-SYSINFO-MIB
+The hardware version of the product.",Inventory,Template Net TP-LINK SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: TPLINK-SYSINFO-MIB
+The Serial number of the product.",Inventory,Template Net TP-LINK SNMPv2,
+Hardware version(revision),system.hw.version,1h,1,"MIB: TPLINK-SYSINFO-MIB
+The hardware version of the product.",Inventory,Template Net TP-LINK SNMPv2,
+CPU utilization,system.cpu.util[loadValue.2],3m,0,"MIB: FROGFOOT-RESOURCES-MIB
+5 minute load average of processor load.",CPU,Template Net Ubiquiti AirOS SNMPv1,%
+Firmware version,system.hw.firmware,1h,1,"MIB: IEEE802dot11-MIB
+Printable string used to identify the manufacturer's product version of the resource. Maximum string length is 128 octets.",Inventory,Template Net Ubiquiti AirOS SNMPv1,
+Hardware model name,system.hw.model,1h,1,"MIB: IEEE802dot11-MIB
+A printable string used to identify the manufacturer's product name of the resource. Maximum string length is 128 octets.",Inventory,Template Net Ubiquiti AirOS SNMPv1,
+Available memory,vm.memory.free[memFree],3m,3,MIB: FROGFOOT-RESOURCES-MIB,Memory,Template Net Ubiquiti AirOS SNMPv1,B
+Memory utilization,vm.memory.pused[memoryUsedPercentage],3m,0,Memory utilization in %,Memory,Template Net Ubiquiti AirOS SNMPv1,%
+Total memory,vm.memory.total[memTotal],3m,3,"MIB: FROGFOOT-RESOURCES-MIB
+Total memory in Bytes",Memory,Template Net Ubiquiti AirOS SNMPv1,B
+Total number of CPUs in cluster,db.cpu.total.query,60,3,,Capacity data,Template OpenStack Cluster,
+Number of used CPUs in cluster,db.cpu.used.query,60,3,,Capacity data,Template OpenStack Cluster,
+Number of instances,db.instance.count.query,60,3,,Capacity data,Template OpenStack Cluster,
+Number of instances in error state,db.instance.error.query,60,3,,Capacity data,Template OpenStack Cluster,
+Total amount of RAM in cluster,db.ram.total.query,60,3,,Capacity data,Template OpenStack Cluster,
+Used RAM in cluster,db.ram.used.query,60,3,,Capacity data,Template OpenStack Cluster,
+Number of Cinder services in offline state,db.services.offline.cinder.query,60,3,,Capacity data,Template OpenStack Cluster,
+Number of Neutron services in offline state,db.services.offline.neutron.query,60,3,,Capacity data,Template OpenStack Cluster,
+Number of Nova services in offline state,db.services.offline.nova.query,60,3,,Capacity data,Template OpenStack Cluster,
+Keystone token count,db.token.count.query,60,3,,Capacity data,Template OpenStack Cluster,
+Number of volumes,db.volume.count.query,60s,3,,Capacity data,Template OpenStack Cluster,
+Number of volumes in error state,db.volume.error.query,60s,3,,Capacity data,Template OpenStack Cluster,
+Gigabytes of volumes,db.volume.gigabytes.query,60s,3,,Capacity data,Template OpenStack Cluster,G
+Aggregated Controllers 1 minutes load,"grpavg[""Controllers"", ""system.cpu.load[percpu,avg1]"", last, 0]",60,0,,Capacity data,Template OpenStack Cluster,
+Aggregated Controllers 5 minutes load,"grpavg[""Controllers"", ""system.cpu.load[percpu,avg5]"", last, 0]",60,0,,Capacity data,Template OpenStack Cluster,
+Aggregated Controllers 15 minutes load,"grpavg[""Controllers"", ""system.cpu.load[percpu,avg15]"", last, 0]",60,0,,Capacity data,Template OpenStack Cluster,
+Cinder VIP API test succeeded,vip.cinder.api.status,60,3,,Controllers,Template OpenStack Cluster,
+Glance VIP API test succeeded,vip.glance.api.status,60,3,,Controllers,Template OpenStack Cluster,
+Keystone VIP API test succeeded,vip.keystone.api.status,60,3,,Controllers,Template OpenStack Cluster,
+Keystone service VIP API test succeeded,vip.keystone.service.api.status,60,3,,Controllers,Template OpenStack Cluster,
+Neutron VIP API test succeeded,vip.neutron.api.status,60,3,,Controllers,Template OpenStack Cluster,
+Nova VIP API test succeeded,vip.nova.api.status,60,3,,Controllers,Template OpenStack Cluster,
+物理内存可用率,Available_memory,2h,3,,Memory,Template OpenStack OS Linux,%
+ops_mem_total,check_mem[mem_total],30s,3,,mem_info,Template OpenStack OS Linux,G
+ops_mem_used,check_mem[mem_used],30s,3,,mem_info,Template OpenStack OS Linux,G
+Maximum number of opened files,kernel.maxfiles,3600,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OpenStack OS Linux,
+Maximum number of processes,kernel.maxproc,3600,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OpenStack OS Linux,
+DNS lookup,"net.dns[,zabbix.com,,2,1]",30,3,,DNS,Template OpenStack OS Linux,
+network in,"net.if.in[vlan21,bytes]",30s,3,,NETWORK,Template OpenStack OS Linux,bps
+network out,"net.if.out[vlan21,bytes]",30s,3,,NETWORK,Template OpenStack OS Linux,bps
+SSH Server is listening on port,"net.tcp.service[ssh,,10022]",30,3,,Core Services,Template OpenStack OS Linux,
+Number of running processes,"proc.num[,,run]",60,3,Number of processes in running state.,Processes,Template OpenStack OS Linux,
+NTP Server process is running,"proc.num[ntpd,,,]",30,3,,Core Services,Template OpenStack OS Linux,
+RsyslogD Server process is running,"proc.num[rsyslogd,,,]",30,3,,Core Services,Template OpenStack OS Linux,
+SSH Server process is running,"proc.num[sshd,,,]",30,3,,Core Services,Template OpenStack OS Linux,
+Number of processes,proc.num[],60,3,Total number of processes in any state.,Processes,Template OpenStack OS Linux,
+/proc/vmstat compact_stall,proc.vmstat[compact_stall],30,3,,Proc,Template OpenStack OS Linux,
+Host boot time,system.boottime,600,3,,General,Template OpenStack OS Linux,unixtime
+Interrupts per second,system.cpu.intr,60,3,,CPU,Template OpenStack OS Linux,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",60,0,The processor load is calculates as system CPU load divided by number of CPU cores.,CPU,Template OpenStack OS Linux,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",60,0,The processor load is calculates as system CPU load divided by number of CPU cores.,CPU,Template OpenStack OS Linux,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",60,0,The processor load is calculates as system CPU load divided by number of CPU cores.,CPU,Template OpenStack OS Linux,
+Context switches per second,system.cpu.switches,60,3,,CPU,Template OpenStack OS Linux,sps
+CPU idle time,"system.cpu.util[,idle]",60,0,The time the CPU has spent doing nothing.,CPU,Template OpenStack OS Linux,%
+CPU interrupt time,"system.cpu.util[,interrupt]",60,0,The amount of time the CPU has been servicing hardware interrupts.,CPU,Template OpenStack OS Linux,%
+CPU iowait time,"system.cpu.util[,iowait]",60,0,Amount of time the CPU has been waiting for I/O to complete.,CPU,Template OpenStack OS Linux,%
+CPU nice time,"system.cpu.util[,nice]",60,0,The time the CPU has spent running users' process that have been niced.,CPU,Template OpenStack OS Linux,%
+CPU softirq time,"system.cpu.util[,softirq]",60,0,The amount of time the CPU has been servicing software interrupts.,CPU,Template OpenStack OS Linux,%
+CPU steal time,"system.cpu.util[,steal]",60,0,The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).,CPU,Template OpenStack OS Linux,%
+CPU system time,"system.cpu.util[,system]",60,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OpenStack OS Linux,%
+CPU user time,"system.cpu.util[,user]",60,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OpenStack OS Linux,%
+Host name,system.hostname,3600,1,System host name.,General,Template OpenStack OS Linux,
+Host local time,system.localtime,60,3,,General,Template OpenStack OS Linux,unixtime
+Free swap space,"system.swap.size[,free]",60,3,,Memory,Template OpenStack OS Linux,B
+Free swap space in %,"system.swap.size[,pfree]",60,0,,Memory,Template OpenStack OS Linux,%
+Total swap space,"system.swap.size[,total]",3600,3,,Memory,Template OpenStack OS Linux,B
+System information,system.uname,3600,1,The information as normally returned by 'uname -a'.,General,Template OpenStack OS Linux,
+System uptime,system.uptime,600,3,,General,Template OpenStack OS Linux,uptime
+Number of logged in users,system.users.num,60,3,Number of users who are currently logged in.,OS,Template OpenStack OS Linux,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],3600,3,,Security,Template OpenStack OS Linux,
+Available memory,vm.memory.size[available],60,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OpenStack OS Linux,B
+Total memory,vm.memory.size[total],3600,3,,Memory,Template OpenStack OS Linux,B
+ops_vms_used,vmx_mem,30s,3,,mem_info,Template OpenStack OS Linux,G
+OpscDB storage total,disk.total.size[tpool],1h,0,,volume,Template OpsDB Storage  info,T
+Number of running processes,"proc.num[,,run]",1m,3,Number of processes in running state.,Processes,Template OS AIX,
+Number of processes,proc.num[],1m,3,Total number of processes in any state.,Processes,Template OS AIX,
+Interrupts per second,system.cpu.intr,1m,3,,CPU,Template OS AIX,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS AIX,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS AIX,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS AIX,
+Context switches per second,system.cpu.switches,1m,3,,CPU,Template OS AIX,sps
+Host name,system.hostname,1h,1,System host name.,General,Template OS AIX,
+Host local time,system.localtime,1m,3,,General,Template OS AIX,unixtime
+CPU available physical processors in the shared pool,"system.stat[cpu,app]",1m,0,,CPU,Template OS AIX,%
+CPU entitled capacity consumed,"system.stat[cpu,ec]",1m,0,,CPU,Template OS AIX,
+CPU idle time,"system.stat[cpu,id]",1m,0,,CPU,Template OS AIX,%
+CPU logical processor utilization,"system.stat[cpu,lbusy]",1m,0,,CPU,Template OS AIX,%
+CPU number of physical processors consumed,"system.stat[cpu,pc]",1m,0,,CPU,Template OS AIX,
+CPU system time,"system.stat[cpu,sy]",1m,0,,CPU,Template OS AIX,%
+CPU user time,"system.stat[cpu,us]",1m,0,,CPU,Template OS AIX,%
+CPU iowait time,"system.stat[cpu,wa]",1m,0,,CPU,Template OS AIX,%
+Amount of data transferred,"system.stat[disk,bps]",1m,0,,Filesystems,Template OS AIX,B
+Number of transfers,"system.stat[disk,tps]",1m,0,,Filesystems,Template OS AIX,
+Processor units is entitled to receive,system.stat[ent],1h,0,,CPU,Template OS AIX,
+Kernel thread context switches,"system.stat[faults,cs]",1m,0,,CPU,Template OS AIX,
+Device interrupts,"system.stat[faults,in]",1m,0,,CPU,Template OS AIX,
+System calls,"system.stat[faults,sy]",1m,0,,CPU,Template OS AIX,
+Length of the swap queue,"system.stat[kthr,b]",1m,0,,Memory,Template OS AIX,
+Length of the run queue,"system.stat[kthr,r]",1m,0,,CPU,Template OS AIX,
+Active virtual pages,"system.stat[memory,avm]",1m,3,,Memory,Template OS AIX,
+Free real memory,"system.stat[memory,fre]",1m,3,,Memory,Template OS AIX,
+File page-ins per second,"system.stat[page,fi]",1m,0,,Memory,Template OS AIX,
+File page-outs per second,"system.stat[page,fo]",1m,0,,Memory,Template OS AIX,
+Pages freed (page replacement),"system.stat[page,fr]",1m,0,,Memory,Template OS AIX,
+Pages paged in from paging space,"system.stat[page,pi]",1m,0,,Memory,Template OS AIX,
+Pages paged out to paging space,"system.stat[page,po]",1m,0,,Memory,Template OS AIX,
+Pages scanned by page-replacement algorithm,"system.stat[page,sr]",1m,0,,Memory,Template OS AIX,
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS AIX,
+System uptime,system.uptime,10m,3,,General,Template OS AIX,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS AIX,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1h,3,,Security,Template OS AIX,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS AIX,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS AIX,B
+Maximum number of opened files,kernel.maxfiles,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS FreeBSD,
+Maximum number of processes,kernel.maxproc,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS FreeBSD,
+Number of running processes,"proc.num[,,run]",1m,3,Number of processes in running state.,Processes,Template OS FreeBSD,
+Number of processes,proc.num[],1m,3,Total number of processes in any state.,Processes,Template OS FreeBSD,
+Host boot time,system.boottime,10m,3,,General,Template OS FreeBSD,unixtime
+Interrupts per second,system.cpu.intr,1m,3,,CPU,Template OS FreeBSD,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS FreeBSD,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS FreeBSD,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS FreeBSD,
+Context switches per second,system.cpu.switches,1m,3,,CPU,Template OS FreeBSD,sps
+CPU idle time,"system.cpu.util[,idle]",1m,0,The time the CPU has spent doing nothing.,CPU,Template OS FreeBSD,%
+CPU interrupt time,"system.cpu.util[,interrupt]",1m,0,The amount of time the CPU has been servicing hardware interrupts.,CPU,Template OS FreeBSD,%
+CPU nice time,"system.cpu.util[,nice]",1m,0,The time the CPU has spent running users' processes that have been niced.,CPU,Template OS FreeBSD,%
+CPU system time,"system.cpu.util[,system]",1m,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OS FreeBSD,%
+CPU user time,"system.cpu.util[,user]",1m,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OS FreeBSD,%
+Host name,system.hostname,1h,1,System host name.,General,Template OS FreeBSD,
+Host local time,system.localtime,1m,3,,General,Template OS FreeBSD,unixtime
+Free swap space,"system.swap.size[,free]",1m,3,,Memory,Template OS FreeBSD,B
+Free swap space in %,"system.swap.size[,pfree]",1m,0,,Memory,Template OS FreeBSD,%
+Total swap space,"system.swap.size[,total]",1h,3,,Memory,Template OS FreeBSD,B
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS FreeBSD,
+System uptime,system.uptime,10m,3,,General,Template OS FreeBSD,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS FreeBSD,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1h,3,,Security,Template OS FreeBSD,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS FreeBSD,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS FreeBSD,B
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS HP-UX,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS HP-UX,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS HP-UX,
+CPU idle time,"system.cpu.util[,idle]",1m,0,The time the CPU has spent doing nothing.,CPU,Template OS HP-UX,%
+CPU nice time,"system.cpu.util[,nice]",1m,0,The time the CPU has spent running users' processes that have been niced.,CPU,Template OS HP-UX,%
+CPU system time,"system.cpu.util[,system]",1m,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OS HP-UX,%
+CPU user time,"system.cpu.util[,user]",1m,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OS HP-UX,%
+Host name,system.hostname,1h,1,System host name.,General,Template OS HP-UX,
+Host local time,system.localtime,1m,3,,General,Template OS HP-UX,unixtime
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS HP-UX,
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS HP-UX,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1h,3,,Security,Template OS HP-UX,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS HP-UX,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS HP-UX,B
+Maximum number of opened files,kernel.maxfiles,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Linux,
+Maximum number of processes,kernel.maxproc,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Linux,
+ceph-droped-in-teams-cls,"net.if.in[teams-cls,dropped]",30s,3,,Network interfaces,Template OS Linux,
+ceph-droped-in-teams-pub,"net.if.in[teams-pub,dropped]",30s,3,,Network interfaces,Template OS Linux,
+ceph-droped-in-teamscls,"net.if.in[teamscls,dropped]",30s,3,,Network interfaces,Template OS Linux,
+ceph-droped-in2-teamspub,"net.if.in[teamspub,dropped]",30s,3,,Network interfaces,Template OS Linux,
+ceph-droped-out-teams-cls,"net.if.out[teams-cls,dropped]",30s,3,,Network interfaces,Template OS Linux,
+ceph-droped-out-teams-pub,"net.if.out[teams-pub,dropped]",30s,3,,Network interfaces,Template OS Linux,
+ceph-droped-out-teamscls,"net.if.out[teamscls,dropped]",30s,3,,Network interfaces,Template OS Linux,
+ceph-droped-out2-teamspub,"net.if.out[teamspub,dropped]",30s,3,,Network interfaces,Template OS Linux,
+Number of running processes,"proc.num[,,run]",1s,3,Number of processes in running state.,Processes,Template OS Linux,
+Number of processes,proc.num[],1m,3,Total number of processes in any state.,Processes,Template OS Linux,
+Host boot time,system.boottime,10m,3,,General,Template OS Linux,unixtime
+Interrupts per second,system.cpu.intr,1m,3,,CPU,Template OS Linux,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux,
+Context switches per second,system.cpu.switches,1m,3,,CPU,Template OS Linux,sps
+CPU guest time,"system.cpu.util[,guest]",1m,0,The time spent running a virtual CPU for guest operating systems,CPU,Template OS Linux,%
+CPU guest nice time,"system.cpu.util[,guest_nice]",1m,0,The time spent running a niced guest (virtual CPU for guest operating systems),CPU,Template OS Linux,%
+CPU idle time,"system.cpu.util[,idle]",1m,0,The time the CPU has spent doing nothing.,CPU,Template OS Linux,%
+CPU interrupt time,"system.cpu.util[,interrupt]",1m,0,The amount of time the CPU has been servicing hardware interrupts.,CPU,Template OS Linux,%
+CPU iowait time,"system.cpu.util[,iowait]",1m,0,Amount of time the CPU has been waiting for I/O to complete.,CPU,Template OS Linux,%
+CPU nice time,"system.cpu.util[,nice]",1m,0,The time the CPU has spent running users' processes that have been niced.,CPU,Template OS Linux,%
+CPU softirq time,"system.cpu.util[,softirq]",1m,0,The amount of time the CPU has been servicing software interrupts.,CPU,Template OS Linux,%
+CPU steal time,"system.cpu.util[,steal]",1m,0,The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).,CPU,Template OS Linux,%
+CPU system time,"system.cpu.util[,system]",1m,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OS Linux,%
+CPU user time,"system.cpu.util[,user]",1m,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OS Linux,%
+Host name,system.hostname,1h,1,System host name.,General,Template OS Linux,
+Host local time,system.localtime,1m,3,,General,Template OS Linux,unixtime
+Free swap space,"system.swap.size[,free]",1m,3,,Memory,Template OS Linux,B
+Free swap space in %,"system.swap.size[,pfree]",1m,0,,Memory,Template OS Linux,%
+Total swap space,"system.swap.size[,total]",1h,3,,Memory,Template OS Linux,B
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS Linux,
+System uptime,system.uptime,10m,3,,General,Template OS Linux,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS Linux,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1s,3,,Security,Template OS Linux,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS Linux,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS Linux,B
+Host name of zabbix_agentd running,agent.hostname,1h,1,,Zabbix agent,Template OS Linux APM,
+Agent ping,agent.ping,1m,3,The agent always returns 1 for this item. It could be used in combination with nodata() for availability check.,Zabbix agent,Template OS Linux APM,
+Version of zabbix_agent(d) running,agent.version,1h,1,,Zabbix agent,Template OS Linux APM,
+Maximum number of opened files,kernel.maxfiles,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Linux APM,
+Maximum number of processes,kernel.maxproc,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Linux APM,
+Number of running processes,"proc.num[,,run]",1s,3,Number of processes in running state.,Processes,Template OS Linux APM,
+Number of processes,proc.num[],1m,3,Total number of processes in any state.,Processes,Template OS Linux APM,
+Host boot time,system.boottime,10m,3,,General,Template OS Linux APM,unixtime
+Interrupts per second,system.cpu.intr,1m,3,,CPU,Template OS Linux APM,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux APM,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux APM,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux APM,
+Context switches per second,system.cpu.switches,1m,3,,CPU,Template OS Linux APM,sps
+CPU guest time,"system.cpu.util[,guest]",1m,0,The time spent running a virtual CPU for guest operating systems,CPU,Template OS Linux APM,%
+CPU guest nice time,"system.cpu.util[,guest_nice]",1m,0,The time spent running a niced guest (virtual CPU for guest operating systems),CPU,Template OS Linux APM,%
+CPU idle time,"system.cpu.util[,idle]",1m,0,The time the CPU has spent doing nothing.,CPU,Template OS Linux APM,%
+CPU interrupt time,"system.cpu.util[,interrupt]",1m,0,The amount of time the CPU has been servicing hardware interrupts.,CPU,Template OS Linux APM,%
+CPU iowait time,"system.cpu.util[,iowait]",1m,0,Amount of time the CPU has been waiting for I/O to complete.,CPU,Template OS Linux APM,%
+CPU nice time,"system.cpu.util[,nice]",1m,0,The time the CPU has spent running users' processes that have been niced.,CPU,Template OS Linux APM,%
+CPU softirq time,"system.cpu.util[,softirq]",1m,0,The amount of time the CPU has been servicing software interrupts.,CPU,Template OS Linux APM,%
+CPU steal time,"system.cpu.util[,steal]",1m,0,The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).,CPU,Template OS Linux APM,%
+CPU system time,"system.cpu.util[,system]",1m,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OS Linux APM,%
+CPU user time,"system.cpu.util[,user]",1m,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OS Linux APM,%
+Host name,system.hostname,1h,1,System host name.,General,Template OS Linux APM,
+Host local time,system.localtime,1m,3,,General,Template OS Linux APM,unixtime
+Total swap space,"system.swap.size[,total]",1h,3,,Memory,Template OS Linux APM,B
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS Linux APM,
+System uptime,system.uptime,10m,3,,General,Template OS Linux APM,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS Linux APM,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1s,3,,Security,Template OS Linux APM,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS Linux APM,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS Linux APM,B
+Maximum number of opened files,kernel.maxfiles,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Linux noswap,
+Maximum number of processes,kernel.maxproc,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Linux noswap,
+Number of running processes,"proc.num[,,run]",1s,3,Number of processes in running state.,Processes,Template OS Linux noswap,
+Number of processes,proc.num[],1m,3,Total number of processes in any state.,Processes,Template OS Linux noswap,
+Host boot time,system.boottime,10m,3,,General,Template OS Linux noswap,unixtime
+Interrupts per second,system.cpu.intr,1m,3,,CPU,Template OS Linux noswap,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux noswap,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux noswap,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux noswap,
+Context switches per second,system.cpu.switches,1m,3,,CPU,Template OS Linux noswap,sps
+CPU guest time,"system.cpu.util[,guest]",1m,0,The time spent running a virtual CPU for guest operating systems,CPU,Template OS Linux noswap,%
+CPU guest nice time,"system.cpu.util[,guest_nice]",1m,0,The time spent running a niced guest (virtual CPU for guest operating systems),CPU,Template OS Linux noswap,%
+CPU idle time,"system.cpu.util[,idle]",1m,0,The time the CPU has spent doing nothing.,CPU,Template OS Linux noswap,%
+CPU interrupt time,"system.cpu.util[,interrupt]",1m,0,The amount of time the CPU has been servicing hardware interrupts.,CPU,Template OS Linux noswap,%
+CPU iowait time,"system.cpu.util[,iowait]",1m,0,Amount of time the CPU has been waiting for I/O to complete.,CPU,Template OS Linux noswap,%
+CPU nice time,"system.cpu.util[,nice]",1m,0,The time the CPU has spent running users' processes that have been niced.,CPU,Template OS Linux noswap,%
+CPU softirq time,"system.cpu.util[,softirq]",1m,0,The amount of time the CPU has been servicing software interrupts.,CPU,Template OS Linux noswap,%
+CPU steal time,"system.cpu.util[,steal]",1m,0,The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).,CPU,Template OS Linux noswap,%
+CPU system time,"system.cpu.util[,system]",1m,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OS Linux noswap,%
+CPU user time,"system.cpu.util[,user]",1m,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OS Linux noswap,%
+Host name,system.hostname,1h,1,System host name.,General,Template OS Linux noswap,
+Host local time,system.localtime,1m,3,,General,Template OS Linux noswap,unixtime
+Total swap space,"system.swap.size[,total]",1h,3,,Memory,Template OS Linux noswap,B
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS Linux noswap,
+System uptime,system.uptime,10m,3,,General,Template OS Linux noswap,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS Linux noswap,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1s,3,,Security,Template OS Linux noswap,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS Linux noswap,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS Linux noswap,B
+Maximum number of opened files,kernel.maxfiles,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Linux_MySQL,
+Maximum number of processes,kernel.maxproc,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Linux_MySQL,
+Number of running processes,"proc.num[,,run]",1s,3,Number of processes in running state.,Processes,Template OS Linux_MySQL,
+Number of processes,proc.num[],1m,3,Total number of processes in any state.,Processes,Template OS Linux_MySQL,
+Host boot time,system.boottime,10m,3,,General,Template OS Linux_MySQL,unixtime
+Interrupts per second,system.cpu.intr,1m,3,,CPU,Template OS Linux_MySQL,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux_MySQL,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux_MySQL,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Linux_MySQL,
+Context switches per second,system.cpu.switches,1m,3,,CPU,Template OS Linux_MySQL,sps
+CPU guest time,"system.cpu.util[,guest]",1m,0,The time spent running a virtual CPU for guest operating systems,CPU,Template OS Linux_MySQL,%
+CPU guest nice time,"system.cpu.util[,guest_nice]",1m,0,The time spent running a niced guest (virtual CPU for guest operating systems),CPU,Template OS Linux_MySQL,%
+CPU idle time,"system.cpu.util[,idle]",1m,0,The time the CPU has spent doing nothing.,CPU,Template OS Linux_MySQL,%
+CPU interrupt time,"system.cpu.util[,interrupt]",1m,0,The amount of time the CPU has been servicing hardware interrupts.,CPU,Template OS Linux_MySQL,%
+CPU iowait time,"system.cpu.util[,iowait]",1m,0,Amount of time the CPU has been waiting for I/O to complete.,CPU,Template OS Linux_MySQL,%
+CPU nice time,"system.cpu.util[,nice]",1m,0,The time the CPU has spent running users' processes that have been niced.,CPU,Template OS Linux_MySQL,%
+CPU softirq time,"system.cpu.util[,softirq]",1m,0,The amount of time the CPU has been servicing software interrupts.,CPU,Template OS Linux_MySQL,%
+CPU steal time,"system.cpu.util[,steal]",1m,0,The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).,CPU,Template OS Linux_MySQL,%
+CPU system time,"system.cpu.util[,system]",1m,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OS Linux_MySQL,%
+CPU user time,"system.cpu.util[,user]",1m,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OS Linux_MySQL,%
+Host name,system.hostname,1h,1,System host name.,General,Template OS Linux_MySQL,
+Host local time,system.localtime,1m,3,,General,Template OS Linux_MySQL,unixtime
+Free swap space,"system.swap.size[,free]",1m,3,,Memory,Template OS Linux_MySQL,B
+Free swap space in %,"system.swap.size[,pfree]",1m,0,,Memory,Template OS Linux_MySQL,%
+Total swap space,"system.swap.size[,total]",1h,3,,Memory,Template OS Linux_MySQL,B
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS Linux_MySQL,
+System uptime,system.uptime,10m,3,,General,Template OS Linux_MySQL,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS Linux_MySQL,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1s,3,,Security,Template OS Linux_MySQL,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS Linux_MySQL,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS Linux_MySQL,B
+Maximum number of opened files,kernel.maxfiles,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Mac OS X,
+Maximum number of processes,kernel.maxproc,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Mac OS X,
+Incoming network traffic on en0,net.if.in[en0],1m,3,,Network interfaces,Template OS Mac OS X,bps
+Outgoing network traffic on en0,net.if.out[en0],1m,3,,Network interfaces,Template OS Mac OS X,bps
+Host boot time,system.boottime,10m,3,,General,Template OS Mac OS X,unixtime
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Mac OS X,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Mac OS X,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Mac OS X,
+Host name,system.hostname,1h,1,System host name.,General,Template OS Mac OS X,
+Host local time,system.localtime,1m,3,,General,Template OS Mac OS X,unixtime
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS Mac OS X,
+System uptime,system.uptime,10m,3,,General,Template OS Mac OS X,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS Mac OS X,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1h,3,,Security,Template OS Mac OS X,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS Mac OS X,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS Mac OS X,B
+Maximum number of opened files,kernel.maxfiles,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS OpenBSD,
+Maximum number of processes,kernel.maxproc,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS OpenBSD,
+Number of running processes,"proc.num[,,run]",1m,3,Number of processes in running state.,Processes,Template OS OpenBSD,
+Number of processes,proc.num[],1m,3,Total number of processes in any state.,Processes,Template OS OpenBSD,
+Host boot time,system.boottime,10m,3,,General,Template OS OpenBSD,unixtime
+Interrupts per second,system.cpu.intr,1m,3,,CPU,Template OS OpenBSD,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS OpenBSD,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS OpenBSD,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS OpenBSD,
+Context switches per second,system.cpu.switches,1m,3,,CPU,Template OS OpenBSD,sps
+CPU idle time,"system.cpu.util[,idle]",1m,0,The time the CPU has spent doing nothing.,CPU,Template OS OpenBSD,%
+CPU interrupt time,"system.cpu.util[,interrupt]",1m,0,The amount of time the CPU has been servicing hardware interrupts.,CPU,Template OS OpenBSD,%
+CPU nice time,"system.cpu.util[,nice]",1m,0,The time the CPU has spent running users' processes that have been niced.,CPU,Template OS OpenBSD,%
+CPU system time,"system.cpu.util[,system]",1m,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OS OpenBSD,%
+CPU user time,"system.cpu.util[,user]",1m,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OS OpenBSD,%
+Host name,system.hostname,1h,1,System host name.,General,Template OS OpenBSD,
+Host local time,system.localtime,1m,3,,General,Template OS OpenBSD,unixtime
+Free swap space,"system.swap.size[,free]",1m,3,,Memory,Template OS OpenBSD,B
+Free swap space in %,"system.swap.size[,pfree]",1m,0,,Memory,Template OS OpenBSD,%
+Total swap space,"system.swap.size[,total]",1h,3,,Memory,Template OS OpenBSD,B
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS OpenBSD,
+System uptime,system.uptime,10m,3,,General,Template OS OpenBSD,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS OpenBSD,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1h,3,,Security,Template OS OpenBSD,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS OpenBSD,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS OpenBSD,B
+Maximum number of processes,kernel.maxproc,1h,3,It could be increased by using sysctrl utility or modifying file /etc/sysctl.conf.,OS,Template OS Solaris,
+Number of running processes,"proc.num[,,run]",1m,3,Number of processes in running state.,Processes,Template OS Solaris,
+Number of processes,proc.num[],1m,3,Total number of processes in any state.,Processes,Template OS Solaris,
+Host boot time,system.boottime,10m,3,,General,Template OS Solaris,unixtime
+Interrupts per second,system.cpu.intr,1m,3,,CPU,Template OS Solaris,ips
+Processor load (1 min average per core),"system.cpu.load[percpu,avg1]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Solaris,
+Processor load (5 min average per core),"system.cpu.load[percpu,avg5]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Solaris,
+Processor load (15 min average per core),"system.cpu.load[percpu,avg15]",1m,0,The processor load is calculated as system CPU load divided by number of CPU cores.,CPU,Template OS Solaris,
+Context switches per second,system.cpu.switches,1m,3,,CPU,Template OS Solaris,sps
+CPU idle time,"system.cpu.util[,idle]",1m,0,The time the CPU has spent doing nothing.,CPU,Template OS Solaris,%
+CPU iowait time,"system.cpu.util[,iowait]",1m,0,Amount of time the CPU has been waiting for I/O to complete.,CPU,Template OS Solaris,%
+CPU system time,"system.cpu.util[,system]",1m,0,The time the CPU has spent running the kernel and its processes.,CPU,Template OS Solaris,%
+CPU user time,"system.cpu.util[,user]",1m,0,The time the CPU has spent running users' processes that are not niced.,CPU,Template OS Solaris,%
+Host name,system.hostname,1h,1,System host name.,General,Template OS Solaris,
+Host local time,system.localtime,1m,3,,General,Template OS Solaris,unixtime
+Free swap space,"system.swap.size[,free]",1m,3,,Memory,Template OS Solaris,B
+Free swap space in %,"system.swap.size[,pfree]",1m,0,,Memory,Template OS Solaris,%
+Total swap space,"system.swap.size[,total]",1h,3,,Memory,Template OS Solaris,B
+System information,system.uname,1h,1,The information as normally returned by 'uname -a'.,General,Template OS Solaris,
+System uptime,system.uptime,10m,3,,General,Template OS Solaris,uptime
+Number of logged in users,system.users.num,1m,3,Number of users who are currently logged in.,OS,Template OS Solaris,
+Checksum of /etc/passwd,vfs.file.cksum[/etc/passwd],1h,3,,Security,Template OS Solaris,
+Available memory,vm.memory.size[available],1m,3,Available memory is defined as free+cached+buffers memory.,Memory,Template OS Solaris,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS Solaris,B
+File read bytes per second,perf_counter[\2\16],1m,0,Full counter name: \System\File Read Bytes/sec,Filesystems,Template OS Windows,Bps
+File write bytes per second,perf_counter[\2\18],1m,0,Full counter name: \System\File Write Bytes/sec,Filesystems,Template OS Windows,Bps
+Number of threads,perf_counter[\2\250],1m,3,Full counter name: \System\Threads,OS,Template OS Windows,
+Average disk read queue length,perf_counter[\234(_Total)\1402],1m,0,Full counter name: \PhysicalDisk(_Total)\Avg. Disk Read Queue Length,Filesystems,Template OS Windows,
+Average disk write queue length,perf_counter[\234(_Total)\1404],1m,0,Full counter name: \PhysicalDisk(_Total)\Avg. Disk Write Queue Length,Filesystems,Template OS Windows,
+Number of processes,proc.num[],1m,3,,Processes,Template OS Windows,
+Processor load (1 min average),"system.cpu.load[percpu,avg1]",1m,0,,CPU,Template OS Windows,
+Processor load (5 min average),"system.cpu.load[percpu,avg5]",1m,0,,CPU,Template OS Windows,
+Processor load (15 min average),"system.cpu.load[percpu,avg15]",1m,0,,CPU,Template OS Windows,
+Free swap space,"system.swap.size[,free]",1m,3,,Memory,Template OS Windows,B
+Total swap space,"system.swap.size[,total]",1h,3,,Memory,Template OS Windows,B
+System information,system.uname,1h,1,,General,Template OS Windows,
+System uptime,system.uptime,1m,3,,General,Template OS Windows,uptime
+Free memory,vm.memory.size[free],1m,3,,Memory,Template OS Windows,B
+Total memory,vm.memory.size[total],1h,3,,Memory,Template OS Windows,B
+"Free virtual memory, in %",vm.vmemory.size[pavailable],1m,0,,Memory,Template OS Windows,%
+Firmware version,system.hw.firmware,1h,1,"MIB: IDRAC-MIB-SMIv2
+This attribute defines the firmware version of a remote access card.",Inventory,Template Server Dell iDRAC SNMPv2,
+Hardware model name,system.hw.model,1h,1,"MIB: IDRAC-MIB-SMIv2
+This attribute defines the model name of the system.",Inventory,Template Server Dell iDRAC SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: IDRAC-MIB-SMIv2
+This attribute defines the service tag of the system.",Inventory,Template Server Dell iDRAC SNMPv2,
+Overall system health status,system.status[globalSystemStatus.0],30s,3,"MIB: IDRAC-MIB-SMIv2
+This attribute defines the overall rollup status of all components in the system being monitored by the remote access card. Includes system, storage, IO devices, iDRAC, CPU, memory, etc.",Status,Template Server Dell iDRAC SNMPv2,
+Operating system,system.sw.os,1h,1,"MIB: IDRAC-MIB-SMIv2
+This attribute defines the name of the operating system that the hostis running.",Inventory,Template Server Dell iDRAC SNMPv2,
+System: Temperature status,sensor.temp.status[cpqHeThermalCondition.0],3m,3,"MIB: CPQHLTH-MIB
+This value specifies the overall condition of the system's thermal environment.
+This value will be one of the following:
+other(1)  Temperature could not be determined.
+ok(2)  The temperature sensor is within normal operating range.
+degraded(3)  The temperature sensor is outside of normal operating range.
+failed(4)  The temperature sensor detects a condition that could  permanently damage the system.",Temperature,Template Server HP iLO SNMPv2,
+Hardware model name,system.hw.model,1h,1,"MIB: CPQSINFO-MIB
+The machine product name.The name of the machine used in this system.",Inventory,Template Server HP iLO SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: CPQSINFO-MIB
+The serial number of the physical system unit. The string will be empty if the system does not report the serial number function.",Inventory,Template Server HP iLO SNMPv2,
+Overall system health status,system.status[cpqSiMibCondition.0],30s,3,"MIB: CPQSINFO-MIB
+The overall condition. This object represents the overall status of the server information represented by this MIB.",Status,Template Server HP iLO SNMPv2,
+Hardware model name,system.hw.model,1h,1,MIB: IMM-MIB,Inventory,Template Server IBM IMM SNMPv1,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: IMM-MIB
+Machine serial number VPD information",Inventory,Template Server IBM IMM SNMPv1,
+Overall system health status,system.status[systemHealthStat.0],30s,3,"MIB: IMM-MIB
+Indicates status of system health for the system in which the IMM resides. Value of 'nonRecoverable' indicates a severe error has occurred and the system may not be functioning. A value of 'critical' indicates that a error has occurred but the system is currently functioning properly. A value of 'nonCritical' indicates that a condition has occurred that may change the state of the system in the future but currently the system is working properly. A value of 'normal' indicates that the system is operating normally.",Status,Template Server IBM IMM SNMPv1,
+Hardware model name,system.hw.model,1h,1,MIB: IMM-MIB,Inventory,Template Server IBM IMM SNMPv2,
+Hardware serial number,system.hw.serialnumber,1h,1,"MIB: IMM-MIB
+Machine serial number VPD information",Inventory,Template Server IBM IMM SNMPv2,
+Overall system health status,system.status[systemHealthStat.0],30s,3,"MIB: IMM-MIB
+Indicates status of system health for the system in which the IMM resides. Value of 'nonRecoverable' indicates a severe error has occurred and the system may not be functioning. A value of 'critical' indicates that a error has occurred but the system is currently functioning properly. A value of 'nonCritical' indicates that a condition has occurred that may change the state of the system in the future but currently the system is working properly. A value of 'normal' indicates that the system is operating normally.",Status,Template Server IBM IMM SNMPv2,
+BB +1.8V SM,bb_1.8v_sm,1m,0,,Voltage,Template Server Intel SR1530 IPMI,V
+BB +3.3V,bb_3.3v,1m,0,,Voltage,Template Server Intel SR1530 IPMI,V
+BB +3.3V STBY,bb_3.3v_stby,1m,0,,Voltage,Template Server Intel SR1530 IPMI,V
+BB +5.0V,bb_5.0v,1m,0,,Voltage,Template Server Intel SR1530 IPMI,V
+BB Ambient Temp,bb_ambient_temp,1m,0,,Temperature,Template Server Intel SR1530 IPMI,C
+Power,power,1m,3,,Voltage,Template Server Intel SR1530 IPMI,
+Processor Vcc,processor_vcc,1m,0,,Voltage,Template Server Intel SR1530 IPMI,V
+System Fan 3,system_fan_3,1m,0,,Fans,Template Server Intel SR1530 IPMI,RPM
+Baseboard Temp,baseboard_temp,1m,0,,Temperature,Template Server Intel SR1630 IPMI,C
+BB +1.05V PCH,bb_1.05v_pch,1m,0,,Voltage,Template Server Intel SR1630 IPMI,V
+BB +1.1V P1 Vccp,bb_1.1v_p1_vccp,1m,0,,Voltage,Template Server Intel SR1630 IPMI,V
+BB +1.5V P1 DDR3,bb_1.5v_p1_ddr3,1m,0,,Voltage,Template Server Intel SR1630 IPMI,V
+BB +3.3V,bb_3.3v,1m,0,,Voltage,Template Server Intel SR1630 IPMI,V
+BB +3.3V STBY,bb_3.3v_stby,1m,0,,Voltage,Template Server Intel SR1630 IPMI,V
+BB +5.0V,bb_5.0v,1m,0,,Voltage,Template Server Intel SR1630 IPMI,V
+Front Panel Temp,front_panel_temp,1m,0,,Temperature,Template Server Intel SR1630 IPMI,C
+Power,power,1m,3,,Voltage,Template Server Intel SR1630 IPMI,
+System Fan 2,system_fan_2,1m,0,,Fans,Template Server Intel SR1630 IPMI,RPM
+System Fan 3,system_fan_3,1m,0,,Fans,Template Server Intel SR1630 IPMI,RPM
+Event log,vmware.eventlog[{$URL}],1m,2,,Log,Template VM VMware,
+Full name,vmware.fullname[{$URL}],1h,1,,General,Template VM VMware,
+Version,vmware.version[{$URL}],1h,1,,General,Template VM VMware,
+Cluster name,"vmware.vm.cluster.name[{$URL},{HOST.HOST}]",1h,1,Cluster name of the guest VM.,General,Template VM VMware Guest,
+Number of virtual CPUs,"vmware.vm.cpu.num[{$URL},{HOST.HOST}]",1m,3,Number of virtual CPUs assigned to the guest.,CPU,Template VM VMware Guest,
+CPU ready,"vmware.vm.cpu.ready[{$URL},{HOST.HOST}]",1m,3,"Time that the virtual machine was ready, but could not get scheduled to run on the physical CPU during last measurement interval (VMware vCenter/ESXi Server performance counter sampling interval - 20 seconds)",CPU,Template VM VMware Guest,ms
+CPU usage,"vmware.vm.cpu.usage[{$URL},{HOST.HOST}]",1m,3,"Current upper-bound on CPU usage. The upper-bound is based on the host the virtual machine is current running on, as well as limits configured on the virtual machine itself or any parent resource pool. Valid while the virtual machine is running.",CPU,Template VM VMware Guest,Hz
+Datacenter name,"vmware.vm.datacenter.name[{$URL},{HOST.HOST}]",1m,1,Datacenter name of the guest VM.,General,Template VM VMware Guest,
+Hypervisor name,"vmware.vm.hv.name[{$URL},{HOST.HOST}]",1h,1,Hypervisor name of the guest VM.,General,Template VM VMware Guest,
+Ballooned memory,"vmware.vm.memory.size.ballooned[{$URL},{HOST.HOST}]",1m,3,The amount of guest physical memory that is currently reclaimed through the balloon driver.,Memory,Template VM VMware Guest,B
+Compressed memory,"vmware.vm.memory.size.compressed[{$URL},{HOST.HOST}]",1m,3,The amount of memory currently in the compression cache for this VM.,Memory,Template VM VMware Guest,B
+Private memory,"vmware.vm.memory.size.private[{$URL},{HOST.HOST}]",1m,3,Amount of memory backed by host memory and not being shared.,Memory,Template VM VMware Guest,B
+Shared memory,"vmware.vm.memory.size.shared[{$URL},{HOST.HOST}]",1m,3,The amount of guest physical memory shared through transparent page sharing.,Memory,Template VM VMware Guest,B
+Swapped memory,"vmware.vm.memory.size.swapped[{$URL},{HOST.HOST}]",1m,3,The amount of guest physical memory swapped out to the VM's swap device by ESX.,Memory,Template VM VMware Guest,B
+Guest memory usage,"vmware.vm.memory.size.usage.guest[{$URL},{HOST.HOST}]",1m,3,The amount of guest physical memory that is being used by the VM.,Memory,Template VM VMware Guest,B
+Host memory usage,"vmware.vm.memory.size.usage.host[{$URL},{HOST.HOST}]",1m,3,"The amount of host physical memory allocated to the VM, accounting for saving from memory sharing with other VMs.",Memory,Template VM VMware Guest,B
+Memory size,"vmware.vm.memory.size[{$URL},{HOST.HOST}]",1m,3,Total size of configured memory.,Memory,Template VM VMware Guest,B
+Power state,"vmware.vm.powerstate[{$URL},{HOST.HOST}]",1m,3,The current power state of the virtual machine.,General,Template VM VMware Guest,
+Committed storage space,"vmware.vm.storage.committed[{$URL},{HOST.HOST}]",1m,3,"Total storage space, in bytes, committed to this virtual machine across all datastores.",Storage,Template VM VMware Guest,B
+Uncommitted storage space,"vmware.vm.storage.uncommitted[{$URL},{HOST.HOST}]",1m,3,"Additional storage space, in bytes, potentially used by this virtual machine on all datastores.",Storage,Template VM VMware Guest,B
+Unshared storage space,"vmware.vm.storage.unshared[{$URL},{HOST.HOST}]",1m,3,"Total storage space, in bytes, occupied by the virtual machine across all datastores, that is not shared with any other virtual machine.",Storage,Template VM VMware Guest,B
+Uptime,"vmware.vm.uptime[{$URL},{HOST.HOST}]",1m,3,System uptime.,General,Template VM VMware Guest,uptime
+Cluster name,"vmware.hv.cluster.name[{$URL},{HOST.HOST}]",1h,1,Cluster name of the guest VM.,General,Template VM VMware Hypervisor,
+CPU usage,"vmware.hv.cpu.usage[{$URL},{HOST.HOST}]",1m,3,Aggregated CPU usage across all cores on the host in Hz. This is only available if the host is connected.,CPU,Template VM VMware Hypervisor,Hz
+Datacenter name,"vmware.hv.datacenter.name[{$URL},{HOST.HOST}]",1m,1,Datacenter name of the hypervisor.,General,Template VM VMware Hypervisor,
+Full name,"vmware.hv.fullname[{$URL},{HOST.HOST}]",1h,1,"The complete product name, including the version information.",General,Template VM VMware Hypervisor,
+CPU frequency,"vmware.hv.hw.cpu.freq[{$URL},{HOST.HOST}]",1h,3,The speed of the CPU cores. This is an average value if there are multiple speeds. The product of CPU frequency and number of cores is approximately equal to the sum of the MHz for all the individual cores on the host.,CPU,Template VM VMware Hypervisor,Hz
+CPU model,"vmware.hv.hw.cpu.model[{$URL},{HOST.HOST}]",1h,1,The CPU model.,CPU,Template VM VMware Hypervisor,
+CPU cores,"vmware.hv.hw.cpu.num[{$URL},{HOST.HOST}]",1h,3,Number of physical CPU cores on the host. Physical CPU cores are the processors contained by a CPU package.,CPU,Template VM VMware Hypervisor,
+CPU threads,"vmware.hv.hw.cpu.threads[{$URL},{HOST.HOST}]",1h,3,Number of physical CPU threads on the host.,CPU,Template VM VMware Hypervisor,
+Total memory,"vmware.hv.hw.memory[{$URL},{HOST.HOST}]",1h,3,The physical memory size.,Hardware,Template VM VMware Hypervisor,B
+Model,"vmware.hv.hw.model[{$URL},{HOST.HOST}]",1h,1,The system model identification.,Hardware,Template VM VMware Hypervisor,
+Bios UUID,"vmware.hv.hw.uuid[{$URL},{HOST.HOST}]",1h,1,The hardware BIOS identification.,Hardware,Template VM VMware Hypervisor,
+Vendor,"vmware.hv.hw.vendor[{$URL},{HOST.HOST}]",1h,1,The hardware vendor identification.,Hardware,Template VM VMware Hypervisor,
+Ballooned memory,"vmware.hv.memory.size.ballooned[{$URL},{HOST.HOST}]",1m,3,The amount of guest physical memory that is currently reclaimed through the balloon driver. Sum of all guest VMs.,Memory,Template VM VMware Hypervisor,B
+Used memory,"vmware.hv.memory.used[{$URL},{HOST.HOST}]",1m,3,Physical memory usage on the host.,Memory,Template VM VMware Hypervisor,B
+Number of bytes received,"vmware.hv.network.in[{$URL},{HOST.HOST},bps]",1m,3,,Network,Template VM VMware Hypervisor,Bps
+Number of bytes transmitted,"vmware.hv.network.out[{$URL},{HOST.HOST},bps]",1m,3,,Network,Template VM VMware Hypervisor,Bps
+Health state rollup,"vmware.hv.sensor.health.state[{$URL},{HOST.HOST}]",1m,3,"The host health state rollup sensor value: gray - unknown, ok, red - it has a problem, yellow - it might have a problem.",General,Template VM VMware Hypervisor,
+Overall status,"vmware.hv.status[{$URL},{HOST.HOST}]",1m,3,"The overall alarm status of the host: gray - unknown, ok, red - it has a problem, yellow - it might have a problem.",General,Template VM VMware Hypervisor,
+Uptime,"vmware.hv.uptime[{$URL},{HOST.HOST}]",1h,3,System uptime.,General,Template VM VMware Hypervisor,uptime
+Version,"vmware.hv.version[{$URL},{HOST.HOST}]",1h,1,Dot-separated version string.,General,Template VM VMware Hypervisor,
+Number of guest VMs,"vmware.hv.vm.num[{$URL},{HOST.HOST}]",1h,3,Number of guest virtual machines.,General,Template VM VMware Hypervisor,

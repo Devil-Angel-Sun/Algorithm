@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: dc-task-executor-svc
+  name: dc-task-executor-svc
+  namespace: databuff
+spec:
+  selector:
+    app: dc-task-executor
+  ports:
+    - port: 18080
+      protocol: TCP
+      targetPort: 18080

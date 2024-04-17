@@ -1,0 +1,18 @@
+{
+  "Chassis": {
+    "Manufacturer": "Supermicro",
+    "Serial Number": "0123456789",
+    "Type": "Main Server Chassis",
+    "Version": "0123456789"
+  },
+  "System": {
+    "Manufacturer": "Supermicro",
+    "Product Name": "Super Server",
+    "Serial Number": "0123456789",
+    "Version": "0123456789",
+    "Wake-up Type": "Power Switch"
+  },
+  "bios": {
+    "Version": "3.2"
+  }
+}

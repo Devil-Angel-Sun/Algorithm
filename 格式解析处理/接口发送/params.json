@@ -1,0 +1,1 @@
+{"kafka": {"http": "10.131.142.24:19092", "topic": "dc_gw_cmdb"}, "token": {"login_url": "http://ywmh.sh.sgcc.com.cn/sso/api-token-auth/", "username": "mahayana", "password": "MAha_6997_yana"}, "cmdb": {"cmdb_url": "http://ywmh.sh.sgcc.com.cn/cmdb/index/", "query_url": "http://ywmh.sh.sgcc.com.cn/cmdb/search/query_ci/"}}

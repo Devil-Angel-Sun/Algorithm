@@ -1,0 +1,1 @@
+{"version": "5.0", "group": "SNMP", "name": "LINUX_SNMP", "template": "LINUX_SNMP", "description": "the template of snmp in linux", "applications": ["Network Interface", "Storage", "CPU", "Memory"]}

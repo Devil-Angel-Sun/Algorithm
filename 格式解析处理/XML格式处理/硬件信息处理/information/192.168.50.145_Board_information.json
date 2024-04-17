@@ -1,0 +1,54 @@
+{
+  "Main Board": {
+    "Manufacturer": "Huawei",
+    "Product Name": "BC11SPSCB0",
+    "Serial Number": "024AFQCNKC010805",
+    "Type": "Motherboard",
+    "Version": "V100R005"
+  },
+  "Single Board Embeded Raid Card": {
+    "Reference Designation": "Embeded Raid Card",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board Embeded SATA Controller": {
+    "Reference Designation": "Embeded SATA Controller",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board Embeded SSATA Controller": {
+    "Reference Designation": "Embeded SSATA Controller",
+    "Status": "Enabled",
+    "Type Instance": "2"
+  },
+  "Single Board Embeded USB Controller": {
+    "Reference Designation": "Embeded USB Controller",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board Embeded Video Card": {
+    "Reference Designation": "Embeded Video Card",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board LOM1": {
+    "Reference Designation": "LOM1",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board LOM2": {
+    "Reference Designation": "LOM2",
+    "Status": "Enabled",
+    "Type Instance": "2"
+  },
+  "Single Board LOM3": {
+    "Reference Designation": "LOM3",
+    "Status": "Enabled",
+    "Type Instance": "3"
+  },
+  "Single Board LOM4": {
+    "Reference Designation": "LOM4",
+    "Status": "Enabled",
+    "Type Instance": "4"
+  }
+}

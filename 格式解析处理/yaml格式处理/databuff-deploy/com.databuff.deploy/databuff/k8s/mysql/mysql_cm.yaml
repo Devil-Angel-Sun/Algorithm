@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dc-mysql-conf
+  namespace: databuff
+  labels:
+    app: dc-mysql
+data:
+  my.cnf: |
+    [mysqld]
+    datadir=/var/lib/mysql
+    #socket=/var/lib/mysql/mysql.sock
+    socket=/run/mysqld/mysqld.sock
+    symbolic-links=0
+    max_connections=500
+    skip-name-resolve
+    innodb_temp_data_file_path = ibtmp1:12M:autoextend:max:5G
+    [mysqld_safe]
+    log-error=/var/log/mariadb/mariadb.log
+    pid-file=/var/run/mariadb/mariadb.pid
+    !includedir /etc/my.cnf.d
+  dc_databuff_init.sql: |
+    CREATE DATABASE IF NOT EXISTS dc_databuff DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_general_ci;

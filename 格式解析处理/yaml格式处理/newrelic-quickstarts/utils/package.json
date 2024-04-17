@@ -1,0 +1,29 @@
+{
+  "name": "newrelic-quickstarts",
+  "version": "0.0.1",
+  "repository": "https://github.com/newrelic/newrelic-quickstarts.git",
+  "author": "NewRelic",
+  "license": "Apache-2.0",
+  "scripts": {
+    "validate-quickstarts": "node validate_quickstarts.js",
+    "test": "jest -i",
+    "check-quickstart-uniqueness": "node check_quickstart_uniqueness.js",
+    "validate-images": "node validate_images.js",
+    "format": "prettier --write \"./**/*.js\"",
+    "validate-logos": "node validate_logos.js",
+    "generate-uuids": "node generate-uuids.js",
+    "sanitize-dashboard": "node sanitize_dashboards.js"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.4.0",
+    "ajv": "^8.4.0",
+    "glob": "^7.1.7",
+    "is-image": "^3.0.0",
+    "jest": "^27.0.5",
+    "js-yaml": "^4.1.0",
+    "node-fetch": "^2.6.1",
+    "parse-link-header": "^1.0.1",
+    "prettier": "2.3.2",
+    "uuid": "^8.3.2"
+  }
+}

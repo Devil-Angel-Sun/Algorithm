@@ -1,0 +1,24 @@
+{
+  "Main Board": {
+    "Manufacturer": "Supermicro",
+    "Product Name": "X10DRL-i",
+    "Serial Number": "ZM20AS003272",
+    "Type": "Motherboard",
+    "Version": "1.01"
+  },
+  "Single Board ASPEED Video AST2400": {
+    "Reference Designation": "ASPEED Video AST2400",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board Intel Ethernet i210 #1": {
+    "Reference Designation": "Intel Ethernet i210 #1",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board Intel Ethernet i210 #2": {
+    "Reference Designation": "Intel Ethernet i210 #2",
+    "Status": "Enabled",
+    "Type Instance": "2"
+  }
+}

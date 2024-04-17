@@ -1,0 +1,36 @@
+{
+  "Single Processer CPU01": {
+    "Core Count": "16",
+    "Core Enabled": "16",
+    "Current Speed": "2300 MHz",
+    "External Clock": "100 MHz",
+    "Family": "Xeon",
+    "ID": "57 06 05 00 FF FB EB BF",
+    "Manufacturer": "Intel(R) Corporation",
+    "Max Speed": "4000 MHz",
+    "Part Number": "Not Specified",
+    "Serial Number": "9F6B0ECFCC436329",
+    "Socket Designation": "CPU01",
+    "Status": "Populated, Enabled",
+    "Thread Count": "32",
+    "Type": "Central Processor",
+    "Version": "Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz"
+  },
+  "Single Processer CPU02": {
+    "Core Count": "16",
+    "Core Enabled": "16",
+    "Current Speed": "2300 MHz",
+    "External Clock": "100 MHz",
+    "Family": "Xeon",
+    "ID": "57 06 05 00 FF FB EB BF",
+    "Manufacturer": "Intel(R) Corporation",
+    "Max Speed": "4000 MHz",
+    "Part Number": "Not Specified",
+    "Serial Number": "9F6AD792B081C69D",
+    "Socket Designation": "CPU02",
+    "Status": "Populated, Enabled",
+    "Thread Count": "32",
+    "Type": "Central Processor",
+    "Version": "Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz"
+  }
+}

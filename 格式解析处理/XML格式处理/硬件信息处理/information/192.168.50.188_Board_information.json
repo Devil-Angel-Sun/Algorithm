@@ -1,0 +1,48 @@
+{
+  "Main Board": {
+    "Manufacturer": "Dell Inc.",
+    "Product Name": "072T6D",
+    "Serial Number": ".BZLCBT2.CNFCP0089B0050.",
+    "Version": "A09"
+  },
+  "Single Board Embedded EHCI USB Controller 1": {
+    "Reference Designation": "Embedded EHCI USB Controller 1",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board Embedded EHCI USB Controller 2": {
+    "Reference Designation": "Embedded EHCI USB Controller 2",
+    "Status": "Enabled",
+    "Type Instance": "2"
+  },
+  "Single Board Embedded Video": {
+    "Reference Designation": "Embedded Video",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board Integrated NIC 1": {
+    "Reference Designation": "Integrated NIC 1",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  },
+  "Single Board Integrated NIC 2": {
+    "Reference Designation": "Integrated NIC 2",
+    "Status": "Enabled",
+    "Type Instance": "2"
+  },
+  "Single Board Integrated NIC 3": {
+    "Reference Designation": "Integrated NIC 3",
+    "Status": "Enabled",
+    "Type Instance": "3"
+  },
+  "Single Board Integrated NIC 4": {
+    "Reference Designation": "Integrated NIC 4",
+    "Status": "Enabled",
+    "Type Instance": "4"
+  },
+  "Single Board Integrated RAID": {
+    "Reference Designation": "Integrated RAID",
+    "Status": "Enabled",
+    "Type Instance": "1"
+  }
+}

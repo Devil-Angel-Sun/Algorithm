@@ -1,0 +1,18 @@
+{
+  "Chassis": {
+    "Manufacturer": "Dell Inc.",
+    "Serial Number": "BZLCBT2",
+    "Type": "Rack Mount Chassis",
+    "Version": "Not Specified"
+  },
+  "System": {
+    "Manufacturer": "Dell Inc.",
+    "Product Name": "PowerEdge R730",
+    "Serial Number": "BZLCBT2",
+    "Version": "Not Specified",
+    "Wake-up Type": "Power Switch"
+  },
+  "bios": {
+    "Version": "2.8.0"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "Physical Memory": {
+    "Actual_Num_Device": "128 GB",
+    "Location": "System Board Or Motherboard",
+    "Max_Capacity": " 3 TB",
+    "Num_Device": "24"
+  },
+  "Single Memory A1": {
+    "Configured Memory Speed": "1866 MT/s",
+    "Form Factor": "DIMM",
+    "Locator": "A1",
+    "Manufacturer": "00CE00B300CE",
+    "Part Number": "M393A4K40CB2-CTD  ",
+    "Rank": "2",
+    "Serial Number": "248F2392",
+    "Size": " 32 GB",
+    "Speed": "2666 MT/s",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous Registered (Buffered)"
+  },
+  "Single Memory A2": {
+    "Configured Memory Speed": "1866 MT/s",
+    "Form Factor": "DIMM",
+    "Locator": "A2",
+    "Manufacturer": "00CE00B300CE",
+    "Part Number": "M393A4K40CB2-CTD  ",
+    "Rank": "2",
+    "Serial Number": "248F28F5",
+    "Size": " 32 GB",
+    "Speed": "2666 MT/s",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous Registered (Buffered)"
+  },
+  "Single Memory A3": {
+    "Configured Memory Speed": "1866 MT/s",
+    "Form Factor": "DIMM",
+    "Locator": "A3",
+    "Manufacturer": "00CE00B300CE",
+    "Part Number": "M393A4K40CB2-CTD  ",
+    "Rank": "2",
+    "Serial Number": "2483720C",
+    "Size": " 32 GB",
+    "Speed": "2666 MT/s",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous Registered (Buffered)"
+  },
+  "Single Memory A4": {
+    "Configured Memory Speed": "1866 MT/s",
+    "Form Factor": "DIMM",
+    "Locator": "A4",
+    "Manufacturer": "00CE00B300CE",
+    "Part Number": "M393A4K40CB2-CTD  ",
+    "Rank": "2",
+    "Serial Number": "248F2408",
+    "Size": " 32 GB",
+    "Speed": "2666 MT/s",
+    "Total Width": "72 bits",
+    "Type": "DDR4",
+    "Type Detail": "Synchronous Registered (Buffered)"
+  }
+}

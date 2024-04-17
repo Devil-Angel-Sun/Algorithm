@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: dc-task-executor
+  namespace: databuff
+spec:
+  selector:
+    matchLabels:
+      app: dc-task-executor # has to match .spec.template.metadata.labels
+  serviceName: "dc-task-executor-svc"
+  replicas: 2 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: dc-task-executor # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: dc-task-executor
+          image: 192.168.50.212/databuff/task-executor:v2.5.2
+          imagePullPolicy: Always #每次重启时重新拉取镜像
+          resources:
+            requests:
+              cpu: "2"
+              memory: 1500Mi
+          ports:
+            - containerPort: 18089
+              name: task-executor
+          volumeMounts:
+            - name: task-executor-config
+              mountPath: /usr/local/databuff/task-executor/config/task-executor.yml
+              subPath: task-executor.yml
+      imagePullSecrets:
+        - name: docker-reg-secret
+      volumes:
+        - name: task-executor-config
+          configMap:
+            name: dc-task-executor-conf
+            items:
+              - key: task-executor.yml
+                path: task-executor.yml

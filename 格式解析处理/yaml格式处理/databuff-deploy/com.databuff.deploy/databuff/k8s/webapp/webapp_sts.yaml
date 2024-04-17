@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: dc-webapp
+  namespace: databuff
+spec:
+  selector:
+    matchLabels:
+      app: dc-webapp # has to match .spec.template.metadata.labels
+  serviceName: "dc-webapp-svc"
+  replicas: 1 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: dc-webapp # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: dc-webapp
+          image: 192.168.50.212/databuff/webapp:v2.5.2
+          imagePullPolicy: Always #每次重启时重新拉取镜像
+          resources:
+            requests:
+              cpu: "2"
+              memory: 3500Mi
+          ports:
+            - containerPort: 18080
+              name: webapp
+          volumeMounts:
+            - name: webapp-config
+              mountPath: /usr/local/databuff/webapp/webapp.yml
+              subPath: webapp.yml
+      imagePullSecrets:
+      - name: docker-reg-secret
+      volumes:
+        - name: webapp-config
+          configMap:
+            name: dc-webapp-conf
+            items:
+              - key: webapp.yml
+                path: webapp.yml

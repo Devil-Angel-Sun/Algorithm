@@ -1,0 +1,17 @@
+kubectl exec -it mysql-sts-0 -ndatabuff -- mkdir -p /var/lib/mysql/initsql
+
+kubectl -n databuff cp ./dc_databuff_init.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00001.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00002.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00003.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00004.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00005.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00006.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00007.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00008.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00009.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00010.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00011.sql mysql-sts-0:/var/lib/mysql/initsql/
+kubectl -n databuff cp ./00012.sql mysql-sts-0:/var/lib/mysql/initsql/
+
+kubectl exec -it mysql-sts-0 -ndatabuff -- mysql -uroot -p'234*(sdlj12' -e 'source /var/lib/mysql/initsql/dc_databuff_init.sql;source /var/lib/mysql/initsql/00001.sql;source /var/lib/mysql/initsql/00002.sql;source /var/lib/mysql/initsql/00003.sql;source /var/lib/mysql/initsql/00004.sql;source /var/lib/mysql/initsql/00005.sql;source /var/lib/mysql/initsql/00006.sql;source /var/lib/mysql/initsql/00007.sql;source /var/lib/mysql/initsql/00008.sql;source /var/lib/mysql/initsql/00009.sql;source /var/lib/mysql/initsql/00010.sql;source /var/lib/mysql/initsql/00011.sql;source /var/lib/mysql/initsql/00012.sql;'

@@ -1,0 +1,65 @@
+{
+  "Single Connector Keyboard PortKeyboard": {
+    "External Connector Type": "PS/2",
+    "External Reference Designator": "Keyboard",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J1A1",
+    "Port Type": "Keyboard Port"
+  },
+  "Single Connector Mouse PortPS2Mouse": {
+    "External Connector Type": "PS/2",
+    "External Reference Designator": "PS2Mouse",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J1A1",
+    "Port Type": "Mouse Port"
+  },
+  "Single Connector OtherNot Specified": {
+    "External Connector Type": "None",
+    "External Reference Designator": "Not Specified",
+    "Internal Connector Type": "Other",
+    "Internal Reference Designator": "J1G6 - AC JACK",
+    "Port Type": "Other"
+  },
+  "Single Connector OtherTV Out": {
+    "External Connector Type": "Mini Centronics Type-14",
+    "External Reference Designator": "TV Out",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J2A1",
+    "Port Type": "Other"
+  },
+  "Single Connector Serial Port 16550A CompatibleCOM A": {
+    "External Connector Type": "DB-9 male",
+    "External Reference Designator": "COM A",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J2A2A",
+    "Port Type": "Serial Port 16550A Compatible"
+  },
+  "Single Connector USBUSB1": {
+    "External Connector Type": "Access Bus (USB)",
+    "External Reference Designator": "USB1",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J3A1",
+    "Port Type": "USB"
+  },
+  "Single Connector USBUSB2": {
+    "External Connector Type": "Access Bus (USB)",
+    "External Reference Designator": "USB2",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J3A1",
+    "Port Type": "USB"
+  },
+  "Single Connector USBUSB3": {
+    "External Connector Type": "Access Bus (USB)",
+    "External Reference Designator": "USB3",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J3A1",
+    "Port Type": "USB"
+  },
+  "Single Connector Video PortVideo": {
+    "External Connector Type": "DB-15 female",
+    "External Reference Designator": "Video",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J2A2B",
+    "Port Type": "Video Port"
+  }
+}

@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dc-apm-rca-conf
+  namespace: databuff
+  labels:
+    app: dc-apm-rca
+data:
+  config.json: |
+    {
+        "model": {
+            "type": ["abnormal"]
+        },
+        "kafka": {
+            "http": "kafka:9092",
+            "event_topic": "dc_event",
+            "offset": "latest",
+            "groupid": "apm-rca",
+            "rca_topic": "dc_rca"
+        },
+        "mysql": {
+            "host": "mysql",
+            "port": 3306,
+            "user": "root",
+            "password": "234*(sdlj12",
+            "database": "dc_databuff"
+        },
+        "influxDB": {
+            "host": "influxdb",
+            "port": 8086,
+            "user": "admin",
+            "password": "234*(sdlj12",
+            "dbname": "trace_metric",
+            "table": "serviceMetric",
+            "metric_dbname": "source_metric"
+        },
+        "elasticsearch": {
+            "http": "http://elasticsearch:9200",
+            "username": "elastic",
+            "password": "Databuff@123",
+            "index": "dc_span"
+        },
+        "redis": {
+            "host": "redis",
+            "port": 6379,
+            "db": 2
+        }
+    }

@@ -1,0 +1,105 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: dc-grafana
+  name: dc-grafana
+  namespace: databuff
+spec:
+  selector:
+    matchLabels:
+      app: dc-grafana
+  template:
+    metadata:
+      labels:
+        app: dc-grafana
+    spec:
+      containers:
+        - name: dc-grafana
+          image: 192.168.50.212/library/grafana:v2.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+              name: http-grafana
+              protocol: TCP
+#          readinessProbe:
+#            failureThreshold: 3
+#            httpGet:
+#              path: /robots.txt
+#              port: 3000
+#              scheme: HTTP
+#            initialDelaySeconds: 10
+#            periodSeconds: 30
+#            successThreshold: 1
+#            timeoutSeconds: 2
+#          livenessProbe:
+#            failureThreshold: 3
+#            initialDelaySeconds: 30
+#            periodSeconds: 10
+#            successThreshold: 1
+#            tcpSocket:
+#              port: 3000
+#            timeoutSeconds: 1
+          resources:
+            requests:
+              cpu: 250m
+              memory: 750Mi
+          volumeMounts:
+            - mountPath: /usr/share/grafana/conf
+              name: grafana-pv
+            - name: grafana-config
+              mountPath: /usr/share/grafana/conf/defaults.ini
+              subPath: defaults.ini
+            - name: grafana-cert-crt
+              mountPath: /usr/share/grafana/conf/cert/dc_tech.crt
+              subPath: dc_tech.crt
+            - name: grafana-cert-key
+              mountPath: /usr/share/grafana/conf/cert/dc_tech.key
+              subPath: dc_tech.key
+            - name: grafana-cert-pem
+              mountPath: /usr/share/grafana/conf/cert/dc_tech.pem
+              subPath: dc_tech.pem
+      volumes:
+        - name: grafana-pv
+          persistentVolumeClaim:
+            claimName: dc-grafana-pvc
+        - name: grafana-config
+          configMap:
+            name: dc-grafana-conf
+            items:
+              - key: defaults.ini
+                path: defaults.ini
+        - name: grafana-cert-crt
+          configMap:
+            name: dc-grafana-conf
+            items:
+              - key: dc_tech.crt
+                path: dc_tech.crt
+        - name: grafana-cert-key
+          configMap:
+            name: dc-grafana-conf
+            items:
+              - key: dc_tech.key
+                path: dc_tech.key
+        - name: grafana-cert-pem
+          configMap:
+            name: dc-grafana-conf
+            items:
+              - key: dc_tech.pem
+                path: dc_tech.pem
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grafana-svc
+  namespace: databuff
+spec:
+  ports:
+    - port: 13000
+      protocol: TCP
+      targetPort: http-grafana
+  selector:
+    app: dc-grafana
+  sessionAffinity: None
+  type: LoadBalancer

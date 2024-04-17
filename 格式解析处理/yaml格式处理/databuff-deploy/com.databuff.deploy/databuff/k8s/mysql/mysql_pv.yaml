@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: dc-mysql-pv
+  labels:
+    pv: dc-mysql-pv
+spec:
+  accessModes:
+    - ReadWriteMany
+  capacity:
+    storage: 80Gi
+  storageClassName: nfs
+  nfs:
+    path: /data/nfs/databuff-kaifa/dc-mysql-data
+    server: 192.168.50.126
+  persistentVolumeReclaimPolicy: Retain
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: dc-mysql-pvc
+  namespace: databuff
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  selector:
+    matchLabels:
+      pv: dc-mysql-pv
+  resources:
+    requests:
+      storage: 80Gi

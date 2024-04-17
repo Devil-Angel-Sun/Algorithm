@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: dc-webapp-svc
+  name: dc-webapp-svc
+  namespace: databuff
+spec:
+  selector:
+    app: dc-webapp
+  type: NodePort
+  ports:
+    - port: 18080
+      protocol: TCP
+      targetPort: 18080
+      nodePort: 32180

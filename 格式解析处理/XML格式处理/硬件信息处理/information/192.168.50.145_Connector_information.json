@@ -1,0 +1,86 @@
+{
+  "Single Connector Audio PortLine In": {
+    "External Connector Type": "Mini Jack (headphones)",
+    "External Reference Designator": "Line In",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J30",
+    "Port Type": "Audio Port"
+  },
+  "Single Connector Audio PortMicrophone In": {
+    "External Connector Type": "Mini Jack (headphones)",
+    "External Reference Designator": "Microphone In",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J30",
+    "Port Type": "Audio Port"
+  },
+  "Single Connector Audio PortSpeaker Out": {
+    "External Connector Type": "Mini Jack (headphones)",
+    "External Reference Designator": "Speaker Out",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J30",
+    "Port Type": "Audio Port"
+  },
+  "Single Connector Keyboard PortKeyboard": {
+    "External Connector Type": "PS/2",
+    "External Reference Designator": "Keyboard",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J1A1",
+    "Port Type": "Keyboard Port"
+  },
+  "Single Connector Mouse PortMouse": {
+    "External Connector Type": "PS/2",
+    "External Reference Designator": "Mouse",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J1A1",
+    "Port Type": "Mouse Port"
+  },
+  "Single Connector Network PortNetwork": {
+    "External Connector Type": "RJ-45",
+    "External Reference Designator": "Network",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J5A1",
+    "Port Type": "Network Port"
+  },
+  "Single Connector OtherOnBoard Floppy Type": {
+    "External Connector Type": "None",
+    "External Reference Designator": "OnBoard Floppy Type",
+    "Internal Connector Type": "On Board Floppy",
+    "Internal Reference Designator": "J9G2",
+    "Port Type": "Other"
+  },
+  "Single Connector OtherOnBoard Primary IDE": {
+    "External Connector Type": "None",
+    "External Reference Designator": "OnBoard Primary IDE",
+    "Internal Connector Type": "On Board IDE",
+    "Internal Reference Designator": "J7J1",
+    "Port Type": "Other"
+  },
+  "Single Connector Serial Port 16550A CompatibleCOM 1": {
+    "External Connector Type": "DB-9 male",
+    "External Reference Designator": "COM 1",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J2A2",
+    "Port Type": "Serial Port 16550A Compatible"
+  },
+  "Single Connector USBUSB": {
+    "External Connector Type": "Access Bus (USB)",
+    "External Reference Designator": "USB",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J5A2",
+    "Port Type": "USB"
+  },
+  "Single Connector Video PortCRT": {
+    "External Connector Type": "DB-15 female",
+    "External Reference Designator": "CRT",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J2A2",
+    "Port Type": "Video Port"
+  },
+  "Single Connector Video PortTV OUT": {
+    "External Connector Type": "Mini DIN",
+    "External Reference Designator": "TV OUT",
+    "Internal Connector Type": "None",
+    "Internal Reference Designator": "J2A1",
+    "Port Type": "Video Port"
+  }
+}

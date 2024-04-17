@@ -1,0 +1,9 @@
+# 说明
+1. zabbix单模板解析.py：主要用于解析zabbix官网上下载的模板
+2. zabbix单模板查重.py：主要用于在解析了国网的总模板所得的excel和1中解析所得模板的excel匹配
+3. 主程序运行
+- 输入：check_items(file_total,file_simple,'Linux')
+- file_total：总模板.xlsx
+- file_simple：单模板.xml
+- str：输入的是需要匹配的Module
+- 输出：单模板中含有但是总模板中不含有的内容

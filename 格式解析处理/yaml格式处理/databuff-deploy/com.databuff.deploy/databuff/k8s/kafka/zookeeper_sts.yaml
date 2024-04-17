@@ -1,0 +1,62 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: zk
+  namespace: databuff
+spec:
+  selector:
+    matchLabels:
+      app: zk
+  serviceName: "dc-zk-inner-svc"
+  replicas: 3
+  updateStrategy:
+    type: RollingUpdate
+  podManagementPolicy: Parallel
+  template:
+    metadata:
+      labels:
+        app: zk
+    spec:
+      containers:
+        - name: zk
+          imagePullPolicy: Always
+          image: 192.168.50.212/library/zookeeper:v3.6.2
+          resources:
+            requests:
+              memory: "1000Mi"
+              cpu: "1"
+          ports:
+            - containerPort: 2181
+              name: client
+            - containerPort: 2888
+              name: server
+            - containerPort: 3888
+              name: leader-election
+          env:
+            - name: SERVERS
+              value: "3"
+            - name: ZOO_CONF_DIR
+              value: /opt/conf
+            - name: ZOO_DATA_DIR
+              value: /opt/data
+            - name: ZOO_DATA_LOG_DIR
+              value: /opt/data_log
+          volumeMounts:
+            - name: zookeeper-data
+              mountPath: /opt/data
+              subPath: zookeeper-cluster-data/data
+            - name: zookeeper-data
+              mountPath: /opt/data_log
+              subPath: zookeeper-cluster-data/data_log
+            - name: data-conf
+              mountPath: /etc/localtime
+      imagePullSecrets:
+        - name: docker-reg-secret
+      volumes:
+        - name: zookeeper-data
+          persistentVolumeClaim:
+            claimName: dc-zk-kafka-pvc
+        - name: data-conf
+          hostPath:
+            path: /usr/share/zoneinfo/Asia/Shanghai
